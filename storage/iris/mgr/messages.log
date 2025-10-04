@@ -1,0 +1,1954 @@
+07/10/25-18:21:22:688 (14563) 0 [Generic.Event] Allocated 503MB shared memory
+07/10/25-18:21:22:689 (14563) 0 [Generic.Event] 32MB global buffers, 80MB routine buffers, 64MB journal buffers, 6MB buffer descriptors, 300MB heap, 5MB ECP, 16MB miscellaneous
+07/10/25-18:21:22:692 (14563) 0 [Crypto.IntelSandyBridgeAESNI] Intel Sandy Bridge or AMD x8 AES-NI instructions detected.
+07/10/25-18:21:22:692 (14563) 0 [SIMD] SIMD optimization level: arch=x86-64-v4
+07/10/25-18:21:22:717 (14563) 0 [WriteDaemon.UsingWIJFile] Using WIJ file: /usr/irissys/mgr/IRIS.WIJ
+07/10/25-18:21:22:717 (14563) 0 [Generic.Event] No journaling info from prior system
+07/10/25-18:21:22:717 (14563) 0 [WriteDaemon.CreatingNewWIJ] Creating a new WIJ file
+07/10/25-18:21:22:723 (14563) 0 [WriteDaemon.CreatedNewWIJ] New WIJ file created
+07/10/25-18:21:22:733 (14563) 0 [Generic.Event] 
+Startup of InterSystems IRIS [IRIS for UNIX (Ubuntu Server LTS for x86-64 Containers) 2025.2 (Build 227U) Thu Jul 10 2025 11:09:14 EDT]
+	in ../bin/
+	with mgr: /usr/irissys/mgr
+	with wij: /usr/irissys/mgr/IRIS.WIJ
+	from: /usr/irissys/mgr/
+  OS=[Linux], version=[#216-Ubuntu SMP Thu Aug 29 13:26:53 UTC 2024], release=[5.4.0-196-generic], machine=[x86_64]
+  nodename=[buildkitsandbox].
+  numasyncwijbuf: 2, wdwrite_asyncio_max: 64, wijdirectio: on, synctype: 3
+  System Initialized.
+07/10/25-18:21:22:743 (14596) 0 [WriteDaemon.Started] Write daemon started.
+07/10/25-18:21:22:774 (14613) 0 [Database.MountedRW] Mounted database /usr/irissys/mgr/ (SFN 0) read-write.
+07/10/25-18:21:22:811 (14620) 0 [Utility.Event] Starting ^INSTALL procedure
+07/10/25-18:21:22:818 (14606) 0 [Database.StartExpansion] Starting Expansion for database /usr/irissys/mgr/. 34 MB requested.
+07/10/25-18:21:22:826 (14606) 0 [Database.FullExpansion] Expansion completed for database /usr/irissys/mgr/. Expanded by 34 MB.
+07/10/25-18:21:22:925 (14620) 0 [Utility.Event] Switching to temporary %SYS Namespace
+07/10/25-18:21:22:928 (14620) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/irislib/ (SFN 1) read-only. Database label is marked read-only. 
+07/10/25-18:21:23:587 (14620) 0 [Utility.Event] Creating IRISTEMP database in /usr/irissys/mgr/iristemp
+07/10/25-18:21:23:603 (14620) 0 [Database.MountedRW] Mounted database /usr/irissys/mgr/iristemp/ (SFN 2) read-write.
+07/10/25-18:21:23:606 (14620) 0 [Utility.Event] Creating IRISMETRICS database in /usr/irissys/mgr/irismetrics/
+07/10/25-18:21:23:630 (14620) 0 [Database.MountedRW] Mounted database /usr/irissys/mgr/irismetrics/ (SFN 3) read-write.
+07/10/25-18:21:23:651 (14620) 0 [Utility.Event] Creating IRISLOCALDATA database in /usr/irissys/mgr/irislocaldata/
+07/10/25-18:21:23:664 (14620) 0 [Database.MountedRW] Mounted database /usr/irissys/mgr/irislocaldata/ (SFN 4) read-write.
+07/10/25-18:21:23:674 (14620) 0 [Utility.Event] Creating IRISSECURITY database in /usr/irissys/mgr/irissecurity/
+07/10/25-18:21:23:683 (14620) 0 [Database.MountedRW] Mounted database /usr/irissys/mgr/irissecurity/ (SFN 5) read-write.
+07/10/25-18:21:23:691 (14620) 0 [Utility.Event] Switching to default %SYS Namespace
+07/10/25-18:21:23:691 (14620) 0 [Utility.Event] Loading DLLs
+07/10/25-18:21:24:823 (14620) 0 [Utility.Event] Loading Locale enuw (English, United States, Unicode) from objects
+07/10/25-18:21:27:919 (14620) 0 [Database.MountedRW] Mounted database /usr/irissys/mgr/irisaudit/ (SFN 6) read-write.
+07/10/25-18:21:27:998 (14620) 0 [Database.MountedRW] Mounted database /usr/irissys/mgr/user/ (SFN 7) read-write.
+07/10/25-18:21:30:410 (14620) 0 [Utility.Event] Finishing ^INSTALL procedure
+07/10/25-18:21:30:514 (14621) 0 [Utility.Event] User 'irisowner' shutting down InterSystems IRIS
+07/10/25-18:21:30:540 (14621) 0 [Utility.Event] Notifying Clients
+07/10/25-18:21:30:540 (14621) 0 [Utility.Event] No user shutdown routines to execute
+07/10/25-18:21:30:541 (14621) 0 [Utility.Event] Stopping User Jobs
+07/10/25-18:21:30:546 (14621) 0 [Utility.Event] Stopping Network Servers
+07/10/25-18:21:30:547 (14621) 0 [Utility.Event] Withdrawing from License Domain
+07/10/25-18:21:30:548 (14621) 0 [Utility.Event] Stopping Client Networking
+07/10/25-18:21:30:548 (14621) 0 [Utility.Event] Updating Journal File
+07/10/25-18:21:30:548 (14621) 0 [Utility.Event] Journal restore not required at next startup
+07/10/25-18:21:30:548 (14621) 0 [Utility.Event] Transaction rollback not required at next startup
+07/10/25-18:21:30:649 (14621) 0 [Utility.Event] Removing database locks
+07/10/25-18:21:30:653 (14621) 0 [Utility.Event] Waiting for database updates to complete
+07/10/25-18:21:30:653 (14621) 0 [Utility.Event] Database updates complete
+07/10/25-18:21:30:653 (14621) 0 [Utility.Event] Stopping System Jobs
+07/10/25-18:21:30:754 (14606) 0 [Generic.Event] EXPDMN exited due to system shutdown
+07/10/25-18:21:30:754 (14598) 0 [Generic.Event] JRNDMN exited due to system shutdown
+07/10/25-18:21:30:755 (14599) 0 [Generic.Event] AUXWD #1 exited due to system shutdown
+07/10/25-18:21:30:755 (14597) 0 [Generic.Event] GARCOL exited due to system shutdown
+07/10/25-18:21:30:756 (14600) 0 [Generic.Event] AUXWD #2 exited due to system shutdown
+07/10/25-18:21:30:756 (14601) 0 [Generic.Event] AUXWD #3 exited due to system shutdown
+07/10/25-18:21:30:757 (14602) 0 [Generic.Event] AUXWD #4 exited due to system shutdown
+07/10/25-18:21:30:758 (14603) 0 [Generic.Event] AUXWD #5 exited due to system shutdown
+07/10/25-18:21:30:758 (14604) 0 [Generic.Event] AUXWD #6 exited due to system shutdown
+07/10/25-18:21:30:759 (14605) 0 [Generic.Event] AUXWD #7 exited due to system shutdown
+07/10/25-18:21:30:764 (14596) 0 [Generic.Event] No blocks pending in WIJ file
+07/10/25-18:21:30:764 (14596) 0 [Generic.Event] WRTDMN exited due to system shutdown
+07/10/25-18:21:30:771 (14563) 0 [Generic.Event] CONTROL exited due to system shutdown
+07/10/25-18:21:30:791 (14621) 0 [Utility.Event] Shutdown complete
+
+
+
+*** Recovery started at Thu Jul 10 18:21:36 2025
+     Current default directory: /usr/irissys/mgr
+     Log file directory: /usr/irissys/mgr/
+     WIJ file spec: /usr/irissys/mgr/IRIS.WIJ
+Recovering local (/usr/irissys/mgr/IRIS.WIJ) image journal file...
+Starting WIJ recovery for '/usr/irissys/mgr/IRIS.WIJ'.
+  0 blocks pending in this WIJ.
+Exiting with status 3 (Success)
+07/10/25-18:21:36:342 (15032) 0 [Generic.Event] Global buffer setting requires attention.  Auto-selected 25% of total memory.
+07/10/25-18:21:36:920 (15032) 0 [Generic.Event] Allocated 18899MB shared memory
+07/10/25-18:21:36:920 (15032) 0 [Generic.Event] 16076MB global buffers, 1020MB routine buffers, 64MB journal buffers, 1235MB buffer descriptors, 482MB heap, 5MB ECP, 16MB miscellaneous
+07/10/25-18:21:36:922 (15032) 0 [Crypto.IntelSandyBridgeAESNI] Intel Sandy Bridge or AMD x8 AES-NI instructions detected.
+07/10/25-18:21:36:923 (15032) 0 [SIMD] SIMD optimization level: arch=x86-64-v4
+07/10/25-18:21:37:596 (15032) 0 [WriteDaemon.UsingWIJFile] Using WIJ file: /usr/irissys/mgr/IRIS.WIJ
+07/10/25-18:21:37:596 (15032) 0 [Generic.Event] No journaling info from prior system
+07/10/25-18:21:37:597 (15032) 0 [WriteDaemon.CreatingNewWIJ] Creating a new WIJ file
+07/10/25-18:21:37:602 (15032) 0 [WriteDaemon.CreatedNewWIJ] New WIJ file created
+07/10/25-18:21:37:607 (15032) 0 [Generic.Event] 
+Startup of InterSystems IRIS [IRIS for UNIX (Ubuntu Server LTS for x86-64 Containers) 2025.2 (Build 227U) Thu Jul 10 2025 11:09:14 EDT]
+	in /usr/irissys/bin/
+	with mgr: /usr/irissys/mgr
+	with wij: /usr/irissys/mgr/IRIS.WIJ
+	from: /usr/irissys/mgr/
+  OS=[Linux], version=[#216-Ubuntu SMP Thu Aug 29 13:26:53 UTC 2024], release=[5.4.0-196-generic], machine=[x86_64]
+  nodename=[buildkitsandbox].
+  numasyncwijbuf: 2, wdwrite_asyncio_max: 64, wijdirectio: on, synctype: 3
+  System Initialized.
+07/10/25-18:21:37:617 (15073) 0 [WriteDaemon.Started] Write daemon started.
+07/10/25-18:21:37:628 (15084) 0 [Database.MountedRW] Mounted database /usr/irissys/mgr/ (SFN 0) read-write.
+07/10/25-18:21:37:654 (15084) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/irislib/ (SFN 1) read-only. Database label is marked read-only. 
+07/10/25-18:21:37:665 (15084) 0 [Utility.Event] Instance 'IRIS' starting on node buildkitsandbox by user 'irisowner' on 07/10/2025 18:21:37.665 UTC
+07/10/25-18:21:37:666 (15084) 0 [Utility.Event] Using parameters from file '/usr/irissys/iris.cpf'
+07/10/25-18:21:37:668 (15084) 0 [Utility.Event] Loading DLLs
+07/10/25-18:21:37:669 (15084) 0 [Utility.Event] Switching to temporary %SYS Namespace
+07/10/25-18:21:37:694 (15084) 0 [Database.MountedRW] Mounted database /usr/irissys/mgr/irissecurity/ (SFN 2) read-write.
+07/10/25-18:21:37:702 (15084) 0 [Utility.Event] Loading Locale enuw (English, United States, Unicode) from objects
+07/10/25-18:21:37:736 (15084) 0 [Database.MountedRW] Mounted database /usr/irissys/mgr/irislocaldata/ (SFN 3) read-write.
+07/10/25-18:21:37:738 (15084) 0 [Utility.Event] Using OpenSSL 3.0.13 30 Jan 2024
+07/10/25-18:21:37:770 (15084) 0 [Database.MountedRW] Mounted database /usr/irissys/mgr/iristemp/ (SFN 4) read-write.
+07/10/25-18:21:37:776 (15084) 0 [Utility.Event] /usr/irissys/mgr/iristemp/ initialized as IRISTEMP
+07/10/25-18:21:37:782 (15084) 0 [Utility.Event] Switching to default %SYS Namespace
+07/10/25-18:21:38:153 (15085) 0 [Utility.Event] Log Monitor Started
+07/10/25-18:21:38:269 (15086) 0 [Utility.Event] Clean Daemon Started
+07/10/25-18:21:38:487 (15084) 0 [Utility.Event] Updating configuration information from /usr/irissys/iris.cpf
+07/10/25-18:21:38:516 (15084) 0 [Utility.Event] No archives configured
+07/10/25-18:21:38:522 (15084) 0 [Utility.Event] Performing Journal Recovery
+07/10/25-18:21:38:524 (15084) 0 [Utility.Event] Graceful system shutdown, journal restore not required
+07/10/25-18:21:38:524 (15084) 0 [Utility.Event] Graceful system shutdown, transaction rollback not required
+07/10/25-18:21:38:535 (15084) 0 [Utility.Event] START: /usr/irissys/mgr/journal/20250710.001
+07/10/25-18:21:38:544 (15084) 0 [Generic.Event] INTERSYSTEMS IRIS JOURNALING SYSTEM MESSAGE
+Journaling started to: /usr/irissys/mgr/journal/20250710.001
+07/10/25-18:21:38:544 (15084) 0 [Utility.Event] Journaling to /usr/irissys/mgr/journal/20250710.001 started.
+07/10/25-18:21:38:544 (15084) 0 [Utility.Event] Processing WorkQueues section
+07/10/25-18:21:38:546 (15084) 0 [Utility.Event] Processing Startup section
+07/10/25-18:21:38:558 (15087) 0 [Utility.Event] Purging old application errors
+07/10/25-18:21:38:559 (15084) 0 [Utility.Event] Created temp directory /usr/irissys/mgr/Temp
+07/10/25-18:21:38:559 (15084) 0 [Utility.Event] Processing config section
+07/10/25-18:21:38:573 (15088) 0 [Utility.Event] LMF Info:  Licensed for 8 users.
+07/10/25-18:21:38:736 (15084) 0 [Utility.Event] Initializing Security system
+07/10/25-18:21:38:875 (15084) 0 [Utility.Event] Processing Network section
+07/10/25-18:21:38:876 (15084) 0 [Utility.Event] Activating Network
+07/10/25-18:21:38:892 (15084) 0 [Utility.Event] Processing Databases section
+07/10/25-18:21:38:898 (15084) 0 [Database.MountedRW] Mounted database /usr/irissys/mgr/irisaudit/ (SFN 5) read-write.
+07/10/25-18:21:38:904 (15084) 0 [Database.MountedRW] Mounted database /usr/irissys/mgr/irismetrics/ (SFN 6) read-write.
+07/10/25-18:21:38:906 (15084) 0 [Utility.Event] Processing Namespaces section
+07/10/25-18:21:38:906 (15084) 0 [Utility.Event] Loading all namespaces
+07/10/25-18:21:38:940 (15084) 0 [Utility.Event] Activating namespaces
+07/10/25-18:21:38:941 (15084) 0 [Utility.Event] Activating new namespace map
+07/10/25-18:21:38:948 (15084) 0 [Utility.Event] Namespace changes have been activated
+07/10/25-18:21:38:969 (15091) 0 [Utility.Event] Starting superserver on port 1972
+07/10/25-18:21:38:969 (15084) 0 [Utility.Event] Network Lock Upload Phase Starting
+07/10/25-18:21:38:969 (15084) 0 [Utility.Event] Lock Upload Phase Complete
+07/10/25-18:21:38:969 (15084) 0 [Utility.Event] Processing Miscellaneous section
+07/10/25-18:21:38:999 (15094) 0 [Utility.Event] Starting Servers
+07/10/25-18:21:39:000 (15084) 0 [Utility.Event] Processing Devices section
+07/10/25-18:21:39:000 (15084) 0 [Utility.Event] Processing DeviceSubTypes section
+07/10/25-18:21:39:000 (15084) 0 [Utility.Event] Processing MagTape section
+07/10/25-18:21:39:003 (15084) 0 [Utility.Event] Processing IO section
+07/10/25-18:21:39:003 (15084) 0 [Utility.Event] Processing SQL section
+07/10/25-18:21:39:004 (15084) 0 [Utility.Event] Processing Macro Pre-Processor (MPP) section
+07/10/25-18:21:39:009 (15084) 0 [Database.MountedRW] Mounted database /usr/irissys/mgr/user/ (SFN 7) read-write.
+07/10/25-18:21:39:009 (15084) 0 [Utility.Event] Processing OS Package Requirements section
+07/10/25-18:21:39:040 (15084) 0 [Generic.Event] Auditing to /usr/irissys/mgr/irisaudit/
+07/10/25-18:21:39:080 (15083) 0 [Database.StartExpansion] Starting Expansion for database /usr/irissys/mgr/irisaudit/. 10 MB requested.
+07/10/25-18:21:39:086 (15083) 0 [Database.FullExpansion] Expansion completed for database /usr/irissys/mgr/irisaudit/. Expanded by 10 MB.
+07/10/25-18:21:39:109 (15094) 0 [Utility.Event] Private webserver started on 52773
+07/10/25-18:21:39:109 (15094) 0 [Utility.Event] Processing Shadows section (this system as shadow)
+07/10/25-18:21:39:115 (15084) 0 [Utility.Event] Interoperability: Installing IRIS
+07/10/25-18:21:39:116 (15094) 0 [Utility.Event] Processing Monitor section
+07/10/25-18:21:39:150 (15247) 0 [Utility.Event] [SYSTEM MONITOR] System Monitor started in %SYS
+07/10/25-18:21:39:174 (15249) 0 [Utility.Event] WorkQueue: Starting work queue daemon parent=15094
+07/10/25-18:21:39:174 (15094) 0 [Utility.Event] Shard license: 0
+07/10/25-18:21:39:177 (15083) 0 [Database.StartExpansion] Starting Expansion for database /usr/irissys/mgr/irislocaldata/. 10 MB requested.
+07/10/25-18:21:39:183 (15083) 0 [Database.ExpansionProgress] Expansion for database /usr/irissys/mgr/irislocaldata/ in progress, 8 MB completed.
+07/10/25-18:21:39:184 (15083) 0 [Database.StartExpansion] Starting Expansion for database /usr/irissys/mgr/iristemp/. 10 MB requested.
+07/10/25-18:21:39:187 (15083) 0 [Database.FullExpansion] Expansion completed for database /usr/irissys/mgr/irislocaldata/. Expanded by 10 MB.
+07/10/25-18:21:39:192 (15083) 0 [Database.FullExpansion] Expansion completed for database /usr/irissys/mgr/iristemp/. Expanded by 10 MB.
+07/10/25-18:21:39:575 (15084) 0 [Utility.Event] Enabling namespace 'USER' for Interoperability
+07/10/25-18:21:39:613 (15084) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/enslib/ (SFN 8) read-only. Database label is marked read-only. 
+07/10/25-18:21:39:630 (15084) 0 [Utility.Event] Activating USER namespace map
+07/10/25-18:21:39:645 (15084) 0 [Utility.Event] Namespace USER changes have been activated
+07/10/25-18:21:39:692 (15084) 0 [Utility.Event] Activating USER namespace map
+07/10/25-18:21:39:696 (15084) 0 [Utility.Event] Namespace USER changes have been activated
+07/10/25-18:21:40:059 (15084) 0 [Utility.Event] Activating USER namespace map
+07/10/25-18:21:40:064 (15084) 0 [Utility.Event] Namespace USER changes have been activated
+07/10/25-18:21:41:485 (15084) 0 [Utility.Event] Activating USER namespace map
+07/10/25-18:21:41:500 (15084) 0 [Utility.Event] Namespace USER changes have been activated
+07/10/25-18:21:41:747 (15084) 0 [Utility.Event] Enabling namespace 'USER' for Interoperability
+07/10/25-18:21:41:783 (15084) 0 [Utility.Event] Activating USER namespace map
+07/10/25-18:21:41:787 (15084) 0 [Utility.Event] Namespace USER changes have been activated
+07/10/25-18:21:41:823 (15084) 0 [Utility.Event] Activating USER namespace map
+07/10/25-18:21:41:827 (15084) 0 [Utility.Event] Namespace USER changes have been activated
+07/10/25-18:21:42:166 (15084) 0 [Utility.Event] Activating USER namespace map
+07/10/25-18:21:42:170 (15084) 0 [Utility.Event] Namespace USER changes have been activated
+07/10/25-18:21:43:195 (15084) 0 [Generic.Event] Switched database /usr/irissys/mgr/irislib/ (SFN 1) to read-write.
+07/10/25-18:21:44:198 (15084) 0 [Generic.Event] Switched database /usr/irissys/mgr/enslib/ (SFN 8) to read-write.
+07/10/25-18:21:44:793 (15083) 0 [Database.StartExpansion] Starting Expansion for database /usr/irissys/mgr/enslib/. 16 MB requested.
+07/10/25-18:21:44:798 (15083) 0 [Database.FullExpansion] Expansion completed for database /usr/irissys/mgr/enslib/. Expanded by 16 MB.
+07/10/25-18:21:48:194 (15084) 0 [Generic.Event] Switched database /usr/irissys/mgr/irislib/ (SFN 1) to read-only.
+07/10/25-18:21:48:195 (15084) 0 [Generic.Event] Switched database /usr/irissys/mgr/enslib/ (SFN 8) to read-only.
+07/10/25-18:21:48:203 (15084) 0 [Utility.Event] Enabling logons
+07/10/25-18:21:48:203 (15084) 0 [Utility.Event] Rebuilding Extent index for namespace USER
+07/10/25-18:21:52:462 (15083) 0 [Database.StartExpansion] Starting Expansion for database /usr/irissys/mgr/user/. 10 MB requested.
+07/10/25-18:21:52:466 (15084) 0 [Utility.Event] Rebuild of Extent index completed
+07/10/25-18:21:52:468 (15083) 0 [Database.FullExpansion] Expansion completed for database /usr/irissys/mgr/user/. Expanded by 10 MB.
+07/10/25-18:21:52:528 (15084) 0 [Utility.Event] Interoperability System including auto-start of productions Starting
+07/10/25-18:21:52:531 (15084) 0 [Utility.Event] Initializing Interoperability during system startup
+07/10/25-18:21:52:533 (15084) 0 [Utility.Event] Interoperability System Startup Complete
+07/10/25-18:21:53:041 (15282) 0 [Utility.Event] User 'irisowner' shutting down InterSystems IRIS
+07/10/25-18:21:53:067 (15282) 0 [Utility.Event] Notifying Clients
+07/10/25-18:21:53:067 (15282) 0 [Utility.Event] No user shutdown routines to execute
+07/10/25-18:21:53:071 (15282) 0 [Utility.Event] Stopping User Jobs
+07/10/25-18:21:53:091 (15282) 0 [Utility.Event] Stopping Network Servers
+07/10/25-18:21:53:093 (15282) 0 [Utility.Event] Withdrawing from License Domain
+07/10/25-18:21:53:111 (15282) 0 [Generic.Event] Auditing stopped
+07/10/25-18:21:53:111 (15282) 0 [Utility.Event] Stopping Client Networking
+07/10/25-18:21:53:111 (15282) 0 [Utility.Event] Updating Journal File
+07/10/25-18:21:53:143 (15282) 0 [Utility.Event] Journal restore not required at next startup
+07/10/25-18:21:53:143 (15282) 0 [Utility.Event] Transaction rollback not required at next startup
+07/10/25-18:21:53:215 (15282) 0 [Utility.Event] Removing database locks
+07/10/25-18:21:53:220 (15282) 0 [Utility.Event] Waiting for database updates to complete
+07/10/25-18:21:53:220 (15282) 0 [Utility.Event] Database updates complete
+07/10/25-18:21:53:220 (15282) 0 [Utility.Event] Stopping System Jobs
+07/10/25-18:21:53:326 (15083) 0 [Generic.Event] EXPDMN exited due to system shutdown
+07/10/25-18:21:53:326 (15075) 0 [Generic.Event] JRNDMN exited due to system shutdown
+07/10/25-18:21:53:327 (15074) 0 [Generic.Event] GARCOL exited due to system shutdown
+07/10/25-18:21:53:327 (15076) 0 [Generic.Event] AUXWD #1 exited due to system shutdown
+07/10/25-18:21:53:328 (15078) 0 [Generic.Event] AUXWD #2 exited due to system shutdown
+07/10/25-18:21:53:328 (15077) 0 [Generic.Event] AUXWD #3 exited due to system shutdown
+07/10/25-18:21:53:332 (15079) 0 [Generic.Event] AUXWD #4 exited due to system shutdown
+07/10/25-18:21:53:333 (15080) 0 [Generic.Event] AUXWD #5 exited due to system shutdown
+07/10/25-18:21:53:333 (15082) 0 [Generic.Event] AUXWD #6 exited due to system shutdown
+07/10/25-18:21:53:333 (15081) 0 [Generic.Event] AUXWD #7 exited due to system shutdown
+07/10/25-18:21:53:337 (15073) 0 [Generic.Event] No blocks pending in WIJ file
+07/10/25-18:21:53:337 (15073) 0 [Generic.Event] WRTDMN exited due to system shutdown
+07/10/25-18:21:53:344 (15032) 0 [Generic.Event] CONTROL exited due to system shutdown
+07/10/25-18:21:53:375 (15282) 0 [Utility.Event] Shutdown complete
+
+
+
+*** Recovery started at Thu Jul 10 18:21:54 2025
+     Current default directory: /usr/irissys/mgr
+     Log file directory: /usr/irissys/mgr/
+     WIJ file spec: /usr/irissys/mgr/IRIS.WIJ
+Recovering local (/usr/irissys/mgr/IRIS.WIJ) image journal file...
+Starting WIJ recovery for '/usr/irissys/mgr/IRIS.WIJ'.
+  0 blocks pending in this WIJ.
+Exiting with status 3 (Success)
+07/10/25-18:21:54:127 (15711) 0 [Generic.Event] Global buffer setting requires attention.  Auto-selected 25% of total memory.
+07/10/25-18:21:54:359 (15711) 0 [Generic.Event] Allocated 18899MB shared memory
+07/10/25-18:21:54:359 (15711) 0 [Generic.Event] 16076MB global buffers, 1020MB routine buffers, 64MB journal buffers, 1235MB buffer descriptors, 482MB heap, 5MB ECP, 16MB miscellaneous
+07/10/25-18:21:54:362 (15711) 0 [Crypto.IntelSandyBridgeAESNI] Intel Sandy Bridge or AMD x8 AES-NI instructions detected.
+07/10/25-18:21:54:362 (15711) 0 [SIMD] SIMD optimization level: arch=x86-64-v4
+07/10/25-18:21:54:909 (15711) 0 [WriteDaemon.UsingWIJFile] Using WIJ file: /usr/irissys/mgr/IRIS.WIJ
+07/10/25-18:21:54:909 (15711) 0 [Generic.Event] Jrn info from prior WIJ (imflags: 0):
+	wdpass: 0
+	jrnwdpass: 13
+	fspec: /usr/irissys/mgr/journal/20250710.001
+	filecnt: 1
+	fileoff: 0
+	prevfcnt: 1
+	prevfileoeff: 0
+	min trans cnt: 1
+	min trans index: 6845004
+07/10/25-18:21:54:911 (15711) 0 [Generic.Event] InterSystems IRIS is started with NOSTU option.
+07/10/25-18:21:54:913 (15711) 0 [Generic.Event] 
+Startup of InterSystems IRIS [IRIS for UNIX (Ubuntu Server LTS for x86-64 Containers) 2025.2 (Build 227U) Thu Jul 10 2025 11:09:14 EDT]
+	in /usr/irissys/bin/
+	with mgr: /usr/irissys/mgr
+	with wij: /usr/irissys/mgr/IRIS.WIJ
+	from: /usr/irissys/mgr/
+  OS=[Linux], version=[#216-Ubuntu SMP Thu Aug 29 13:26:53 UTC 2024], release=[5.4.0-196-generic], machine=[x86_64]
+  nodename=[buildkitsandbox].
+  numasyncwijbuf: 2, wdwrite_asyncio_max: 64, wijdirectio: on, synctype: 3
+  System Initialized.
+07/10/25-18:21:54:925 (15752) 0 [WriteDaemon.Started] Write daemon started.
+07/10/25-18:21:54:996 (15784) 0 [Database.MountedRW] Mounted database /usr/irissys/mgr/ (SFN 0) read-write.
+07/10/25-18:21:55:026 (15784) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/irislib/ (SFN 1) read-only. Database label is marked read-only. 
+07/10/25-18:21:55:071 (15784) 0 [Database.MountedRW] Mounted database /usr/irissys/mgr/irislocaldata/ (SFN 2) read-write.
+07/10/25-18:21:55:088 (15784) 2 [Utility.Event] SQL detected collation mismatch which can cause incorrect query results. Default process collation (5) is different from IRISTEMP database collation ()
+07/10/25-18:21:55:494 (15784) 0 [Database.MountedRW] Mounted database /usr/irissys/mgr/irissecurity/ (SFN 3) read-write.
+07/10/25-18:21:55:641 (15802) 0 [Utility.Event] User 'irisowner' shutting down InterSystems IRIS
+07/10/25-18:21:55:802 (15802) 0 [Utility.Event] Notifying Clients
+07/10/25-18:21:55:804 (15802) 0 [Utility.Event] No user shutdown routines to execute
+07/10/25-18:21:55:806 (15802) 0 [Utility.Event] Stopping User Jobs
+07/10/25-18:21:55:814 (15802) 0 [Utility.Event] Stopping Network Servers
+07/10/25-18:21:55:817 (15802) 0 [Utility.Event] Withdrawing from License Domain
+07/10/25-18:21:55:819 (15802) 0 [Utility.Event] Stopping Client Networking
+07/10/25-18:21:55:822 (15802) 0 [Utility.Event] Updating Journal File
+07/10/25-18:21:55:822 (15802) 0 [Utility.Event] Skip jrnwait as WIJ update is disabled
+07/10/25-18:21:55:874 (15802) 0 [Utility.Event] Removing database locks
+07/10/25-18:21:55:877 (15802) 0 [Utility.Event] Waiting for database updates to complete
+07/10/25-18:21:55:878 (15802) 0 [Utility.Event] Database updates complete
+07/10/25-18:21:55:878 (15802) 0 [Utility.Event] Stopping System Jobs
+07/10/25-18:21:55:979 (15762) 0 [Generic.Event] EXPDMN exited due to system shutdown
+07/10/25-18:21:55:980 (15754) 0 [Generic.Event] JRNDMN exited due to system shutdown
+07/10/25-18:21:55:983 (15753) 0 [Generic.Event] GARCOL exited due to system shutdown
+07/10/25-18:21:55:983 (15759) 0 [Generic.Event] AUXWD #1 exited due to system shutdown
+07/10/25-18:21:55:984 (15755) 0 [Generic.Event] AUXWD #2 exited due to system shutdown
+07/10/25-18:21:55:984 (15760) 0 [Generic.Event] AUXWD #3 exited due to system shutdown
+07/10/25-18:21:55:985 (15757) 0 [Generic.Event] AUXWD #4 exited due to system shutdown
+07/10/25-18:21:55:985 (15756) 0 [Generic.Event] AUXWD #5 exited due to system shutdown
+07/10/25-18:21:55:986 (15761) 0 [Generic.Event] AUXWD #6 exited due to system shutdown
+07/10/25-18:21:55:986 (15758) 0 [Generic.Event] AUXWD #7 exited due to system shutdown
+07/10/25-18:21:55:991 (15752) 0 [Generic.Event] No blocks pending in WIJ file
+07/10/25-18:21:55:991 (15752) 0 [Generic.Event] WRTDMN exited due to system shutdown
+07/10/25-18:21:55:997 (15711) 0 [Generic.Event] CONTROL exited due to system shutdown
+07/10/25-18:21:56:038 (15802) 0 [Utility.Event] Shutdown complete
+10/03/25-15:25:07:334 (410) 0 [Utility.Event] Executing /usr/irissys/bin/iris version
+10/03/25-15:25:07:341 (410) 0 [Utility.Event] Executing /usr/irissys/bin/iris qlist
+10/03/25-15:25:07:346 (410) 0 [Utility.Event] Moving data directory of instance IRIS to /durable/iris/
+10/03/25-15:25:07:346 (410) 0 [Utility.Event] ISC_DATA_DIRECTORY=/durable/iris/
+10/03/25-15:25:07:349 (410) 0 [Utility.Event] Creating directory /durable/iris/
+10/03/25-15:25:07:354 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/
+10/03/25-15:25:07:386 (410) 0 [Utility.Event] Creating directory /durable/iris/mgr/
+10/03/25-15:25:07:397 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/mgr/
+10/03/25-15:25:07:415 (410) 0 [Utility.Event] Executing cp -fp /usr/irissys/mgr/messages.log /durable/iris/mgr/messages.log
+10/03/25-15:25:07:439 (410) 0 [Utility.Event] Executing cp -fp /usr/irissys/mgr/.product /durable/iris/mgr/.product
+10/03/25-15:25:07:457 (410) 0 [Utility.Event] Executing cp -fp /usr/irissys/mgr/ilock /durable/iris/mgr/ilock
+10/03/25-15:25:07:478 (410) 0 [Utility.Event] Executing cp -fp /usr/irissys/mgr/irisodbc.ini /durable/iris/mgr/irisodbc.ini
+10/03/25-15:25:07:495 (410) 0 [Utility.Event] Database ENSLIB is set to read only, not copied to /durable/iris/
+10/03/25-15:25:07:502 (410) 0 [Utility.Event] Creating directory /durable/iris/mgr/irisaudit/
+10/03/25-15:25:07:523 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/mgr/irisaudit/
+10/03/25-15:25:07:538 (410) 0 [Utility.Event] Executing cp -fp /usr/irissys/mgr/irisaudit/IRIS.DAT /durable/iris/mgr/irisaudit/IRIS.DAT
+10/03/25-15:25:07:681 (410) 0 [Utility.Event] Database IRISLIB is set to read only, not copied to /durable/iris/
+10/03/25-15:25:07:690 (410) 0 [Utility.Event] Creating directory /durable/iris/mgr/irislocaldata/
+10/03/25-15:25:07:708 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/mgr/irislocaldata/
+10/03/25-15:25:07:722 (410) 0 [Utility.Event] Executing cp -fp /usr/irissys/mgr/irislocaldata/IRIS.DAT /durable/iris/mgr/irislocaldata/IRIS.DAT
+10/03/25-15:25:07:910 (410) 0 [Utility.Event] Creating directory /durable/iris/mgr/irismetrics/
+10/03/25-15:25:07:931 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/mgr/irismetrics/
+10/03/25-15:25:07:944 (410) 0 [Utility.Event] Executing cp -fp /usr/irissys/mgr/irismetrics/IRIS.DAT /durable/iris/mgr/irismetrics/IRIS.DAT
+10/03/25-15:25:08:007 (410) 0 [Utility.Event] Creating directory /durable/iris/mgr/irissecurity/
+10/03/25-15:25:08:025 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/mgr/irissecurity/
+10/03/25-15:25:08:041 (410) 0 [Utility.Event] Executing cp -fp /usr/irissys/mgr/irissecurity/IRIS.DAT /durable/iris/mgr/irissecurity/IRIS.DAT
+10/03/25-15:25:08:095 (410) 0 [Utility.Event] Creating directory /durable/iris/mgr/
+10/03/25-15:25:08:103 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/mgr/
+10/03/25-15:25:08:110 (410) 0 [Utility.Event] Executing cp -fp /usr/irissys/mgr/IRIS.DAT /durable/iris/mgr/IRIS.DAT
+10/03/25-15:25:08:834 (410) 0 [Utility.Event] Creating directory /durable/iris/mgr/iristemp/
+10/03/25-15:25:08:851 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/mgr/iristemp/
+10/03/25-15:25:08:867 (410) 0 [Utility.Event] Executing cp -fp /usr/irissys/mgr/iristemp/IRIS.DAT /durable/iris/mgr/iristemp/IRIS.DAT
+10/03/25-15:25:09:002 (410) 0 [Utility.Event] Creating directory /durable/iris/mgr/user/
+10/03/25-15:25:09:022 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/mgr/user/
+10/03/25-15:25:09:036 (410) 0 [Utility.Event] Executing cp -fp /usr/irissys/mgr/user/IRIS.DAT /durable/iris/mgr/user/IRIS.DAT
+10/03/25-15:25:09:167 (410) 0 [Utility.Event] Creating directory /durable/iris/mgr/journal/
+10/03/25-15:25:09:186 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/mgr/journal/
+10/03/25-15:25:09:202 (410) 0 [Utility.Event] Executing cp -fp /usr/irissys/iris.cpf /durable/iris/iris.cpf
+10/03/25-15:25:09:219 (410) 0 [Utility.Event] Creating directory /durable/iris/httpd/
+10/03/25-15:25:09:231 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/httpd/
+10/03/25-15:25:09:253 (410) 0 [Utility.Event] Creating directory /durable/iris/httpd/logs/
+10/03/25-15:25:09:276 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/httpd/logs/
+10/03/25-15:25:09:299 (410) 0 [Utility.Event] Creating directory /durable/iris/httpd/conf/
+10/03/25-15:25:09:320 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/httpd/conf/
+10/03/25-15:25:09:344 (410) 0 [Utility.Event] Executing cp -fp /usr/irissys/httpd/conf/httpd.conf /durable/iris/httpd/conf/httpd.conf
+10/03/25-15:25:09:437 (410) 0 [Utility.Event] Creating directory /durable/iris/csp/
+10/03/25-15:25:09:452 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/csp/
+10/03/25-15:25:09:470 (410) 0 [Utility.Event] Creating directory /durable/iris/dev/
+10/03/25-15:25:09:481 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/dev/
+10/03/25-15:25:09:499 (410) 0 [Utility.Event] Creating directory /durable/iris/dev/python/
+10/03/25-15:25:09:518 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/dev/python/
+10/03/25-15:25:09:543 (410) 0 [Utility.Event] Creating directory /durable/iris/dev/python/virtual/
+10/03/25-15:25:09:580 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/dev/python/virtual/
+10/03/25-15:25:09:625 (410) 0 [Utility.Event] Creating directory /durable/iris/csp/temp/
+10/03/25-15:25:09:648 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/csp/temp/
+10/03/25-15:25:09:672 (410) 0 [Utility.Event] Creating directory /durable/iris/csp/broker/
+10/03/25-15:25:09:695 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/csp/broker/
+10/03/25-15:25:09:720 (410) 0 [Utility.Event] Creating directory /durable/iris/csp/user/
+10/03/25-15:25:09:745 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/csp/user/
+10/03/25-15:25:09:768 (410) 0 [Utility.Event] Creating directory /durable/iris/csp/bin/
+10/03/25-15:25:09:791 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/csp/bin/
+10/03/25-15:25:11:266 (410) 0 [Utility.Event] Creating directory /durable/iris/csp/broker/covers/
+10/03/25-15:25:11:288 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/csp/broker/covers/
+10/03/25-15:25:12:261 (410) 0 [Utility.Event] Creating directory /durable/iris/csp/broker/deepsee/
+10/03/25-15:25:12:288 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/csp/broker/deepsee/
+10/03/25-15:25:16:105 (410) 0 [Utility.Event] Executing cp -fp /usr/irissys/csp/bin/CSP.ini /durable/iris/csp/bin/CSP.ini
+10/03/25-15:25:16:128 (410) 0 [Utility.Event] Executing cp -fp /usr/irissys/csp/bin/CSPRT.ini /durable/iris/csp/bin/CSPRT.ini
+10/03/25-15:25:16:150 (410) 0 [Utility.Event] Creating directory /durable/iris/dist/
+10/03/25-15:25:16:166 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/dist/
+10/03/25-15:25:16:184 (410) 0 [Utility.Event] Creating directory /durable/iris/dist/install/
+10/03/25-15:25:16:202 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/dist/install/
+10/03/25-15:25:16:221 (410) 0 [Utility.Event] Creating directory /durable/iris/dist/install/misc/
+10/03/25-15:25:16:250 (410) 0 [Utility.Event] Executing chown irisowner:irisowner /durable/iris/dist/install/misc/
+10/03/25-15:25:16:274 (410) 0 [Utility.Event] Executing cp -fp /usr/irissys/dist/install/misc/buildver /durable/iris/dist/install/misc/buildver
+10/03/25-15:25:16:292 (410) 0 [Utility.Event] File copy complete
+10/03/25-15:25:16:295 (410) 0 [Utility.Event] Updating configuration files
+10/03/25-15:25:16:634 (410) 0 [Utility.Event] Executing /usr/irissys/bin/iris update IRIS datadir=/durable/iris/
+10/03/25-15:25:16:664 (410) 0 [Utility.Event] Executing cp -fp /usr/irissys/bin/irismgr /usr/irissys/bin/irisinstall
+10/03/25-15:25:16:670 (410) 0 [Utility.Event] Executing cp -fp /usr/irissys/bin/irisuxsusr /usr/irissys/bin/irisuxsinst
+10/03/25-15:25:16:687 (410) 0 [Utility.Event] Executing /usr/irissys/bin/irisinstall -s/durable/iris/mgr/ -cc -g20 -W1 -B -C/durable/iris/iris.cpf*INSTALL
+10/03/25-15:25:16:764 (1174) 0 [Generic.Event] Allocated 503MB shared memory
+10/03/25-15:25:16:765 (1174) 0 [Generic.Event] 32MB global buffers, 80MB routine buffers, 64MB journal buffers, 6MB buffer descriptors, 300MB heap, 5MB ECP, 16MB miscellaneous
+10/03/25-15:25:16:769 (1174) 0 [Crypto.IntelSandyBridgeAESNI] Intel Sandy Bridge or AMD x8 AES-NI instructions detected.
+10/03/25-15:25:16:771 (1174) 0 [SIMD] SIMD optimization level: arch=x86-64-v3
+10/03/25-15:25:16:786 (1174) 0 [WriteDaemon.UsingWIJFile] Using WIJ file: /durable/iris/mgr/IRIS.WIJ
+10/03/25-15:25:16:788 (1174) 0 [Generic.Event] No journaling info from prior system
+10/03/25-15:25:16:791 (1174) 0 [WriteDaemon.CreatingNewWIJ] Creating a new WIJ file
+10/03/25-15:25:17:062 (1174) 0 [WriteDaemon.CreatedNewWIJ] New WIJ file created
+10/03/25-15:25:17:077 (1174) 0 [Generic.Event] 
+Startup of InterSystems IRIS [IRIS for UNIX (Ubuntu Server LTS for x86-64 Containers) 2025.2 (Build 227U) Thu Jul 10 2025 11:09:14 EDT]
+	in /usr/irissys/bin/
+	with mgr: /durable/iris/mgr
+	with wij: /durable/iris/mgr/IRIS.WIJ
+	from: /durable/iris/mgr/
+  OS=[Linux], version=[#1 SMP Tue Nov 5 00:21:55 UTC 2024], release=[5.15.167.4-microsoft-standard-WSL2], machine=[x86_64]
+  nodename=[34ea40329381].
+  numasyncwijbuf: 2, wdwrite_asyncio_max: 64, wijdirectio: on, synctype: 3
+  System Initialized.
+10/03/25-15:25:17:083 (1207) 0 [WriteDaemon.Started] Write daemon started.
+10/03/25-15:25:17:090 (410) 0 [Utility.Event] Executing /usr/irissys/bin/irisuxsinst -s/durable/iris/mgr/ -B -V
+10/03/25-15:25:17:114 (1218) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/ (SFN 0) read-write.
+10/03/25-15:25:17:174 (1218) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/irislib/ (SFN 1) read-only. Database label is marked read-only. 
+10/03/25-15:25:17:594 (1218) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irissecurity/ (SFN 2) read-write.
+10/03/25-15:25:17:608 (410) 0 [Utility.Event] Executing rm -f /durable/iris/mgr/install.in
+10/03/25-15:25:17:616 (410) 0 [Utility.Event] Executing /usr/irissys/bin/irisuxsinst -s/durable/iris/mgr/ -B -V INT^SHUTDOWN
+10/03/25-15:25:17:646 (1220) 0 [Utility.Event] User 'irisowner' shutting down InterSystems IRIS
+10/03/25-15:25:17:676 (1220) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irislocaldata/ (SFN 3) read-write.
+10/03/25-15:25:17:689 (1220) 0 [Utility.Event] Notifying Clients
+10/03/25-15:25:17:691 (1220) 0 [Utility.Event] No user shutdown routines to execute
+10/03/25-15:25:17:694 (1220) 0 [Utility.Event] Stopping User Jobs
+10/03/25-15:25:17:714 (1220) 0 [Utility.Event] Stopping Network Servers
+10/03/25-15:25:17:717 (1220) 0 [Utility.Event] Withdrawing from License Domain
+10/03/25-15:25:17:719 (1220) 0 [Utility.Event] Stopping Client Networking
+10/03/25-15:25:17:723 (1220) 0 [Utility.Event] Updating Journal File
+10/03/25-15:25:17:726 (1220) 0 [Utility.Event] Journal restore not required at next startup
+10/03/25-15:25:17:728 (1220) 0 [Utility.Event] Transaction rollback not required at next startup
+10/03/25-15:25:17:830 (1220) 0 [Utility.Event] Removing database locks
+10/03/25-15:25:17:849 (1220) 0 [Utility.Event] Waiting for database updates to complete
+10/03/25-15:25:17:851 (1220) 0 [Utility.Event] Database updates complete
+10/03/25-15:25:17:853 (1220) 0 [Utility.Event] Stopping System Jobs
+10/03/25-15:25:17:955 (1209) 0 [Generic.Event] JRNDMN exited due to system shutdown
+10/03/25-15:25:17:955 (1217) 0 [Generic.Event] EXPDMN exited due to system shutdown
+10/03/25-15:25:17:955 (1208) 0 [Generic.Event] GARCOL exited due to system shutdown
+10/03/25-15:25:17:955 (1210) 0 [Generic.Event] AUXWD #1 exited due to system shutdown
+10/03/25-15:25:17:956 (1214) 0 [Generic.Event] AUXWD #5 exited due to system shutdown
+10/03/25-15:25:17:956 (1212) 0 [Generic.Event] AUXWD #3 exited due to system shutdown
+10/03/25-15:25:17:956 (1216) 0 [Generic.Event] AUXWD #7 exited due to system shutdown
+10/03/25-15:25:17:956 (1213) 0 [Generic.Event] AUXWD #4 exited due to system shutdown
+10/03/25-15:25:17:956 (1211) 0 [Generic.Event] AUXWD #2 exited due to system shutdown
+10/03/25-15:25:17:956 (1215) 0 [Generic.Event] AUXWD #6 exited due to system shutdown
+10/03/25-15:25:17:961 (1207) 0 [Generic.Event] No blocks pending in WIJ file
+10/03/25-15:25:17:965 (1207) 0 [Generic.Event] WRTDMN exited due to system shutdown
+10/03/25-15:25:17:979 (1174) 0 [Generic.Event] CONTROL exited due to system shutdown
+10/03/25-15:25:17:987 (1220) 0 [Utility.Event] Shutdown complete
+10/03/25-15:25:18:001 (410) 0 [Utility.Event] Executing rm -f /usr/irissys/bin/irisinstall
+10/03/25-15:25:18:005 (410) 0 [Utility.Event] Executing rm -f /usr/irissys/bin/irisuxsint
+10/03/25-15:25:18:008 (410) 0 [Utility.Event] Executing rm -f /durable/iris/CloneIncomplete
+10/03/25-15:25:18:014 (410) 0 [Utility.Event] Instance IRIS data directory moved to /durable/iris/
+10/03/25-15:25:18:017 (410) 0 [Utility.Event] Executing find /usr/irissys/ -type d -exec chmod ugo-w {} +
+10/03/25-15:25:18:071 (410) 0 [Utility.Event] Executing chmod ugo-w /usr/irissys/
+
+
+
+*** Recovery started at Fri Oct  3 15:25:20 2025
+     Current default directory: /durable/iris/mgr
+     Log file directory: /durable/iris/mgr/
+     WIJ file spec: /durable/iris/mgr/IRIS.WIJ
+Recovering local (/durable/iris/mgr/IRIS.WIJ) image journal file...
+Starting WIJ recovery for '/durable/iris/mgr/IRIS.WIJ'.
+  0 blocks pending in this WIJ.
+Exiting with status 3 (Success)
+10/03/25-15:25:20:202 (1631) 0 [Generic.Event] Global buffer setting requires attention.  Auto-selected 25% of total memory.
+10/03/25-15:25:20:264 (1631) 0 [Generic.Event] Allocated 5016MB shared memory
+10/03/25-15:25:20:266 (1631) 0 [Generic.Event] 3930MB global buffers, 393MB routine buffers, 64MB journal buffers, 308MB buffer descriptors, 300MB heap, 5MB ECP, 16MB miscellaneous
+10/03/25-15:25:20:270 (1631) 0 [Crypto.IntelSandyBridgeAESNI] Intel Sandy Bridge or AMD x8 AES-NI instructions detected.
+10/03/25-15:25:20:272 (1631) 0 [SIMD] SIMD optimization level: arch=x86-64-v3
+10/03/25-15:25:20:503 (1631) 0 [WriteDaemon.UsingWIJFile] Using WIJ file: /durable/iris/mgr/IRIS.WIJ
+10/03/25-15:25:20:505 (1631) 0 [Generic.Event] No journaling info from prior system
+10/03/25-15:25:20:521 (1631) 0 [WriteDaemon.CreatingNewWIJ] Creating a new WIJ file
+10/03/25-15:25:21:334 (1631) 0 [WriteDaemon.CreatedNewWIJ] New WIJ file created
+10/03/25-15:25:21:349 (1631) 0 [Generic.Event] 
+Startup of InterSystems IRIS [IRIS for UNIX (Ubuntu Server LTS for x86-64 Containers) 2025.2 (Build 227U) Thu Jul 10 2025 11:09:14 EDT]
+	in /usr/irissys/bin/
+	with mgr: /durable/iris/mgr
+	with wij: /durable/iris/mgr/IRIS.WIJ
+	from: /durable/iris/mgr/
+  OS=[Linux], version=[#1 SMP Tue Nov 5 00:21:55 UTC 2024], release=[5.15.167.4-microsoft-standard-WSL2], machine=[x86_64]
+  nodename=[34ea40329381].
+  numasyncwijbuf: 2, wdwrite_asyncio_max: 64, wijdirectio: on, synctype: 3
+  System Initialized.
+10/03/25-15:25:21:352 (1688) 0 [WriteDaemon.Started] Write daemon started.
+10/03/25-15:25:21:375 (1699) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/ (SFN 0) read-write.
+10/03/25-15:25:21:453 (1631) 1 [Generic.Event] Cannot lock /usr/irissys/mgr/irislib/ err(13): will try accessing readonly
+10/03/25-15:25:21:457 (1699) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/irislib/ (SFN 1) read-only. File or filesystem allows read-only access. 
+10/03/25-15:25:21:466 (1699) 0 [Utility.Event] Instance 'IRIS' starting on node 34ea40329381 by user 'irisowner' on 10/03/2025 15:25:21.466 UTC
+10/03/25-15:25:21:468 (1699) 0 [Utility.Event] Using parameters from file '/durable/iris/iris.cpf'
+10/03/25-15:25:21:472 (1699) 0 [Utility.Event] Loading DLLs
+10/03/25-15:25:21:475 (1699) 0 [Utility.Event] Switching to temporary %SYS Namespace
+10/03/25-15:25:21:505 (1699) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irissecurity/ (SFN 2) read-write.
+10/03/25-15:25:21:513 (1699) 0 [Utility.Event] Loading Locale enuw (English, United States, Unicode) from objects
+10/03/25-15:25:21:543 (1699) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irislocaldata/ (SFN 3) read-write.
+10/03/25-15:25:21:551 (1699) 0 [Utility.Event] Using OpenSSL 3.0.13 30 Jan 2024
+10/03/25-15:25:21:758 (1699) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/iristemp/ (SFN 4) read-write.
+10/03/25-15:25:21:765 (1699) 0 [Utility.Event] /durable/iris/mgr/iristemp/ initialized as IRISTEMP
+10/03/25-15:25:21:785 (1699) 0 [Utility.Event] Switching to default %SYS Namespace
+10/03/25-15:25:21:826 (1700) 0 [Utility.Event] Log Monitor Started
+10/03/25-15:25:21:935 (1701) 0 [Utility.Event] Clean Daemon Started
+10/03/25-15:25:21:937 (1699) 1 [Utility.Event] Configuration file /durable/iris/iris.cpf is not the same as when last shut down
+10/03/25-15:25:23:230 (1699) 0 [Utility.Event] Updating configuration information from /durable/iris/iris.cpf
+10/03/25-15:25:23:399 (1699) 0 [Utility.Event] No archives configured
+10/03/25-15:25:23:422 (1699) 0 [Utility.Event] Performing Journal Recovery
+10/03/25-15:25:23:425 (1699) 0 [Utility.Event] Graceful system shutdown, journal restore not required
+10/03/25-15:25:23:427 (1699) 0 [Utility.Event] Graceful system shutdown, transaction rollback not required
+10/03/25-15:25:23:468 (1699) 0 [Utility.Event] START: /durable/iris/mgr/journal/20251003.001
+10/03/25-15:25:23:495 (1699) 0 [Generic.Event] INTERSYSTEMS IRIS JOURNALING SYSTEM MESSAGE
+Journaling started to: /durable/iris/mgr/journal/20251003.001
+10/03/25-15:25:23:499 (1699) 0 [Utility.Event] Journaling to /durable/iris/mgr/journal/20251003.001 started.
+10/03/25-15:25:23:501 (1699) 0 [Utility.Event] Processing WorkQueues section
+10/03/25-15:25:23:531 (1699) 0 [Utility.Event] Processing Startup section
+10/03/25-15:25:23:538 (1702) 0 [Utility.Event] Purging old application errors
+10/03/25-15:25:23:542 (1699) 0 [Utility.Event] Created temp directory /durable/iris/mgr/Temp
+10/03/25-15:25:23:544 (1699) 0 [Utility.Event] Processing config section
+10/03/25-15:25:23:556 (1703) 0 [Utility.Event] LMF Info:  Licensed for 8 users.
+10/03/25-15:25:23:566 (1699) 0 [Utility.Event] Initializing Security system
+10/03/25-15:25:23:585 (1699) 0 [Utility.Event] Processing Network section
+10/03/25-15:25:23:588 (1699) 0 [Utility.Event] Activating Network
+10/03/25-15:25:23:595 (1699) 0 [Utility.Event] Processing Databases section
+10/03/25-15:25:23:636 (1699) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irisaudit/ (SFN 5) read-write.
+10/03/25-15:25:23:682 (1699) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irismetrics/ (SFN 6) read-write.
+10/03/25-15:25:23:710 (1699) 0 [Utility.Event] Processing Namespaces section
+10/03/25-15:25:23:712 (1699) 0 [Utility.Event] Loading all namespaces
+10/03/25-15:25:23:734 (1631) 1 [Generic.Event] Cannot lock /usr/irissys/mgr/enslib/ err(13): will try accessing readonly
+10/03/25-15:25:23:737 (1699) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/enslib/ (SFN 7) read-only. File or filesystem allows read-only access. 
+10/03/25-15:25:23:758 (1699) 0 [Utility.Event] Activating namespaces
+10/03/25-15:25:23:760 (1699) 0 [Utility.Event] Activating new namespace map
+10/03/25-15:25:23:790 (1699) 0 [Utility.Event] Namespace changes have been activated
+10/03/25-15:25:23:796 (1699) 0 [Utility.Event] Rebuilding Extent index for namespace USER
+10/03/25-15:25:23:812 (1699) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/user/ (SFN 8) read-write.
+10/03/25-15:25:25:802 (1699) 0 [Utility.Event] Rebuild of Extent index completed
+10/03/25-15:25:25:816 (1699) 0 [Utility.Event] Network Lock Upload Phase Starting
+10/03/25-15:25:25:816 (1707) 0 [Utility.Event] Starting superserver on port 1972
+10/03/25-15:25:25:818 (1699) 0 [Utility.Event] Lock Upload Phase Complete
+10/03/25-15:25:25:820 (1699) 0 [Utility.Event] Processing Miscellaneous section
+10/03/25-15:25:25:862 (1710) 0 [Utility.Event] Starting Servers
+10/03/25-15:25:25:863 (1699) 0 [Utility.Event] Processing Devices section
+10/03/25-15:25:25:865 (1699) 0 [Utility.Event] Processing DeviceSubTypes section
+10/03/25-15:25:25:868 (1699) 0 [Utility.Event] Processing MagTape section
+10/03/25-15:25:25:871 (1699) 0 [Utility.Event] Processing IO section
+10/03/25-15:25:25:872 (1699) 0 [Utility.Event] Processing SQL section
+10/03/25-15:25:25:874 (1699) 0 [Utility.Event] Processing Macro Pre-Processor (MPP) section
+10/03/25-15:25:25:878 (1699) 0 [Utility.Event] Processing OS Package Requirements section
+10/03/25-15:25:26:284 (1699) 0 [Generic.Event] Auditing to /durable/iris/mgr/irisaudit/
+10/03/25-15:25:26:348 (1699) 0 [Utility.Event] Enabling logons
+10/03/25-15:25:26:352 (1699) 0 [Utility.Event] Interoperability System including auto-start of productions Starting
+10/03/25-15:25:26:357 (1699) 0 [Utility.Event] Initializing Interoperability during system startup
+10/03/25-15:25:26:517 (1699) 0 [Utility.Event] Interoperability System Startup Complete
+10/03/25-15:25:26:582 (1736) 0 [Utility.Event] User 'irisowner' shutting down InterSystems IRIS
+10/03/25-15:25:26:834 (1710) 0 [Utility.Event] Private webserver started on 52773
+10/03/25-15:25:26:837 (1710) 0 [Utility.Event] Processing Shadows section (this system as shadow)
+10/03/25-15:25:26:843 (1710) 0 [Utility.Event] Processing Monitor section
+10/03/25-15:25:26:982 (1743) 0 [Utility.Event] [SYSTEM MONITOR] System Monitor started in %SYS
+10/03/25-15:25:26:996 (1710) 0 [Utility.Event] Shard license: 0
+10/03/25-15:25:26:996 (1745) 0 [Utility.Event] WorkQueue: Starting work queue daemon parent=1710
+10/03/25-15:25:27:012 (1742) 0 [Utility.Event] Starting TASKMGR
+10/03/25-15:25:27:193 (1736) 0 [Utility.Event] Notifying Clients
+10/03/25-15:25:27:195 (1736) 0 [Utility.Event] No user shutdown routines to execute
+10/03/25-15:25:27:198 (1736) 0 [Utility.Event] Stopping User Jobs
+10/03/25-15:25:27:227 (1736) 0 [Utility.Event] Stopping Network Servers
+10/03/25-15:25:27:230 (1736) 0 [Utility.Event] Withdrawing from License Domain
+10/03/25-15:25:27:236 (1736) 0 [Generic.Event] Auditing stopped
+10/03/25-15:25:27:238 (1736) 0 [Utility.Event] Stopping Client Networking
+10/03/25-15:25:27:243 (1736) 0 [Utility.Event] Updating Journal File
+10/03/25-15:25:27:479 (1736) 0 [Utility.Event] Journal restore not required at next startup
+10/03/25-15:25:27:481 (1736) 0 [Utility.Event] Transaction rollback not required at next startup
+10/03/25-15:25:27:554 (1736) 0 [Utility.Event] Removing database locks
+10/03/25-15:25:27:607 (1736) 0 [Utility.Event] Waiting for database updates to complete
+10/03/25-15:25:27:609 (1736) 0 [Utility.Event] Database updates complete
+10/03/25-15:25:27:611 (1736) 0 [Utility.Event] Stopping System Jobs
+10/03/25-15:25:27:714 (1698) 0 [Generic.Event] EXPDMN exited due to system shutdown
+10/03/25-15:25:27:714 (1689) 0 [Generic.Event] GARCOL exited due to system shutdown
+10/03/25-15:25:27:714 (1690) 0 [Generic.Event] JRNDMN exited due to system shutdown
+10/03/25-15:25:27:719 (1692) 0 [Generic.Event] AUXWD #1 exited due to system shutdown
+10/03/25-15:25:27:720 (1693) 0 [Generic.Event] AUXWD #3 exited due to system shutdown
+10/03/25-15:25:27:722 (1694) 0 [Generic.Event] AUXWD #4 exited due to system shutdown
+10/03/25-15:25:27:721 (1688) 0 [Generic.Event] No blocks pending in WIJ file
+10/03/25-15:25:27:723 (1696) 0 [Generic.Event] AUXWD #5 exited due to system shutdown
+10/03/25-15:25:27:724 (1695) 0 [Generic.Event] AUXWD #6 exited due to system shutdown
+10/03/25-15:25:27:725 (1697) 0 [Generic.Event] AUXWD #7 exited due to system shutdown
+10/03/25-15:25:27:726 (1691) 0 [Generic.Event] AUXWD #2 exited due to system shutdown
+10/03/25-15:25:27:736 (1688) 0 [Generic.Event] WRTDMN exited due to system shutdown
+10/03/25-15:25:27:749 (1631) 0 [Generic.Event] CONTROL exited due to system shutdown
+10/03/25-15:25:27:757 (1736) 0 [Utility.Event] Shutdown complete
+
+
+
+*** Recovery started at Fri Oct  3 15:25:30 2025
+     Current default directory: /durable/iris/mgr
+     Log file directory: /durable/iris/mgr/
+     WIJ file spec: /durable/iris/mgr/IRIS.WIJ
+Recovering local (/durable/iris/mgr/IRIS.WIJ) image journal file...
+Starting WIJ recovery for '/durable/iris/mgr/IRIS.WIJ'.
+  0 blocks pending in this WIJ.
+Exiting with status 3 (Success)
+10/03/25-15:25:30:283 (2311) 1 [Utility.Event] Startup directory and clone directory are the same
+10/03/25-15:25:30:285 (2311) 1 [Utility.Event] ISC_DATA_DIRECTORY=/durable/iris
+10/03/25-15:25:30:287 (2311) 1 [Utility.Event] Cloning command ignored
+
+
+
+*** Recovery started at Fri Oct  3 15:25:31 2025
+     Current default directory: /durable/iris/mgr
+     Log file directory: /durable/iris/mgr/
+     WIJ file spec: /durable/iris/mgr/IRIS.WIJ
+Recovering local (/durable/iris/mgr/IRIS.WIJ) image journal file...
+Starting WIJ recovery for '/durable/iris/mgr/IRIS.WIJ'.
+  0 blocks pending in this WIJ.
+Exiting with status 3 (Success)
+10/03/25-15:25:31:579 (2731) 0 [Generic.Event] Global buffer setting requires attention.  Auto-selected 25% of total memory.
+10/03/25-15:25:31:666 (2731) 0 [Generic.Event] Allocated 5016MB shared memory
+10/03/25-15:25:31:669 (2731) 0 [Generic.Event] 3930MB global buffers, 393MB routine buffers, 64MB journal buffers, 308MB buffer descriptors, 300MB heap, 5MB ECP, 16MB miscellaneous
+10/03/25-15:25:31:673 (2731) 0 [Crypto.IntelSandyBridgeAESNI] Intel Sandy Bridge or AMD x8 AES-NI instructions detected.
+10/03/25-15:25:31:676 (2731) 0 [SIMD] SIMD optimization level: arch=x86-64-v3
+10/03/25-15:25:31:776 (2731) 0 [WriteDaemon.UsingWIJFile] Using WIJ file: /durable/iris/mgr/IRIS.WIJ
+10/03/25-15:25:31:778 (2731) 0 [Generic.Event] Jrn info from prior WIJ (imflags: 0):
+	wdpass: 0
+	jrnwdpass: 8
+	fspec: /durable/iris/mgr/journal/20251003.001
+	filecnt: 1
+	fileoff: 0
+	prevfcnt: 1
+	prevfileoeff: 0
+	min trans cnt: 1
+	min trans index: 509904
+10/03/25-15:25:31:794 (2731) 0 [Generic.Event] 
+Startup of InterSystems IRIS [IRIS for UNIX (Ubuntu Server LTS for x86-64 Containers) 2025.2 (Build 227U) Thu Jul 10 2025 11:09:14 EDT]
+	in /usr/irissys/bin/
+	with mgr: /durable/iris/mgr
+	with wij: /durable/iris/mgr/IRIS.WIJ
+	from: /durable/iris/mgr/
+  OS=[Linux], version=[#1 SMP Tue Nov 5 00:21:55 UTC 2024], release=[5.15.167.4-microsoft-standard-WSL2], machine=[x86_64]
+  nodename=[34ea40329381].
+  numasyncwijbuf: 2, wdwrite_asyncio_max: 64, wijdirectio: on, synctype: 3
+  System Initialized.
+10/03/25-15:25:31:796 (2772) 0 [WriteDaemon.Started] Write daemon started.
+10/03/25-15:25:31:817 (2783) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/ (SFN 0) read-write.
+10/03/25-15:25:31:861 (2731) 1 [Generic.Event] Cannot lock /usr/irissys/mgr/irislib/ err(13): will try accessing readonly
+10/03/25-15:25:31:863 (2783) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/irislib/ (SFN 1) read-only. File or filesystem allows read-only access. 
+10/03/25-15:25:31:870 (2783) 0 [Utility.Event] Instance 'IRIS' starting on node 34ea40329381 by user 'irisowner' on 10/03/2025 15:25:31.870 UTC
+10/03/25-15:25:31:872 (2783) 0 [Utility.Event] Using parameters from file '/durable/iris/iris.cpf'
+10/03/25-15:25:31:875 (2783) 0 [Utility.Event] Loading DLLs
+10/03/25-15:25:31:877 (2783) 0 [Utility.Event] Switching to temporary %SYS Namespace
+10/03/25-15:25:31:901 (2783) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irissecurity/ (SFN 2) read-write.
+10/03/25-15:25:31:915 (2783) 0 [Utility.Event] Loading Locale enuw (English, United States, Unicode) from objects
+10/03/25-15:25:31:943 (2783) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irislocaldata/ (SFN 3) read-write.
+10/03/25-15:25:31:950 (2783) 0 [Utility.Event] Using OpenSSL 3.0.13 30 Jan 2024
+10/03/25-15:25:32:146 (2783) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/iristemp/ (SFN 4) read-write.
+10/03/25-15:25:32:154 (2783) 0 [Utility.Event] /durable/iris/mgr/iristemp/ initialized as IRISTEMP
+10/03/25-15:25:32:174 (2783) 0 [Utility.Event] Switching to default %SYS Namespace
+10/03/25-15:25:32:328 (2784) 0 [Utility.Event] Log Monitor Started
+10/03/25-15:25:32:438 (2785) 0 [Utility.Event] Clean Daemon Started
+10/03/25-15:25:32:446 (2783) 0 [Utility.Event] No archives configured
+10/03/25-15:25:32:493 (2783) 0 [Utility.Event] Performing Journal Recovery
+10/03/25-15:25:32:592 (2783) 0 [Utility.Event] WIJ indicates no open transactions
+10/03/25-15:25:32:688 (2783) 0 [Utility.Event] START: /durable/iris/mgr/journal/20251003.002
+10/03/25-15:25:32:694 (2783) 1 [Generic.Event] Warning: Alternate and primary journal directories are the same
+10/03/25-15:25:32:719 (2783) 0 [Generic.Event] INTERSYSTEMS IRIS JOURNALING SYSTEM MESSAGE
+Journaling started to: /durable/iris/mgr/journal/20251003.002
+10/03/25-15:25:32:721 (2783) 0 [Utility.Event] Journaling to /durable/iris/mgr/journal/20251003.002 started.
+10/03/25-15:25:32:725 (2783) 0 [Utility.Event] Processing WorkQueues section
+10/03/25-15:25:32:755 (2783) 0 [Utility.Event] Processing Startup section
+10/03/25-15:25:32:763 (2786) 0 [Utility.Event] Purging old application errors
+10/03/25-15:25:32:768 (2783) 0 [Utility.Event] Processing config section
+10/03/25-15:25:32:818 (2787) 0 [Utility.Event] LMF Info:  Licensed for 8 users.
+10/03/25-15:25:32:845 (2783) 0 [Utility.Event] Initializing Security system
+10/03/25-15:25:32:905 (2783) 0 [Utility.Event] Processing Network section
+10/03/25-15:25:32:908 (2783) 0 [Utility.Event] Activating Network
+10/03/25-15:25:32:916 (2783) 0 [Utility.Event] Processing Databases section
+10/03/25-15:25:32:959 (2783) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irisaudit/ (SFN 5) read-write.
+10/03/25-15:25:33:010 (2783) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irismetrics/ (SFN 6) read-write.
+10/03/25-15:25:33:041 (2783) 0 [Utility.Event] Processing Namespaces section
+10/03/25-15:25:33:043 (2783) 0 [Utility.Event] Namespaces are up to date
+10/03/25-15:25:33:045 (2783) 0 [Utility.Event] Activating namespaces
+10/03/25-15:25:33:049 (2783) 0 [Utility.Event] Activating new namespace map
+10/03/25-15:25:33:076 (2783) 0 [Utility.Event] Namespace changes have been activated
+10/03/25-15:25:33:116 (2790) 0 [Utility.Event] Starting superserver on port 1972
+10/03/25-15:25:33:116 (2783) 0 [Utility.Event] Network Lock Upload Phase Starting
+10/03/25-15:25:33:119 (2783) 0 [Utility.Event] Lock Upload Phase Complete
+10/03/25-15:25:33:121 (2783) 0 [Utility.Event] Processing Miscellaneous section
+10/03/25-15:25:33:135 (2789) 0 [Utility.Event] Journal File Compression: Compressed /durable/iris/mgr/journal/20251003.001 from 524288 bytes to 143360 bytes, compression ratio = 3.7
+10/03/25-15:25:33:174 (2793) 0 [Utility.Event] Starting Servers
+10/03/25-15:25:33:174 (2783) 0 [Utility.Event] Processing Devices section
+10/03/25-15:25:33:178 (2783) 0 [Utility.Event] Processing DeviceSubTypes section
+10/03/25-15:25:33:180 (2783) 0 [Utility.Event] Processing MagTape section
+10/03/25-15:25:33:185 (2783) 0 [Utility.Event] Processing IO section
+10/03/25-15:25:33:188 (2783) 0 [Utility.Event] Processing SQL section
+10/03/25-15:25:33:192 (2783) 0 [Utility.Event] Processing Macro Pre-Processor (MPP) section
+10/03/25-15:25:33:194 (2783) 0 [Utility.Event] Processing OS Package Requirements section
+10/03/25-15:25:33:943 (2783) 0 [Generic.Event] Auditing to /durable/iris/mgr/irisaudit/
+10/03/25-15:25:34:007 (2783) 0 [Utility.Event] Enabling logons
+10/03/25-15:25:34:011 (2783) 0 [Utility.Event] Interoperability System including auto-start of productions Starting
+10/03/25-15:25:34:036 (2783) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/user/ (SFN 7) read-write.
+10/03/25-15:25:34:043 (2731) 1 [Generic.Event] Cannot lock /usr/irissys/mgr/enslib/ err(13): will try accessing readonly
+10/03/25-15:25:34:047 (2783) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/enslib/ (SFN 8) read-only. File or filesystem allows read-only access. 
+10/03/25-15:25:34:051 (2793) 0 [Utility.Event] Private webserver started on 52773
+10/03/25-15:25:34:052 (2793) 0 [Utility.Event] Processing Shadows section (this system as shadow)
+10/03/25-15:25:34:052 (2783) 0 [Utility.Event] Initializing Interoperability during system startup
+10/03/25-15:25:34:058 (2793) 0 [Utility.Event] Processing Monitor section
+10/03/25-15:25:34:082 (2804) 0 [Utility.Event] Starting TASKMGR
+10/03/25-15:25:34:095 (2805) 0 [Utility.Event] [SYSTEM MONITOR] System Monitor started in %SYS
+10/03/25-15:25:34:114 (2793) 0 [Utility.Event] Shard license: 0
+10/03/25-15:25:34:115 (2807) 0 [Utility.Event] WorkQueue: Starting work queue daemon parent=2793
+10/03/25-15:25:34:450 (2783) 0 [Utility.Event] Interoperability System Startup Complete
+10/03/25-15:29:43:260 (2980) 1 [Utility.Event] Warning: Database SCRAPER has the same definition as Database IRISSYS - ^^/durable/iris/mgr/
+10/03/25-15:29:54:233 (2980) 0 [Utility.Event] Activating SCRAPER namespace map
+10/03/25-15:29:54:239 (2980) 0 [Utility.Event] Namespace SCRAPER changes have been activated
+10/03/25-15:29:54:277 (2980) 0 [Utility.Event] Enabling namespace 'SCRAPER' for Interoperabilidade
+10/03/25-15:29:54:948 (2980) 0 [Utility.Event] Activating SCRAPER namespace map
+10/03/25-15:29:54:954 (2980) 0 [Utility.Event] Namespace SCRAPER changes have been activated
+10/03/25-15:29:54:956 (2980) 0 [Utility.Event] Rebuilding Extent index for namespace SCRAPER
+10/03/25-15:29:55:420 (2980) 0 [Utility.Event] Rebuild of Extent index completed
+10/03/25-15:29:55:917 (2980) 0 [Utility.Event] Activating SCRAPER namespace map
+10/03/25-15:29:55:923 (2980) 0 [Utility.Event] Namespace SCRAPER changes have been activated
+10/03/25-15:30:00:826 (2980) 0 [Utility.Event] Activating SCRAPER namespace map
+10/03/25-15:30:00:833 (2980) 0 [Utility.Event] Namespace SCRAPER changes have been activated
+10/03/25-15:30:02:070 (2980) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/scraperenstemp/ (SFN 9) read-write.
+10/03/25-15:30:02:636 (2980) 1 [Utility.Event] Warning: Database SCRAPER has the same definition as Database IRISSYS - ^^/durable/iris/mgr/
+10/03/25-15:30:03:319 (2980) 0 [Utility.Event] Activating SCRAPER namespace map
+10/03/25-15:30:03:344 (2980) 0 [Utility.Event] Namespace SCRAPER changes have been activated
+10/03/25-15:30:03:470 (2980) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/scrapersecondary/ (SFN 10) read-write.
+10/03/25-15:30:04:043 (2980) 1 [Utility.Event] Warning: Database SCRAPER has the same definition as Database IRISSYS - ^^/durable/iris/mgr/
+10/03/25-15:30:04:664 (2980) 0 [Utility.Event] Activating SCRAPER namespace map
+10/03/25-15:30:04:670 (2980) 0 [Utility.Event] Namespace SCRAPER changes have been activated
+10/03/25-15:30:43:877 (3095) 0 [Utility.Event] User 'irisowner' shutting down InterSystems IRIS
+10/03/25-15:30:44:326 (2805) 0 [Utility.Event] [SYSTEM MONITOR] System Monitor stopped in %SYS
+10/03/25-15:30:44:326 (3095) 0 [Utility.Event] Notifying Clients
+10/03/25-15:30:44:328 (3095) 0 [Utility.Event] No user shutdown routines to execute
+10/03/25-15:30:44:332 (3095) 0 [Utility.Event] Stopping User Jobs
+10/03/25-15:30:48:858 (3095) 0 [Utility.Event] Stopping Network Servers
+10/03/25-15:30:48:862 (3095) 0 [Utility.Event] Withdrawing from License Domain
+10/03/25-15:30:48:873 (3095) 0 [Generic.Event] Auditing stopped
+10/03/25-15:30:48:875 (3095) 0 [Utility.Event] Stopping Client Networking
+10/03/25-15:30:48:885 (3095) 0 [Utility.Event] Updating Journal File
+10/03/25-15:30:48:928 (3095) 0 [Utility.Event] Journal restore not required at next startup
+10/03/25-15:30:48:931 (3095) 0 [Utility.Event] Transaction rollback not required at next startup
+10/03/25-15:30:49:024 (3095) 0 [Utility.Event] Removing database locks
+10/03/25-15:30:49:096 (3095) 0 [Utility.Event] Waiting for database updates to complete
+10/03/25-15:30:49:098 (3095) 0 [Utility.Event] Database updates complete
+10/03/25-15:30:49:100 (3095) 0 [Utility.Event] Stopping System Jobs
+10/03/25-15:30:49:203 (2774) 0 [Generic.Event] JRNDMN exited due to system shutdown
+10/03/25-15:30:49:202 (2782) 0 [Generic.Event] EXPDMN exited due to system shutdown
+10/03/25-15:30:49:203 (2773) 0 [Generic.Event] GARCOL exited due to system shutdown
+10/03/25-15:30:49:209 (2780) 0 [Generic.Event] AUXWD #5 exited due to system shutdown
+10/03/25-15:30:49:209 (2778) 0 [Generic.Event] AUXWD #4 exited due to system shutdown
+10/03/25-15:30:49:210 (2772) 0 [Generic.Event] No blocks pending in WIJ file
+10/03/25-15:30:49:211 (2779) 0 [Generic.Event] AUXWD #6 exited due to system shutdown
+10/03/25-15:30:49:209 (2776) 0 [Generic.Event] AUXWD #2 exited due to system shutdown
+10/03/25-15:30:49:209 (2775) 0 [Generic.Event] AUXWD #1 exited due to system shutdown
+10/03/25-15:30:49:211 (2781) 0 [Generic.Event] AUXWD #7 exited due to system shutdown
+10/03/25-15:30:49:214 (2777) 0 [Generic.Event] AUXWD #3 exited due to system shutdown
+10/03/25-15:30:49:225 (2772) 0 [Generic.Event] WRTDMN exited due to system shutdown
+10/03/25-15:30:49:237 (2731) 0 [Generic.Event] CONTROL exited due to system shutdown
+10/03/25-15:30:49:257 (3095) 0 [Utility.Event] Shutdown complete
+10/03/25-15:32:53:210 (410) 0 [Utility.Event] ISC_DATA_DIRECTORY=/durable/iris/
+10/03/25-15:32:53:215 (410) 0 [Utility.Event] Executing /usr/irissys/bin/iris qlist
+10/03/25-15:32:53:251 (410) 0 [Utility.Event] Versions are the same
+10/03/25-15:32:53:254 (410) 0 [Utility.Event] Source /usr/irissys/: 2025.2.0.227.0com
+10/03/25-15:32:53:257 (410) 0 [Utility.Event] Destination /durable/iris/: 2025.2.0.227.0com
+10/03/25-15:32:53:262 (410) 0 [Utility.Event] Executing /usr/irissys/bin/iris update IRIS directory=/usr/irissys/ datadir=/durable/iris/ versionid=2025.2.0.227.0com
+10/03/25-15:32:53:279 (410) 0 [Utility.Event] Executing find /usr/irissys/ -type d -exec chmod ugo-w {} +
+10/03/25-15:32:53:297 (410) 0 [Utility.Event] Executing chmod ugo-w /usr/irissys/
+
+
+
+*** Recovery started at Fri Oct  3 15:32:54 2025
+     Current default directory: /durable/iris/mgr
+     Log file directory: /durable/iris/mgr/
+     WIJ file spec: /durable/iris/mgr/IRIS.WIJ
+Recovering local (/durable/iris/mgr/IRIS.WIJ) image journal file...
+Starting WIJ recovery for '/durable/iris/mgr/IRIS.WIJ'.
+  0 blocks pending in this WIJ.
+Exiting with status 3 (Success)
+10/03/25-15:32:54:808 (821) 0 [Generic.Event] Global buffer setting requires attention.  Auto-selected 25% of total memory.
+10/03/25-15:32:54:880 (821) 0 [Generic.Event] Allocated 5016MB shared memory
+10/03/25-15:32:54:882 (821) 0 [Generic.Event] 3930MB global buffers, 393MB routine buffers, 64MB journal buffers, 308MB buffer descriptors, 300MB heap, 5MB ECP, 16MB miscellaneous
+10/03/25-15:32:54:885 (821) 0 [Crypto.IntelSandyBridgeAESNI] Intel Sandy Bridge or AMD x8 AES-NI instructions detected.
+10/03/25-15:32:54:888 (821) 0 [SIMD] SIMD optimization level: arch=x86-64-v3
+10/03/25-15:32:55:067 (821) 0 [WriteDaemon.UsingWIJFile] Using WIJ file: /durable/iris/mgr/IRIS.WIJ
+10/03/25-15:32:55:070 (821) 0 [Generic.Event] Jrn info from prior WIJ (imflags: 0):
+	wdpass: 0
+	jrnwdpass: 16
+	fspec: /durable/iris/mgr/journal/20251003.002
+	filecnt: 2
+	fileoff: 0
+	prevfcnt: 2
+	prevfileoeff: 0
+	min trans cnt: 2
+	min trans index: 3044172
+10/03/25-15:32:55:097 (821) 0 [Generic.Event] 
+Startup of InterSystems IRIS [IRIS for UNIX (Ubuntu Server LTS for x86-64 Containers) 2025.2 (Build 227U) Thu Jul 10 2025 11:09:14 EDT]
+	in /usr/irissys/bin/
+	with mgr: /durable/iris/mgr
+	with wij: /durable/iris/mgr/IRIS.WIJ
+	from: /durable/iris/mgr/
+  OS=[Linux], version=[#1 SMP Tue Nov 5 00:21:55 UTC 2024], release=[5.15.167.4-microsoft-standard-WSL2], machine=[x86_64]
+  nodename=[54e4c5dfe28c].
+  numasyncwijbuf: 2, wdwrite_asyncio_max: 64, wijdirectio: on, synctype: 3
+  System Initialized.
+10/03/25-15:32:55:099 (862) 0 [WriteDaemon.Started] Write daemon started.
+10/03/25-15:32:55:127 (873) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/ (SFN 0) read-write.
+10/03/25-15:32:55:195 (821) 1 [Generic.Event] Cannot lock /usr/irissys/mgr/irislib/ err(13): will try accessing readonly
+10/03/25-15:32:55:198 (873) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/irislib/ (SFN 1) read-only. File or filesystem allows read-only access. 
+10/03/25-15:32:55:205 (873) 0 [Utility.Event] Instance 'IRIS' starting on node 54e4c5dfe28c by user 'irisowner' on 10/03/2025 15:32:55.205 UTC
+10/03/25-15:32:55:208 (873) 0 [Utility.Event] Using parameters from file '/durable/iris/iris.cpf'
+10/03/25-15:32:55:212 (873) 0 [Utility.Event] Loading DLLs
+10/03/25-15:32:55:214 (873) 0 [Utility.Event] Switching to temporary %SYS Namespace
+10/03/25-15:32:55:259 (873) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irissecurity/ (SFN 2) read-write.
+10/03/25-15:32:55:279 (873) 0 [Utility.Event] Loading Locale enuw (English, United States, Unicode) from objects
+10/03/25-15:32:55:315 (873) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irislocaldata/ (SFN 3) read-write.
+10/03/25-15:32:55:322 (873) 0 [Utility.Event] Using OpenSSL 3.0.13 30 Jan 2024
+10/03/25-15:32:55:544 (873) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/iristemp/ (SFN 4) read-write.
+10/03/25-15:32:55:565 (873) 0 [Utility.Event] /durable/iris/mgr/iristemp/ initialized as IRISTEMP
+10/03/25-15:32:55:599 (873) 0 [Utility.Event] Switching to default %SYS Namespace
+10/03/25-15:32:55:648 (874) 0 [Utility.Event] Log Monitor Started
+10/03/25-15:32:55:757 (873) 2 [Utility.Event] System appears to have failed over from node 34ea40329381
+10/03/25-15:32:55:780 (875) 0 [Utility.Event] Clean Daemon Started
+10/03/25-15:32:55:794 (873) 0 [Utility.Event] No archives configured
+10/03/25-15:32:55:887 (873) 0 [Utility.Event] Performing Journal Recovery
+10/03/25-15:32:55:999 (873) 0 [Utility.Event] WIJ indicates no open transactions
+10/03/25-15:32:56:081 (873) 0 [Utility.Event] START: /durable/iris/mgr/journal/20251003.003
+10/03/25-15:32:56:090 (873) 1 [Generic.Event] Warning: Alternate and primary journal directories are the same
+10/03/25-15:32:56:137 (873) 0 [Generic.Event] INTERSYSTEMS IRIS JOURNALING SYSTEM MESSAGE
+Journaling started to: /durable/iris/mgr/journal/20251003.003
+10/03/25-15:32:56:140 (873) 0 [Utility.Event] Journaling to /durable/iris/mgr/journal/20251003.003 started.
+10/03/25-15:32:56:142 (873) 0 [Utility.Event] Processing WorkQueues section
+10/03/25-15:32:56:184 (873) 0 [Utility.Event] Processing Startup section
+10/03/25-15:32:56:195 (876) 0 [Utility.Event] Purging old application errors
+10/03/25-15:32:56:204 (873) 0 [Utility.Event] Processing config section
+10/03/25-15:32:56:222 (877) 0 [Utility.Event] LMF Info:  Licensed for 8 users.
+10/03/25-15:32:56:236 (873) 0 [Utility.Event] Initializing Security system
+10/03/25-15:32:56:258 (873) 0 [Utility.Event] Processing Network section
+10/03/25-15:32:56:263 (873) 0 [Utility.Event] Activating Network
+10/03/25-15:32:56:276 (873) 0 [Utility.Event] Processing Databases section
+10/03/25-15:32:56:342 (873) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irisaudit/ (SFN 5) read-write.
+10/03/25-15:32:56:416 (873) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irismetrics/ (SFN 6) read-write.
+10/03/25-15:32:56:440 (873) 1 [Utility.Event] Warning: Database SCRAPER has the same definition as Database IRISSYS - ^^/durable/iris/mgr/
+10/03/25-15:32:56:508 (873) 0 [Utility.Event] Processing Namespaces section
+10/03/25-15:32:56:510 (873) 0 [Utility.Event] Namespaces are up to date
+10/03/25-15:32:56:513 (873) 0 [Utility.Event] Activating namespaces
+10/03/25-15:32:56:516 (873) 0 [Utility.Event] Activating new namespace map
+10/03/25-15:32:56:568 (873) 0 [Utility.Event] Namespace changes have been activated
+10/03/25-15:32:56:583 (896) 0 [Utility.Event] Starting superserver on port 1972
+10/03/25-15:32:56:583 (873) 0 [Utility.Event] Network Lock Upload Phase Starting
+10/03/25-15:32:56:586 (873) 0 [Utility.Event] Lock Upload Phase Complete
+10/03/25-15:32:56:588 (873) 0 [Utility.Event] Processing Miscellaneous section
+10/03/25-15:32:56:620 (899) 0 [Utility.Event] Starting Servers
+10/03/25-15:32:56:620 (873) 0 [Utility.Event] Processing Devices section
+10/03/25-15:32:56:623 (873) 0 [Utility.Event] Processing DeviceSubTypes section
+10/03/25-15:32:56:626 (873) 0 [Utility.Event] Processing MagTape section
+10/03/25-15:32:56:632 (873) 0 [Utility.Event] Processing IO section
+10/03/25-15:32:56:636 (873) 0 [Utility.Event] Processing SQL section
+10/03/25-15:32:56:639 (873) 0 [Utility.Event] Processing Macro Pre-Processor (MPP) section
+10/03/25-15:32:56:642 (873) 0 [Utility.Event] Processing OS Package Requirements section
+10/03/25-15:32:57:135 (873) 0 [Generic.Event] Auditing to /durable/iris/mgr/irisaudit/
+10/03/25-15:32:57:198 (873) 0 [Utility.Event] Enabling logons
+10/03/25-15:32:57:204 (873) 0 [Utility.Event] Interoperability System including auto-start of productions Starting
+10/03/25-15:32:57:231 (873) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/user/ (SFN 7) read-write.
+10/03/25-15:32:57:239 (821) 1 [Generic.Event] Cannot lock /usr/irissys/mgr/enslib/ err(13): will try accessing readonly
+10/03/25-15:32:57:242 (873) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/enslib/ (SFN 8) read-only. File or filesystem allows read-only access. 
+10/03/25-15:32:57:246 (873) 0 [Utility.Event] Initializing Interoperability during system startup
+10/03/25-15:32:57:452 (873) 0 [Utility.Event] Interoperability System Startup Complete
+10/03/25-15:32:57:490 (899) 0 [Utility.Event] Private webserver started on 52773
+10/03/25-15:32:57:494 (899) 0 [Utility.Event] Processing Shadows section (this system as shadow)
+10/03/25-15:32:57:502 (899) 0 [Utility.Event] Processing Monitor section
+10/03/25-15:32:57:506 (914) 0 [Utility.Event] User 'irisowner' shutting down InterSystems IRIS
+10/03/25-15:32:57:518 (915) 0 [Utility.Event] Starting TASKMGR
+10/03/25-15:32:57:543 (916) 0 [Utility.Event] [SYSTEM MONITOR] System Monitor started in %SYS
+10/03/25-15:32:57:568 (918) 0 [Utility.Event] WorkQueue: Starting work queue daemon parent=899
+10/03/25-15:32:57:567 (899) 0 [Utility.Event] Shard license: 0
+10/03/25-15:32:57:575 (888) 0 [Utility.Event] Journal File Compression: Compressed /durable/iris/mgr/journal/20251003.002 from 3080192 bytes to 393216 bytes, compression ratio = 7.8
+10/03/25-15:32:58:046 (914) 0 [Utility.Event] Notifying Clients
+10/03/25-15:32:58:045 (916) 0 [Utility.Event] [SYSTEM MONITOR] System Monitor stopped in %SYS
+10/03/25-15:32:58:047 (914) 0 [Utility.Event] No user shutdown routines to execute
+10/03/25-15:32:58:050 (914) 0 [Utility.Event] Stopping User Jobs
+10/03/25-15:32:58:066 (914) 0 [Utility.Event] Stopping Network Servers
+10/03/25-15:32:58:069 (914) 0 [Utility.Event] Withdrawing from License Domain
+10/03/25-15:32:58:089 (914) 0 [Generic.Event] Auditing stopped
+10/03/25-15:32:58:091 (914) 0 [Utility.Event] Stopping Client Networking
+10/03/25-15:32:58:098 (914) 0 [Utility.Event] Updating Journal File
+10/03/25-15:32:58:223 (914) 0 [Utility.Event] Journal restore not required at next startup
+10/03/25-15:32:58:225 (914) 0 [Utility.Event] Transaction rollback not required at next startup
+10/03/25-15:32:58:359 (914) 0 [Utility.Event] Removing database locks
+10/03/25-15:32:58:420 (914) 0 [Utility.Event] Waiting for database updates to complete
+10/03/25-15:32:58:422 (914) 0 [Utility.Event] Database updates complete
+10/03/25-15:32:58:424 (914) 0 [Utility.Event] Stopping System Jobs
+10/03/25-15:32:58:527 (870) 0 [Generic.Event] AUXWD #4 exited due to system shutdown
+10/03/25-15:32:58:527 (872) 0 [Generic.Event] EXPDMN exited due to system shutdown
+10/03/25-15:32:58:527 (865) 0 [Generic.Event] AUXWD #1 exited due to system shutdown
+10/03/25-15:32:58:527 (864) 0 [Generic.Event] JRNDMN exited due to system shutdown
+10/03/25-15:32:58:527 (867) 0 [Generic.Event] AUXWD #2 exited due to system shutdown
+10/03/25-15:32:58:527 (863) 0 [Generic.Event] GARCOL exited due to system shutdown
+10/03/25-15:32:58:528 (869) 0 [Generic.Event] AUXWD #6 exited due to system shutdown
+10/03/25-15:32:58:527 (868) 0 [Generic.Event] AUXWD #5 exited due to system shutdown
+10/03/25-15:32:58:527 (866) 0 [Generic.Event] AUXWD #3 exited due to system shutdown
+10/03/25-15:32:58:528 (871) 0 [Generic.Event] AUXWD #7 exited due to system shutdown
+10/03/25-15:32:58:546 (862) 0 [Generic.Event] No blocks pending in WIJ file
+10/03/25-15:32:58:562 (862) 0 [Generic.Event] WRTDMN exited due to system shutdown
+10/03/25-15:32:58:570 (821) 0 [Generic.Event] CONTROL exited due to system shutdown
+10/03/25-15:32:58:590 (914) 0 [Utility.Event] Shutdown complete
+
+
+
+*** Recovery started at Fri Oct  3 15:33:01 2025
+     Current default directory: /durable/iris/mgr
+     Log file directory: /durable/iris/mgr/
+     WIJ file spec: /durable/iris/mgr/IRIS.WIJ
+Recovering local (/durable/iris/mgr/IRIS.WIJ) image journal file...
+Starting WIJ recovery for '/durable/iris/mgr/IRIS.WIJ'.
+  0 blocks pending in this WIJ.
+Exiting with status 3 (Success)
+10/03/25-15:33:01:526 (1500) 1 [Utility.Event] Startup directory and clone directory are the same
+10/03/25-15:33:01:528 (1500) 1 [Utility.Event] ISC_DATA_DIRECTORY=/durable/iris
+10/03/25-15:33:01:530 (1500) 1 [Utility.Event] Cloning command ignored
+
+
+
+*** Recovery started at Fri Oct  3 15:33:02 2025
+     Current default directory: /durable/iris/mgr
+     Log file directory: /durable/iris/mgr/
+     WIJ file spec: /durable/iris/mgr/IRIS.WIJ
+Recovering local (/durable/iris/mgr/IRIS.WIJ) image journal file...
+Starting WIJ recovery for '/durable/iris/mgr/IRIS.WIJ'.
+  0 blocks pending in this WIJ.
+Exiting with status 3 (Success)
+10/03/25-15:33:02:958 (1904) 0 [Generic.Event] Global buffer setting requires attention.  Auto-selected 25% of total memory.
+10/03/25-15:33:03:016 (1904) 0 [Generic.Event] Allocated 5016MB shared memory
+10/03/25-15:33:03:019 (1904) 0 [Generic.Event] 3930MB global buffers, 393MB routine buffers, 64MB journal buffers, 308MB buffer descriptors, 300MB heap, 5MB ECP, 16MB miscellaneous
+10/03/25-15:33:03:022 (1904) 0 [Crypto.IntelSandyBridgeAESNI] Intel Sandy Bridge or AMD x8 AES-NI instructions detected.
+10/03/25-15:33:03:024 (1904) 0 [SIMD] SIMD optimization level: arch=x86-64-v3
+10/03/25-15:33:03:206 (1904) 0 [WriteDaemon.UsingWIJFile] Using WIJ file: /durable/iris/mgr/IRIS.WIJ
+10/03/25-15:33:03:208 (1904) 0 [Generic.Event] Jrn info from prior WIJ (imflags: 0):
+	wdpass: 0
+	jrnwdpass: 8
+	fspec: /durable/iris/mgr/journal/20251003.003
+	filecnt: 3
+	fileoff: 0
+	prevfcnt: 3
+	prevfileoeff: 0
+	min trans cnt: 3
+	min trans index: 175628
+10/03/25-15:33:03:232 (1904) 0 [Generic.Event] 
+Startup of InterSystems IRIS [IRIS for UNIX (Ubuntu Server LTS for x86-64 Containers) 2025.2 (Build 227U) Thu Jul 10 2025 11:09:14 EDT]
+	in /usr/irissys/bin/
+	with mgr: /durable/iris/mgr
+	with wij: /durable/iris/mgr/IRIS.WIJ
+	from: /durable/iris/mgr/
+  OS=[Linux], version=[#1 SMP Tue Nov 5 00:21:55 UTC 2024], release=[5.15.167.4-microsoft-standard-WSL2], machine=[x86_64]
+  nodename=[54e4c5dfe28c].
+  numasyncwijbuf: 2, wdwrite_asyncio_max: 64, wijdirectio: on, synctype: 3
+  System Initialized.
+10/03/25-15:33:03:234 (1945) 0 [WriteDaemon.Started] Write daemon started.
+10/03/25-15:33:03:263 (1956) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/ (SFN 0) read-write.
+10/03/25-15:33:03:328 (1904) 1 [Generic.Event] Cannot lock /usr/irissys/mgr/irislib/ err(13): will try accessing readonly
+10/03/25-15:33:03:330 (1956) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/irislib/ (SFN 1) read-only. File or filesystem allows read-only access. 
+10/03/25-15:33:03:338 (1956) 0 [Utility.Event] Instance 'IRIS' starting on node 54e4c5dfe28c by user 'irisowner' on 10/03/2025 15:33:03.338 UTC
+10/03/25-15:33:03:341 (1956) 0 [Utility.Event] Using parameters from file '/durable/iris/iris.cpf'
+10/03/25-15:33:03:345 (1956) 0 [Utility.Event] Loading DLLs
+10/03/25-15:33:03:349 (1956) 0 [Utility.Event] Switching to temporary %SYS Namespace
+10/03/25-15:33:03:392 (1956) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irissecurity/ (SFN 2) read-write.
+10/03/25-15:33:03:415 (1956) 0 [Utility.Event] Loading Locale enuw (English, United States, Unicode) from objects
+10/03/25-15:33:03:453 (1956) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irislocaldata/ (SFN 3) read-write.
+10/03/25-15:33:03:460 (1956) 0 [Utility.Event] Using OpenSSL 3.0.13 30 Jan 2024
+10/03/25-15:33:03:669 (1956) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/iristemp/ (SFN 4) read-write.
+10/03/25-15:33:03:680 (1956) 0 [Utility.Event] /durable/iris/mgr/iristemp/ initialized as IRISTEMP
+10/03/25-15:33:03:705 (1956) 0 [Utility.Event] Switching to default %SYS Namespace
+10/03/25-15:33:03:758 (1957) 0 [Utility.Event] Log Monitor Started
+10/03/25-15:33:03:866 (1958) 0 [Utility.Event] Clean Daemon Started
+10/03/25-15:33:03:880 (1956) 0 [Utility.Event] No archives configured
+10/03/25-15:33:03:943 (1956) 0 [Utility.Event] Performing Journal Recovery
+10/03/25-15:33:04:049 (1956) 0 [Utility.Event] WIJ indicates no open transactions
+10/03/25-15:33:04:129 (1956) 0 [Utility.Event] START: /durable/iris/mgr/journal/20251003.004
+10/03/25-15:33:04:136 (1956) 1 [Generic.Event] Warning: Alternate and primary journal directories are the same
+10/03/25-15:33:04:175 (1956) 0 [Generic.Event] INTERSYSTEMS IRIS JOURNALING SYSTEM MESSAGE
+Journaling started to: /durable/iris/mgr/journal/20251003.004
+10/03/25-15:33:04:179 (1956) 0 [Utility.Event] Journaling to /durable/iris/mgr/journal/20251003.004 started.
+10/03/25-15:33:04:182 (1956) 0 [Utility.Event] Processing WorkQueues section
+10/03/25-15:33:04:228 (1956) 0 [Utility.Event] Processing Startup section
+10/03/25-15:33:04:238 (1959) 0 [Utility.Event] Purging old application errors
+10/03/25-15:33:04:244 (1956) 0 [Utility.Event] Processing config section
+10/03/25-15:33:04:289 (1960) 0 [Utility.Event] LMF Info:  Licensed for 8 users.
+10/03/25-15:33:04:294 (1956) 0 [Utility.Event] Initializing Security system
+10/03/25-15:33:04:310 (1956) 0 [Utility.Event] Processing Network section
+10/03/25-15:33:04:314 (1956) 0 [Utility.Event] Activating Network
+10/03/25-15:33:04:326 (1956) 0 [Utility.Event] Processing Databases section
+10/03/25-15:33:04:370 (1956) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irisaudit/ (SFN 5) read-write.
+10/03/25-15:33:04:419 (1956) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irismetrics/ (SFN 6) read-write.
+10/03/25-15:33:04:435 (1956) 1 [Utility.Event] Warning: Database SCRAPER has the same definition as Database IRISSYS - ^^/durable/iris/mgr/
+10/03/25-15:33:04:478 (1956) 0 [Utility.Event] Processing Namespaces section
+10/03/25-15:33:04:479 (1956) 0 [Utility.Event] Namespaces are up to date
+10/03/25-15:33:04:481 (1956) 0 [Utility.Event] Activating namespaces
+10/03/25-15:33:04:484 (1956) 0 [Utility.Event] Activating new namespace map
+10/03/25-15:33:04:531 (1956) 0 [Utility.Event] Namespace changes have been activated
+10/03/25-15:33:04:559 (1963) 0 [Utility.Event] Starting superserver on port 1972
+10/03/25-15:33:04:560 (1956) 0 [Utility.Event] Network Lock Upload Phase Starting
+10/03/25-15:33:04:562 (1956) 0 [Utility.Event] Lock Upload Phase Complete
+10/03/25-15:33:04:564 (1956) 0 [Utility.Event] Processing Miscellaneous section
+10/03/25-15:33:04:601 (1962) 0 [Utility.Event] Journal File Compression: Compressed /durable/iris/mgr/journal/20251003.003 from 196608 bytes to 77824 bytes, compression ratio = 2.5
+10/03/25-15:33:04:629 (1966) 0 [Utility.Event] Starting Servers
+10/03/25-15:33:04:630 (1956) 0 [Utility.Event] Processing Devices section
+10/03/25-15:33:04:633 (1956) 0 [Utility.Event] Processing DeviceSubTypes section
+10/03/25-15:33:04:635 (1956) 0 [Utility.Event] Processing MagTape section
+10/03/25-15:33:04:640 (1956) 0 [Utility.Event] Processing IO section
+10/03/25-15:33:04:643 (1956) 0 [Utility.Event] Processing SQL section
+10/03/25-15:33:04:646 (1956) 0 [Utility.Event] Processing Macro Pre-Processor (MPP) section
+10/03/25-15:33:04:649 (1956) 0 [Utility.Event] Processing OS Package Requirements section
+10/03/25-15:33:05:161 (1956) 0 [Generic.Event] Auditing to /durable/iris/mgr/irisaudit/
+10/03/25-15:33:05:219 (1956) 0 [Utility.Event] Enabling logons
+10/03/25-15:33:05:225 (1956) 0 [Utility.Event] Interoperability System including auto-start of productions Starting
+10/03/25-15:33:05:251 (1956) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/user/ (SFN 7) read-write.
+10/03/25-15:33:05:259 (1904) 1 [Generic.Event] Cannot lock /usr/irissys/mgr/enslib/ err(13): will try accessing readonly
+10/03/25-15:33:05:262 (1956) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/enslib/ (SFN 8) read-only. File or filesystem allows read-only access. 
+10/03/25-15:33:05:266 (1956) 0 [Utility.Event] Initializing Interoperability during system startup
+10/03/25-15:33:05:476 (1956) 0 [Utility.Event] Interoperability System Startup Complete
+10/03/25-15:33:05:504 (1966) 0 [Utility.Event] Private webserver started on 52773
+10/03/25-15:33:05:507 (1966) 0 [Utility.Event] Processing Shadows section (this system as shadow)
+10/03/25-15:33:05:518 (1966) 0 [Utility.Event] Processing Monitor section
+10/03/25-15:33:05:537 (1978) 0 [Utility.Event] Starting TASKMGR
+10/03/25-15:33:05:556 (1979) 0 [Utility.Event] [SYSTEM MONITOR] System Monitor started in %SYS
+10/03/25-15:33:05:587 (1966) 0 [Utility.Event] Shard license: 0
+10/03/25-15:33:05:587 (1981) 0 [Utility.Event] WorkQueue: Starting work queue daemon parent=1966
+10/03/25-18:10:15:710 (4606) 0 [Utility.Event] User 'irisowner' shutting down InterSystems IRIS
+10/03/25-18:10:16:215 (1979) 0 [Utility.Event] [SYSTEM MONITOR] System Monitor stopped in %SYS
+10/03/25-18:10:16:215 (4606) 0 [Utility.Event] Notifying Clients
+10/03/25-18:10:16:217 (4606) 0 [Utility.Event] No user shutdown routines to execute
+10/03/25-18:10:16:222 (4606) 0 [Utility.Event] Stopping User Jobs
+10/03/25-18:10:20:289 (4606) 0 [Utility.Event] Stopping Network Servers
+10/03/25-18:10:20:294 (4606) 0 [Utility.Event] Withdrawing from License Domain
+10/03/25-18:10:20:334 (4606) 0 [Generic.Event] Auditing stopped
+10/03/25-18:10:20:337 (4606) 0 [Utility.Event] Stopping Client Networking
+10/03/25-18:10:20:343 (4606) 0 [Utility.Event] Updating Journal File
+10/03/25-18:10:20:398 (4606) 0 [Utility.Event] Journal restore not required at next startup
+10/03/25-18:10:20:401 (4606) 0 [Utility.Event] Transaction rollback not required at next startup
+10/03/25-18:10:20:544 (4606) 0 [Utility.Event] Removing database locks
+10/03/25-18:10:20:749 (4606) 0 [Utility.Event] Waiting for database updates to complete
+10/03/25-18:10:20:752 (4606) 0 [Utility.Event] Database updates complete
+10/03/25-18:10:20:755 (4606) 0 [Utility.Event] Stopping System Jobs
+10/03/25-18:10:20:860 (1955) 0 [Generic.Event] EXPDMN exited due to system shutdown
+10/03/25-18:10:20:861 (1946) 0 [Generic.Event] GARCOL exited due to system shutdown
+10/03/25-18:10:20:861 (1947) 0 [Generic.Event] JRNDMN exited due to system shutdown
+10/03/25-18:10:20:863 (1948) 0 [Generic.Event] AUXWD #1 exited due to system shutdown
+10/03/25-18:10:20:865 (1949) 0 [Generic.Event] AUXWD #2 exited due to system shutdown
+10/03/25-18:10:20:867 (1951) 0 [Generic.Event] AUXWD #3 exited due to system shutdown
+10/03/25-18:10:20:869 (1950) 0 [Generic.Event] AUXWD #4 exited due to system shutdown
+10/03/25-18:10:20:872 (1952) 0 [Generic.Event] AUXWD #5 exited due to system shutdown
+10/03/25-18:10:20:874 (1953) 0 [Generic.Event] AUXWD #6 exited due to system shutdown
+10/03/25-18:10:20:877 (1954) 0 [Generic.Event] AUXWD #7 exited due to system shutdown
+10/03/25-18:10:20:886 (1945) 0 [Generic.Event] No blocks pending in WIJ file
+10/03/25-18:10:20:903 (1945) 0 [Generic.Event] WRTDMN exited due to system shutdown
+10/03/25-18:10:20:913 (1904) 0 [Generic.Event] CONTROL exited due to system shutdown
+10/03/25-18:10:20:931 (4606) 0 [Utility.Event] Shutdown complete
+10/03/25-18:35:14:153 (410) 0 [Utility.Event] ISC_DATA_DIRECTORY=/durable/iris/
+10/03/25-18:35:14:159 (410) 0 [Utility.Event] Executing /usr/irissys/bin/iris qlist
+10/03/25-18:35:14:220 (410) 0 [Utility.Event] Versions are the same
+10/03/25-18:35:14:224 (410) 0 [Utility.Event] Source /usr/irissys/: 2025.2.0.227.0com
+10/03/25-18:35:14:227 (410) 0 [Utility.Event] Destination /durable/iris/: 2025.2.0.227.0com
+10/03/25-18:35:14:231 (410) 0 [Utility.Event] Executing /usr/irissys/bin/iris update IRIS directory=/usr/irissys/ datadir=/durable/iris/ versionid=2025.2.0.227.0com
+10/03/25-18:35:14:262 (410) 0 [Utility.Event] Executing find /usr/irissys/ -type d -exec chmod ugo-w {} +
+10/03/25-18:35:14:286 (410) 0 [Utility.Event] Executing chmod ugo-w /usr/irissys/
+
+
+
+*** Recovery started at Fri Oct  3 18:35:15 2025
+     Current default directory: /durable/iris/mgr
+     Log file directory: /durable/iris/mgr/
+     WIJ file spec: /durable/iris/mgr/IRIS.WIJ
+Recovering local (/durable/iris/mgr/IRIS.WIJ) image journal file...
+Starting WIJ recovery for '/durable/iris/mgr/IRIS.WIJ'.
+  0 blocks pending in this WIJ.
+Exiting with status 3 (Success)
+10/03/25-18:35:15:875 (821) 0 [Generic.Event] Global buffer setting requires attention.  Auto-selected 25% of total memory.
+10/03/25-18:35:15:944 (821) 0 [Generic.Event] Allocated 5016MB shared memory
+10/03/25-18:35:15:946 (821) 0 [Generic.Event] 3930MB global buffers, 393MB routine buffers, 64MB journal buffers, 308MB buffer descriptors, 300MB heap, 5MB ECP, 16MB miscellaneous
+10/03/25-18:35:15:953 (821) 0 [Crypto.IntelSandyBridgeAESNI] Intel Sandy Bridge or AMD x8 AES-NI instructions detected.
+10/03/25-18:35:15:954 (821) 0 [SIMD] SIMD optimization level: arch=x86-64-v3
+10/03/25-18:35:16:110 (821) 0 [WriteDaemon.UsingWIJFile] Using WIJ file: /durable/iris/mgr/IRIS.WIJ
+10/03/25-18:35:16:113 (821) 0 [Generic.Event] Jrn info from prior WIJ (imflags: 0):
+	wdpass: 0
+	jrnwdpass: 813
+	fspec: /durable/iris/mgr/journal/20251003.004
+	filecnt: 4
+	fileoff: 0
+	prevfcnt: 4
+	prevfileoeff: 0
+	min trans cnt: 4
+	min trans index: 197832
+10/03/25-18:35:16:144 (821) 0 [Generic.Event] 
+Startup of InterSystems IRIS [IRIS for UNIX (Ubuntu Server LTS for x86-64 Containers) 2025.2 (Build 227U) Thu Jul 10 2025 11:09:14 EDT]
+	in /usr/irissys/bin/
+	with mgr: /durable/iris/mgr
+	with wij: /durable/iris/mgr/IRIS.WIJ
+	from: /durable/iris/mgr/
+  OS=[Linux], version=[#1 SMP Tue Nov 5 00:21:55 UTC 2024], release=[5.15.167.4-microsoft-standard-WSL2], machine=[x86_64]
+  nodename=[baac76f4b82b].
+  numasyncwijbuf: 2, wdwrite_asyncio_max: 64, wijdirectio: on, synctype: 3
+  System Initialized.
+10/03/25-18:35:16:146 (862) 0 [WriteDaemon.Started] Write daemon started.
+10/03/25-18:35:16:188 (873) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/ (SFN 0) read-write.
+10/03/25-18:35:16:255 (821) 1 [Generic.Event] Cannot lock /usr/irissys/mgr/irislib/ err(13): will try accessing readonly
+10/03/25-18:35:16:257 (873) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/irislib/ (SFN 1) read-only. File or filesystem allows read-only access. 
+10/03/25-18:35:16:266 (873) 0 [Utility.Event] Instance 'IRIS' starting on node baac76f4b82b by user 'irisowner' on 10/03/2025 18:35:16.266 UTC
+10/03/25-18:35:16:268 (873) 0 [Utility.Event] Using parameters from file '/durable/iris/iris.cpf'
+10/03/25-18:35:16:274 (873) 0 [Utility.Event] Loading DLLs
+10/03/25-18:35:16:277 (873) 0 [Utility.Event] Switching to temporary %SYS Namespace
+10/03/25-18:35:16:331 (873) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irissecurity/ (SFN 2) read-write.
+10/03/25-18:35:16:378 (873) 0 [Utility.Event] Loading Locale enuw (English, United States, Unicode) from objects
+10/03/25-18:35:16:437 (873) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irislocaldata/ (SFN 3) read-write.
+10/03/25-18:35:16:448 (873) 0 [Utility.Event] Using OpenSSL 3.0.13 30 Jan 2024
+10/03/25-18:35:16:725 (873) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/iristemp/ (SFN 4) read-write.
+10/03/25-18:35:16:733 (873) 0 [Utility.Event] /durable/iris/mgr/iristemp/ initialized as IRISTEMP
+10/03/25-18:35:16:807 (873) 0 [Utility.Event] Switching to default %SYS Namespace
+10/03/25-18:35:16:858 (874) 0 [Utility.Event] Log Monitor Started
+10/03/25-18:35:16:962 (873) 2 [Utility.Event] System appears to have failed over from node 54e4c5dfe28c
+10/03/25-18:35:16:972 (875) 0 [Utility.Event] Clean Daemon Started
+10/03/25-18:35:16:983 (873) 0 [Utility.Event] No archives configured
+10/03/25-18:35:17:071 (873) 0 [Utility.Event] Performing Journal Recovery
+10/03/25-18:35:17:152 (873) 0 [Utility.Event] WIJ indicates no open transactions
+10/03/25-18:35:17:281 (873) 0 [Utility.Event] START: /durable/iris/mgr/journal/20251003.005
+10/03/25-18:35:17:289 (873) 1 [Generic.Event] Warning: Alternate and primary journal directories are the same
+10/03/25-18:35:17:348 (873) 0 [Generic.Event] INTERSYSTEMS IRIS JOURNALING SYSTEM MESSAGE
+Journaling started to: /durable/iris/mgr/journal/20251003.005
+10/03/25-18:35:17:351 (873) 0 [Utility.Event] Journaling to /durable/iris/mgr/journal/20251003.005 started.
+10/03/25-18:35:17:354 (873) 0 [Utility.Event] Processing WorkQueues section
+10/03/25-18:35:17:389 (873) 0 [Utility.Event] Processing Startup section
+10/03/25-18:35:17:404 (876) 0 [Utility.Event] Purging old application errors
+10/03/25-18:35:17:411 (873) 0 [Utility.Event] Processing config section
+10/03/25-18:35:17:455 (873) 0 [Utility.Event] Initializing Security system
+10/03/25-18:35:17:456 (877) 0 [Utility.Event] LMF Info:  Licensed for 8 users.
+10/03/25-18:35:17:475 (873) 0 [Utility.Event] Processing Network section
+10/03/25-18:35:17:480 (873) 0 [Utility.Event] Activating Network
+10/03/25-18:35:17:493 (873) 0 [Utility.Event] Processing Databases section
+10/03/25-18:35:17:541 (873) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irisaudit/ (SFN 5) read-write.
+10/03/25-18:35:17:590 (873) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irismetrics/ (SFN 6) read-write.
+10/03/25-18:35:17:605 (873) 1 [Utility.Event] Warning: Database SCRAPER has the same definition as Database IRISSYS - ^^/durable/iris/mgr/
+10/03/25-18:35:17:643 (873) 0 [Utility.Event] Processing Namespaces section
+10/03/25-18:35:17:645 (873) 0 [Utility.Event] Namespaces are up to date
+10/03/25-18:35:17:647 (873) 0 [Utility.Event] Activating namespaces
+10/03/25-18:35:17:651 (873) 0 [Utility.Event] Activating new namespace map
+10/03/25-18:35:17:698 (873) 0 [Utility.Event] Namespace changes have been activated
+10/03/25-18:35:17:713 (896) 0 [Utility.Event] Starting superserver on port 1972
+10/03/25-18:35:17:713 (873) 0 [Utility.Event] Network Lock Upload Phase Starting
+10/03/25-18:35:17:716 (873) 0 [Utility.Event] Lock Upload Phase Complete
+10/03/25-18:35:17:718 (873) 0 [Utility.Event] Processing Miscellaneous section
+10/03/25-18:35:17:770 (899) 0 [Utility.Event] Starting Servers
+10/03/25-18:35:17:770 (873) 0 [Utility.Event] Processing Devices section
+10/03/25-18:35:17:774 (873) 0 [Utility.Event] Processing DeviceSubTypes section
+10/03/25-18:35:17:777 (873) 0 [Utility.Event] Processing MagTape section
+10/03/25-18:35:17:781 (873) 0 [Utility.Event] Processing IO section
+10/03/25-18:35:17:784 (873) 0 [Utility.Event] Processing SQL section
+10/03/25-18:35:17:789 (873) 0 [Utility.Event] Processing Macro Pre-Processor (MPP) section
+10/03/25-18:35:17:792 (873) 0 [Utility.Event] Processing OS Package Requirements section
+10/03/25-18:35:18:265 (873) 0 [Generic.Event] Auditing to /durable/iris/mgr/irisaudit/
+10/03/25-18:35:18:395 (873) 0 [Utility.Event] Enabling logons
+10/03/25-18:35:18:399 (873) 0 [Utility.Event] Interoperability System including auto-start of productions Starting
+10/03/25-18:35:18:436 (873) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/user/ (SFN 7) read-write.
+10/03/25-18:35:18:442 (821) 1 [Generic.Event] Cannot lock /usr/irissys/mgr/enslib/ err(13): will try accessing readonly
+10/03/25-18:35:18:444 (873) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/enslib/ (SFN 8) read-only. File or filesystem allows read-only access. 
+10/03/25-18:35:18:448 (873) 0 [Utility.Event] Initializing Interoperability during system startup
+10/03/25-18:35:18:678 (873) 0 [Utility.Event] Interoperability System Startup Complete
+10/03/25-18:35:18:730 (909) 0 [Utility.Event] User 'irisowner' shutting down InterSystems IRIS
+10/03/25-18:35:18:762 (899) 0 [Utility.Event] Private webserver started on 52773
+10/03/25-18:35:18:765 (899) 0 [Utility.Event] Processing Shadows section (this system as shadow)
+10/03/25-18:35:18:773 (899) 0 [Utility.Event] Processing Monitor section
+10/03/25-18:35:18:794 (915) 0 [Utility.Event] Starting TASKMGR
+10/03/25-18:35:18:827 (916) 0 [Utility.Event] [SYSTEM MONITOR] System Monitor started in %SYS
+10/03/25-18:35:18:842 (899) 0 [Utility.Event] Shard license: 0
+10/03/25-18:35:18:843 (918) 0 [Utility.Event] WorkQueue: Starting work queue daemon parent=899
+10/03/25-18:35:18:857 (879) 0 [Utility.Event] Journal File Compression: Compressed /durable/iris/mgr/journal/20251003.004 from 262144 bytes to 86016 bytes, compression ratio = 3.0
+10/03/25-18:35:19:265 (916) 0 [Utility.Event] [SYSTEM MONITOR] System Monitor stopped in %SYS
+10/03/25-18:35:19:266 (909) 0 [Utility.Event] Notifying Clients
+10/03/25-18:35:19:268 (909) 0 [Utility.Event] No user shutdown routines to execute
+10/03/25-18:35:19:271 (909) 0 [Utility.Event] Stopping User Jobs
+10/03/25-18:35:19:287 (909) 0 [Utility.Event] Stopping Network Servers
+10/03/25-18:35:19:290 (909) 0 [Utility.Event] Withdrawing from License Domain
+10/03/25-18:35:19:297 (909) 0 [Generic.Event] Auditing stopped
+10/03/25-18:35:19:299 (909) 0 [Utility.Event] Stopping Client Networking
+10/03/25-18:35:19:306 (909) 0 [Utility.Event] Updating Journal File
+10/03/25-18:35:19:461 (909) 0 [Utility.Event] Journal restore not required at next startup
+10/03/25-18:35:19:463 (909) 0 [Utility.Event] Transaction rollback not required at next startup
+10/03/25-18:35:19:596 (909) 0 [Utility.Event] Removing database locks
+10/03/25-18:35:19:651 (909) 0 [Utility.Event] Waiting for database updates to complete
+10/03/25-18:35:19:654 (909) 0 [Utility.Event] Database updates complete
+10/03/25-18:35:19:656 (909) 0 [Utility.Event] Stopping System Jobs
+10/03/25-18:35:19:758 (872) 0 [Generic.Event] EXPDMN exited due to system shutdown
+10/03/25-18:35:19:758 (863) 0 [Generic.Event] GARCOL exited due to system shutdown
+10/03/25-18:35:19:758 (864) 0 [Generic.Event] JRNDMN exited due to system shutdown
+10/03/25-18:35:19:759 (865) 0 [Generic.Event] AUXWD #1 exited due to system shutdown
+10/03/25-18:35:19:759 (870) 0 [Generic.Event] AUXWD #6 exited due to system shutdown
+10/03/25-18:35:19:759 (866) 0 [Generic.Event] AUXWD #2 exited due to system shutdown
+10/03/25-18:35:19:759 (869) 0 [Generic.Event] AUXWD #5 exited due to system shutdown
+10/03/25-18:35:19:759 (868) 0 [Generic.Event] AUXWD #4 exited due to system shutdown
+10/03/25-18:35:19:759 (867) 0 [Generic.Event] AUXWD #3 exited due to system shutdown
+10/03/25-18:35:19:759 (871) 0 [Generic.Event] AUXWD #7 exited due to system shutdown
+10/03/25-18:35:19:768 (862) 0 [Generic.Event] No blocks pending in WIJ file
+10/03/25-18:35:19:785 (862) 0 [Generic.Event] WRTDMN exited due to system shutdown
+10/03/25-18:35:19:792 (821) 0 [Generic.Event] CONTROL exited due to system shutdown
+10/03/25-18:35:19:801 (909) 0 [Utility.Event] Shutdown complete
+
+
+
+*** Recovery started at Fri Oct  3 18:35:22 2025
+     Current default directory: /durable/iris/mgr
+     Log file directory: /durable/iris/mgr/
+     WIJ file spec: /durable/iris/mgr/IRIS.WIJ
+Recovering local (/durable/iris/mgr/IRIS.WIJ) image journal file...
+Starting WIJ recovery for '/durable/iris/mgr/IRIS.WIJ'.
+  0 blocks pending in this WIJ.
+Exiting with status 3 (Success)
+10/03/25-18:35:22:723 (1493) 1 [Utility.Event] Startup directory and clone directory are the same
+10/03/25-18:35:22:725 (1493) 1 [Utility.Event] ISC_DATA_DIRECTORY=/durable/iris
+10/03/25-18:35:22:727 (1493) 1 [Utility.Event] Cloning command ignored
+
+
+
+*** Recovery started at Fri Oct  3 18:35:24 2025
+     Current default directory: /durable/iris/mgr
+     Log file directory: /durable/iris/mgr/
+     WIJ file spec: /durable/iris/mgr/IRIS.WIJ
+Recovering local (/durable/iris/mgr/IRIS.WIJ) image journal file...
+Starting WIJ recovery for '/durable/iris/mgr/IRIS.WIJ'.
+  0 blocks pending in this WIJ.
+Exiting with status 3 (Success)
+10/03/25-18:35:24:363 (1904) 0 [Generic.Event] Global buffer setting requires attention.  Auto-selected 25% of total memory.
+10/03/25-18:35:24:418 (1904) 0 [Generic.Event] Allocated 5016MB shared memory
+10/03/25-18:35:24:420 (1904) 0 [Generic.Event] 3930MB global buffers, 393MB routine buffers, 64MB journal buffers, 308MB buffer descriptors, 300MB heap, 5MB ECP, 16MB miscellaneous
+10/03/25-18:35:24:425 (1904) 0 [Crypto.IntelSandyBridgeAESNI] Intel Sandy Bridge or AMD x8 AES-NI instructions detected.
+10/03/25-18:35:24:427 (1904) 0 [SIMD] SIMD optimization level: arch=x86-64-v3
+10/03/25-18:35:24:583 (1904) 0 [WriteDaemon.UsingWIJFile] Using WIJ file: /durable/iris/mgr/IRIS.WIJ
+10/03/25-18:35:24:584 (1904) 0 [Generic.Event] Jrn info from prior WIJ (imflags: 0):
+	wdpass: 0
+	jrnwdpass: 8
+	fspec: /durable/iris/mgr/journal/20251003.005
+	filecnt: 5
+	fileoff: 0
+	prevfcnt: 5
+	prevfileoeff: 0
+	min trans cnt: 5
+	min trans index: 175796
+10/03/25-18:35:24:606 (1904) 0 [Generic.Event] 
+Startup of InterSystems IRIS [IRIS for UNIX (Ubuntu Server LTS for x86-64 Containers) 2025.2 (Build 227U) Thu Jul 10 2025 11:09:14 EDT]
+	in /usr/irissys/bin/
+	with mgr: /durable/iris/mgr
+	with wij: /durable/iris/mgr/IRIS.WIJ
+	from: /durable/iris/mgr/
+  OS=[Linux], version=[#1 SMP Tue Nov 5 00:21:55 UTC 2024], release=[5.15.167.4-microsoft-standard-WSL2], machine=[x86_64]
+  nodename=[baac76f4b82b].
+  numasyncwijbuf: 2, wdwrite_asyncio_max: 64, wijdirectio: on, synctype: 3
+  System Initialized.
+10/03/25-18:35:24:607 (1945) 0 [WriteDaemon.Started] Write daemon started.
+10/03/25-18:35:24:629 (1956) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/ (SFN 0) read-write.
+10/03/25-18:35:24:676 (1904) 1 [Generic.Event] Cannot lock /usr/irissys/mgr/irislib/ err(13): will try accessing readonly
+10/03/25-18:35:24:678 (1956) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/irislib/ (SFN 1) read-only. File or filesystem allows read-only access. 
+10/03/25-18:35:24:686 (1956) 0 [Utility.Event] Instance 'IRIS' starting on node baac76f4b82b by user 'irisowner' on 10/03/2025 18:35:24.686 UTC
+10/03/25-18:35:24:688 (1956) 0 [Utility.Event] Using parameters from file '/durable/iris/iris.cpf'
+10/03/25-18:35:24:691 (1956) 0 [Utility.Event] Loading DLLs
+10/03/25-18:35:24:695 (1956) 0 [Utility.Event] Switching to temporary %SYS Namespace
+10/03/25-18:35:24:724 (1956) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irissecurity/ (SFN 2) read-write.
+10/03/25-18:35:24:739 (1956) 0 [Utility.Event] Loading Locale enuw (English, United States, Unicode) from objects
+10/03/25-18:35:24:767 (1956) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irislocaldata/ (SFN 3) read-write.
+10/03/25-18:35:24:773 (1956) 0 [Utility.Event] Using OpenSSL 3.0.13 30 Jan 2024
+10/03/25-18:35:24:963 (1956) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/iristemp/ (SFN 4) read-write.
+10/03/25-18:35:24:970 (1956) 0 [Utility.Event] /durable/iris/mgr/iristemp/ initialized as IRISTEMP
+10/03/25-18:35:24:991 (1956) 0 [Utility.Event] Switching to default %SYS Namespace
+10/03/25-18:35:25:034 (1957) 0 [Utility.Event] Log Monitor Started
+10/03/25-18:35:25:143 (1958) 0 [Utility.Event] Clean Daemon Started
+10/03/25-18:35:25:152 (1956) 0 [Utility.Event] No archives configured
+10/03/25-18:35:25:205 (1956) 0 [Utility.Event] Performing Journal Recovery
+10/03/25-18:35:25:291 (1956) 0 [Utility.Event] WIJ indicates no open transactions
+10/03/25-18:35:25:368 (1956) 0 [Utility.Event] START: /durable/iris/mgr/journal/20251003.006
+10/03/25-18:35:25:375 (1956) 1 [Generic.Event] Warning: Alternate and primary journal directories are the same
+10/03/25-18:35:25:418 (1956) 0 [Generic.Event] INTERSYSTEMS IRIS JOURNALING SYSTEM MESSAGE
+Journaling started to: /durable/iris/mgr/journal/20251003.006
+10/03/25-18:35:25:423 (1956) 0 [Utility.Event] Journaling to /durable/iris/mgr/journal/20251003.006 started.
+10/03/25-18:35:25:425 (1956) 0 [Utility.Event] Processing WorkQueues section
+10/03/25-18:35:25:458 (1956) 0 [Utility.Event] Processing Startup section
+10/03/25-18:35:25:466 (1959) 0 [Utility.Event] Purging old application errors
+10/03/25-18:35:25:470 (1956) 0 [Utility.Event] Processing config section
+10/03/25-18:35:25:494 (1960) 0 [Utility.Event] LMF Info:  Licensed for 8 users.
+10/03/25-18:35:25:502 (1956) 0 [Utility.Event] Initializing Security system
+10/03/25-18:35:25:523 (1956) 0 [Utility.Event] Processing Network section
+10/03/25-18:35:25:527 (1956) 0 [Utility.Event] Activating Network
+10/03/25-18:35:25:538 (1956) 0 [Utility.Event] Processing Databases section
+10/03/25-18:35:25:582 (1956) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irisaudit/ (SFN 5) read-write.
+10/03/25-18:35:25:631 (1956) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irismetrics/ (SFN 6) read-write.
+10/03/25-18:35:25:647 (1956) 1 [Utility.Event] Warning: Database SCRAPER has the same definition as Database IRISSYS - ^^/durable/iris/mgr/
+10/03/25-18:35:25:688 (1956) 0 [Utility.Event] Processing Namespaces section
+10/03/25-18:35:25:690 (1956) 0 [Utility.Event] Namespaces are up to date
+10/03/25-18:35:25:692 (1956) 0 [Utility.Event] Activating namespaces
+10/03/25-18:35:25:696 (1956) 0 [Utility.Event] Activating new namespace map
+10/03/25-18:35:25:750 (1956) 0 [Utility.Event] Namespace changes have been activated
+10/03/25-18:35:25:783 (1956) 0 [Utility.Event] Network Lock Upload Phase Starting
+10/03/25-18:35:25:783 (1963) 0 [Utility.Event] Starting superserver on port 1972
+10/03/25-18:35:25:786 (1956) 0 [Utility.Event] Lock Upload Phase Complete
+10/03/25-18:35:25:788 (1956) 0 [Utility.Event] Processing Miscellaneous section
+10/03/25-18:35:25:831 (1966) 0 [Utility.Event] Starting Servers
+10/03/25-18:35:25:832 (1956) 0 [Utility.Event] Processing Devices section
+10/03/25-18:35:25:832 (1962) 0 [Utility.Event] Journal File Compression: Compressed /durable/iris/mgr/journal/20251003.005 from 196608 bytes to 77824 bytes, compression ratio = 2.5
+10/03/25-18:35:25:844 (1956) 0 [Utility.Event] Processing DeviceSubTypes section
+10/03/25-18:35:25:847 (1956) 0 [Utility.Event] Processing MagTape section
+10/03/25-18:35:25:853 (1956) 0 [Utility.Event] Processing IO section
+10/03/25-18:35:25:856 (1956) 0 [Utility.Event] Processing SQL section
+10/03/25-18:35:25:860 (1956) 0 [Utility.Event] Processing Macro Pre-Processor (MPP) section
+10/03/25-18:35:25:863 (1956) 0 [Utility.Event] Processing OS Package Requirements section
+10/03/25-18:35:26:376 (1956) 0 [Generic.Event] Auditing to /durable/iris/mgr/irisaudit/
+10/03/25-18:35:26:444 (1956) 0 [Utility.Event] Enabling logons
+10/03/25-18:35:26:449 (1956) 0 [Utility.Event] Interoperability System including auto-start of productions Starting
+10/03/25-18:35:26:477 (1956) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/user/ (SFN 7) read-write.
+10/03/25-18:35:26:488 (1904) 1 [Generic.Event] Cannot lock /usr/irissys/mgr/enslib/ err(13): will try accessing readonly
+10/03/25-18:35:26:490 (1956) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/enslib/ (SFN 8) read-only. File or filesystem allows read-only access. 
+10/03/25-18:35:26:495 (1956) 0 [Utility.Event] Initializing Interoperability during system startup
+10/03/25-18:35:26:704 (1966) 0 [Utility.Event] Private webserver started on 52773
+10/03/25-18:35:26:706 (1966) 0 [Utility.Event] Processing Shadows section (this system as shadow)
+10/03/25-18:35:26:714 (1966) 0 [Utility.Event] Processing Monitor section
+10/03/25-18:35:26:733 (1977) 0 [Utility.Event] Starting TASKMGR
+10/03/25-18:35:26:744 (1978) 0 [Utility.Event] [SYSTEM MONITOR] System Monitor started in %SYS
+10/03/25-18:35:26:763 (1966) 0 [Utility.Event] Shard license: 0
+10/03/25-18:35:26:763 (1980) 0 [Utility.Event] WorkQueue: Starting work queue daemon parent=1966
+10/03/25-18:35:26:767 (1956) 0 [Utility.Event] Interoperability System Startup Complete
+10/03/25-18:37:27:090 (2143) 0 [Utility.Event] Deleting SCRAPER namespace map
+10/03/25-18:37:27:093 (2143) 0 [Utility.Event] Namespace SCRAPER has been deleted
+10/03/25-18:59:14:195 (2164) 1 [Utility.Event] Warning: Database SANITARY-SURVEILLANCE has the same definition as Database IRISSYS - ^^/durable/iris/mgr/
+10/03/25-18:59:14:199 (2164) 1 [Utility.Event] Warning: Database SCRAPER has the same definition as Database IRISSYS - ^^/durable/iris/mgr/
+10/03/25-18:59:14:205 (2164) 1 [Utility.Event] Warning: Database SCRAPER has the same definition as Database SANITARY-SURVEILLANCE - ^^/durable/iris/mgr/
+10/03/25-19:19:30:647 (2164) 0 [Utility.Event] Activating SANITARYSURVERLLANCE namespace map
+10/03/25-19:19:30:653 (2164) 0 [Utility.Event] Namespace SANITARYSURVERLLANCE changes have been activated
+10/03/25-19:19:30:689 (2164) 0 [Utility.Event] Enabling namespace 'SANITARYSURVERLLANCE' for Interoperabilidade
+10/03/25-19:19:31:373 (2164) 0 [Utility.Event] Activating SANITARYSURVERLLANCE namespace map
+10/03/25-19:19:31:401 (2164) 0 [Utility.Event] Namespace SANITARYSURVERLLANCE changes have been activated
+10/03/25-19:19:31:404 (2164) 0 [Utility.Event] Rebuilding Extent index for namespace SANITARYSURVERLLANCE
+10/03/25-19:19:33:574 (2164) 0 [Utility.Event] Rebuild of Extent index completed
+10/03/25-19:19:34:085 (2164) 0 [Utility.Event] Activating SANITARYSURVERLLANCE namespace map
+10/03/25-19:19:34:091 (2164) 0 [Utility.Event] Namespace SANITARYSURVERLLANCE changes have been activated
+10/03/25-19:19:39:435 (2164) 0 [Utility.Event] Activating SANITARYSURVERLLANCE namespace map
+10/03/25-19:19:39:441 (2164) 0 [Utility.Event] Namespace SANITARYSURVERLLANCE changes have been activated
+10/03/25-19:19:40:528 (2164) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/sanitary-surveillanceenstemp/ (SFN 9) read-write.
+10/03/25-19:19:41:105 (2164) 1 [Utility.Event] Warning: Database SANITARY-SURVEILLANCE has the same definition as Database IRISSYS - ^^/durable/iris/mgr/
+10/03/25-19:19:41:120 (2164) 1 [Utility.Event] Warning: Database SCRAPER has the same definition as Database IRISSYS - ^^/durable/iris/mgr/
+10/03/25-19:19:41:125 (2164) 1 [Utility.Event] Warning: Database SCRAPER has the same definition as Database SANITARY-SURVEILLANCE - ^^/durable/iris/mgr/
+10/03/25-19:19:41:906 (2164) 0 [Utility.Event] Activating SANITARYSURVERLLANCE namespace map
+10/03/25-19:19:41:911 (2164) 0 [Utility.Event] Namespace SANITARYSURVERLLANCE changes have been activated
+10/03/25-19:19:42:041 (2164) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/sanitary-surveillancesecondary/ (SFN 10) read-write.
+10/03/25-19:19:42:636 (2164) 1 [Utility.Event] Warning: Database SANITARY-SURVEILLANCE has the same definition as Database IRISSYS - ^^/durable/iris/mgr/
+10/03/25-19:19:42:644 (2164) 1 [Utility.Event] Warning: Database SCRAPER has the same definition as Database IRISSYS - ^^/durable/iris/mgr/
+10/03/25-19:19:42:646 (2164) 1 [Utility.Event] Warning: Database SCRAPER has the same definition as Database SANITARY-SURVEILLANCE - ^^/durable/iris/mgr/
+10/03/25-19:19:43:281 (2164) 0 [Utility.Event] Activating SANITARYSURVERLLANCE namespace map
+10/03/25-19:19:43:286 (2164) 0 [Utility.Event] Namespace SANITARYSURVERLLANCE changes have been activated
+
+
+
+*** Recovery started at Sat Oct  4 21:58:55 2025
+     Current default directory: /durable/iris/mgr
+     Log file directory: /durable/iris/mgr/
+     WIJ file spec: /durable/iris/mgr/IRIS.WIJ
+Recovering local (/durable/iris/mgr/IRIS.WIJ) image journal file...
+Starting WIJ recovery for '/durable/iris/mgr/IRIS.WIJ'.
+  0 blocks pending in this WIJ.
+WIJ pass # is 0.
+Starting fast WIJ compare
+Finished comparing 15 blocks in 0 seconds
+Exiting with status 3 (Success)
+10/04/25-21:58:56:058 (413) 1 [Utility.Event] Startup directory and clone directory are the same
+10/04/25-21:58:56:063 (413) 1 [Utility.Event] ISC_DATA_DIRECTORY=/durable/iris
+10/04/25-21:58:56:067 (413) 1 [Utility.Event] Cloning command ignored
+
+
+
+*** Recovery started at Sat Oct  4 21:59:00 2025
+     Current default directory: /durable/iris/mgr
+     Log file directory: /durable/iris/mgr/
+     WIJ file spec: /durable/iris/mgr/IRIS.WIJ
+Recovering local (/durable/iris/mgr/IRIS.WIJ) image journal file...
+Starting WIJ recovery for '/durable/iris/mgr/IRIS.WIJ'.
+  0 blocks pending in this WIJ.
+WIJ pass # is 0.
+Starting fast WIJ compare
+Finished comparing 15 blocks in 0 seconds
+Exiting with status 3 (Success)
+10/04/25-21:59:00:615 (835) 0 [Generic.Event] Global buffer setting requires attention.  Auto-selected 25% of total memory.
+10/04/25-21:59:00:758 (835) 0 [Generic.Event] Allocated 5016MB shared memory
+10/04/25-21:59:00:762 (835) 0 [Generic.Event] 3930MB global buffers, 393MB routine buffers, 64MB journal buffers, 308MB buffer descriptors, 300MB heap, 5MB ECP, 16MB miscellaneous
+10/04/25-21:59:00:770 (835) 0 [Crypto.IntelSandyBridgeAESNI] Intel Sandy Bridge or AMD x8 AES-NI instructions detected.
+10/04/25-21:59:00:774 (835) 0 [SIMD] SIMD optimization level: arch=x86-64-v3
+10/04/25-21:59:00:996 (835) 0 [WriteDaemon.UsingWIJFile] Using WIJ file: /durable/iris/mgr/IRIS.WIJ
+10/04/25-21:59:01:000 (835) 0 [Generic.Event] Jrn info from prior WIJ (imflags: 0):
+	wdpass: 0
+	jrnwdpass: 908
+	fspec: /durable/iris/mgr/journal/20251003.006
+	filecnt: 6
+	fileoff: 3218012
+	prevfcnt: 6
+	prevfileoeff: 3218012
+	min trans cnt: 6
+	min trans index: 3218012
+10/04/25-21:59:01:032 (835) 0 [Generic.Event] 
+Startup of InterSystems IRIS [IRIS for UNIX (Ubuntu Server LTS for x86-64 Containers) 2025.2 (Build 227U) Thu Jul 10 2025 11:09:14 EDT]
+	in /usr/irissys/bin/
+	with mgr: /durable/iris/mgr
+	with wij: /durable/iris/mgr/IRIS.WIJ
+	from: /durable/iris/mgr/
+  OS=[Linux], version=[#1 SMP Tue Nov 5 00:21:55 UTC 2024], release=[5.15.167.4-microsoft-standard-WSL2], machine=[x86_64]
+  nodename=[baac76f4b82b].
+  numasyncwijbuf: 2, wdwrite_asyncio_max: 64, wijdirectio: on, synctype: 3
+  System Initialized.
+10/04/25-21:59:01:035 (876) 0 [WriteDaemon.Started] Write daemon started.
+10/04/25-21:59:01:068 (887) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/ (SFN 0) read-write.
+10/04/25-21:59:01:162 (835) 1 [Generic.Event] Cannot lock /usr/irissys/mgr/irislib/ err(13): will try accessing readonly
+10/04/25-21:59:01:166 (887) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/irislib/ (SFN 1) read-only. File or filesystem allows read-only access. 
+10/04/25-21:59:01:180 (887) 0 [Utility.Event] Instance 'IRIS' starting on node baac76f4b82b by user 'irisowner' on 10/04/2025 21:59:01.180 UTC
+10/04/25-21:59:01:184 (887) 0 [Utility.Event] Using parameters from file '/durable/iris/iris.cpf'
+10/04/25-21:59:01:194 (887) 0 [Utility.Event] Loading DLLs
+10/04/25-21:59:01:199 (887) 0 [Utility.Event] Switching to temporary %SYS Namespace
+10/04/25-21:59:01:328 (887) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irissecurity/ (SFN 2) read-write.
+10/04/25-21:59:01:402 (887) 0 [Utility.Event] Loading Locale enuw (English, United States, Unicode) from objects
+10/04/25-21:59:01:496 (887) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irislocaldata/ (SFN 3) read-write.
+10/04/25-21:59:01:513 (887) 0 [Utility.Event] Using OpenSSL 3.0.13 30 Jan 2024
+10/04/25-21:59:02:054 (887) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/iristemp/ (SFN 4) read-write.
+10/04/25-21:59:02:069 (887) 0 [Utility.Event] /durable/iris/mgr/iristemp/ initialized as IRISTEMP
+10/04/25-21:59:02:132 (887) 0 [Utility.Event] Switching to default %SYS Namespace
+10/04/25-21:59:02:230 (904) 0 [Utility.Event] Log Monitor Started
+10/04/25-21:59:02:334 (887) 2 [Utility.Event] Previous system shutdown was abnormal, system forced down or crashed
+10/04/25-21:59:02:356 (905) 0 [Utility.Event] Clean Daemon Started
+10/04/25-21:59:02:411 (887) 0 [Utility.Event] Updating configuration information from /durable/iris/iris.cpf
+10/04/25-21:59:02:932 (887) 0 [Utility.Event] No archives configured
+10/04/25-21:59:03:155 (887) 0 [Utility.Event] Performing Journal Recovery
+10/04/25-21:59:04:457 (887) 0 [Utility.Event] Restoring from journal /durable/iris/mgr/journal/20251003.006
+10/04/25-21:59:04:678 (887) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irisaudit/ (SFN 5) read-write.
+10/04/25-21:59:04:770 (887) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irismetrics/ (SFN 6) read-write.
+10/04/25-21:59:04:844 (887) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/user/ (SFN 7) read-write.
+10/04/25-21:59:04:853 (887) 1 [Utility.Event] [JOURNAL RESTORE] Not restoring /usr/irissys/mgr/enslib/ because the database is not journaled
+10/04/25-21:59:04:866 (887) 1 [Utility.Event] [JOURNAL RESTORE] Not restoring /durable/iris/mgr/sanitary-surveillanceenstemp/ because the database is not journaled
+10/04/25-21:59:04:931 (887) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/sanitary-surveillancesecondary/ (SFN 8) read-write.
+10/04/25-21:59:05:165 (887) 0 [Utility.Event] Performing Transaction Rollback if necessary
+10/04/25-21:59:05:295 (887) 0 [Utility.Event]   Scanning /durable/iris/mgr/journal/20251003.006
+10/04/25-21:59:05:647 (887) 0 [Utility.Event] No open transactions to roll back
+10/04/25-21:59:05:748 (887) 0 [Utility.Event] START: /durable/iris/mgr/journal/20251004.001
+10/04/25-21:59:05:760 (887) 1 [Generic.Event] Warning: Alternate and primary journal directories are the same
+10/04/25-21:59:05:836 (887) 0 [Generic.Event] INTERSYSTEMS IRIS JOURNALING SYSTEM MESSAGE
+Journaling started to: /durable/iris/mgr/journal/20251004.001
+10/04/25-21:59:05:843 (887) 0 [Utility.Event] Journaling to /durable/iris/mgr/journal/20251004.001 started.
+10/04/25-21:59:05:849 (887) 0 [Utility.Event] Processing WorkQueues section
+10/04/25-21:59:05:914 (887) 0 [Utility.Event] Processing Startup section
+10/04/25-21:59:05:931 (915) 0 [Utility.Event] Purging old application errors
+10/04/25-21:59:05:942 (887) 0 [Utility.Event] Processing config section
+10/04/25-21:59:05:961 (916) 0 [Utility.Event] LMF Info:  Licensed for 8 users.
+10/04/25-21:59:05:986 (887) 0 [Utility.Event] Initializing Security system
+10/04/25-21:59:06:044 (887) 0 [Utility.Event] Processing Network section
+10/04/25-21:59:06:050 (887) 0 [Utility.Event] Activating Network
+10/04/25-21:59:06:069 (887) 0 [Utility.Event] Processing Databases section
+10/04/25-21:59:06:121 (887) 1 [Utility.Event] Warning: Database SANITARY-SURVEILLANCE has the same definition as Database IRISSYS - ^^/durable/iris/mgr/
+10/04/25-21:59:06:163 (887) 1 [Utility.Event] Warning: Database SCRAPER has the same definition as Database IRISSYS - ^^/durable/iris/mgr/
+10/04/25-21:59:06:167 (887) 1 [Utility.Event] Warning: Database SCRAPER has the same definition as Database SANITARY-SURVEILLANCE - ^^/durable/iris/mgr/
+10/04/25-21:59:06:233 (887) 0 [Utility.Event] Processing Namespaces section
+10/04/25-21:59:06:236 (887) 0 [Utility.Event] Namespaces are up to date
+10/04/25-21:59:06:239 (887) 0 [Utility.Event] Activating namespaces
+10/04/25-21:59:06:244 (887) 0 [Utility.Event] Activating new namespace map
+10/04/25-21:59:06:336 (887) 0 [Utility.Event] Namespace changes have been activated
+10/04/25-21:59:06:357 (887) 0 [Utility.Event] Network Lock Upload Phase Starting
+10/04/25-21:59:06:357 (919) 0 [Utility.Event] Starting superserver on port 1972
+10/04/25-21:59:06:361 (887) 0 [Utility.Event] Lock Upload Phase Complete
+10/04/25-21:59:06:366 (887) 0 [Utility.Event] Processing Miscellaneous section
+10/04/25-21:59:06:430 (922) 0 [Utility.Event] Starting Servers
+10/04/25-21:59:06:433 (887) 0 [Utility.Event] Processing Devices section
+10/04/25-21:59:06:442 (887) 0 [Utility.Event] Processing DeviceSubTypes section
+10/04/25-21:59:06:448 (887) 0 [Utility.Event] Processing MagTape section
+10/04/25-21:59:06:456 (887) 0 [Utility.Event] Processing IO section
+10/04/25-21:59:06:464 (887) 0 [Utility.Event] Processing SQL section
+10/04/25-21:59:06:475 (887) 0 [Utility.Event] Processing Macro Pre-Processor (MPP) section
+10/04/25-21:59:06:484 (887) 0 [Utility.Event] Processing OS Package Requirements section
+10/04/25-21:59:07:422 (887) 0 [Generic.Event] Auditing to /durable/iris/mgr/irisaudit/
+10/04/25-21:59:07:558 (887) 0 [Utility.Event] Enabling logons
+10/04/25-21:59:07:565 (887) 0 [Utility.Event] Interoperability System including auto-start of productions Starting
+10/04/25-21:59:07:577 (835) 1 [Generic.Event] Cannot lock /usr/irissys/mgr/enslib/ err(13): will try accessing readonly
+10/04/25-21:59:07:581 (887) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/enslib/ (SFN 9) read-only. File or filesystem allows read-only access. 
+10/04/25-21:59:07:589 (887) 0 [Utility.Event] Initializing Interoperability during system startup
+10/04/25-21:59:07:695 (918) 0 [Utility.Event] Journal File Compression: Compressed /durable/iris/mgr/journal/20251003.006 from 3276800 bytes to 299008 bytes, compression ratio = 11.0
+10/04/25-21:59:07:884 (887) 0 [Utility.Event] Interoperability System Startup Complete
+10/04/25-21:59:07:971 (949) 0 [Utility.Event] User 'irisowner' shutting down InterSystems IRIS
+10/04/25-21:59:08:016 (922) 0 [Utility.Event] Private webserver started on 52773
+10/04/25-21:59:08:019 (922) 0 [Utility.Event] Processing Shadows section (this system as shadow)
+10/04/25-21:59:08:027 (922) 0 [Utility.Event] Processing Monitor section
+10/04/25-21:59:08:056 (955) 0 [Utility.Event] Starting TASKMGR
+10/04/25-21:59:08:100 (956) 0 [Utility.Event] [SYSTEM MONITOR] System Monitor started in %SYS
+10/04/25-21:59:08:123 (922) 0 [Utility.Event] Shard license: 0
+10/04/25-21:59:08:123 (958) 0 [Utility.Event] WorkQueue: Starting work queue daemon parent=922
+10/04/25-21:59:08:786 (949) 0 [Utility.Event] Notifying Clients
+10/04/25-21:59:08:785 (956) 0 [Utility.Event] [SYSTEM MONITOR] System Monitor stopped in %SYS
+10/04/25-21:59:08:787 (949) 0 [Utility.Event] No user shutdown routines to execute
+10/04/25-21:59:08:792 (949) 0 [Utility.Event] Stopping User Jobs
+10/04/25-21:59:08:818 (949) 0 [Utility.Event] Stopping Network Servers
+10/04/25-21:59:08:822 (949) 0 [Utility.Event] Withdrawing from License Domain
+10/04/25-21:59:08:833 (949) 0 [Generic.Event] Auditing stopped
+10/04/25-21:59:08:836 (949) 0 [Utility.Event] Stopping Client Networking
+10/04/25-21:59:08:851 (949) 0 [Utility.Event] Updating Journal File
+10/04/25-21:59:09:008 (949) 0 [Utility.Event] Journal restore not required at next startup
+10/04/25-21:59:09:012 (949) 0 [Utility.Event] Transaction rollback not required at next startup
+10/04/25-21:59:09:147 (949) 0 [Utility.Event] Removing database locks
+10/04/25-21:59:09:287 (949) 0 [Utility.Event] Waiting for database updates to complete
+10/04/25-21:59:09:290 (949) 0 [Utility.Event] Database updates complete
+10/04/25-21:59:09:293 (949) 0 [Utility.Event] Stopping System Jobs
+10/04/25-21:59:09:398 (886) 0 [Generic.Event] EXPDMN exited due to system shutdown
+10/04/25-21:59:09:398 (878) 0 [Generic.Event] JRNDMN exited due to system shutdown
+10/04/25-21:59:09:398 (879) 0 [Generic.Event] AUXWD #1 exited due to system shutdown
+10/04/25-21:59:09:399 (884) 0 [Generic.Event] AUXWD #6 exited due to system shutdown
+10/04/25-21:59:09:399 (882) 0 [Generic.Event] AUXWD #3 exited due to system shutdown
+10/04/25-21:59:09:398 (877) 0 [Generic.Event] GARCOL exited due to system shutdown
+10/04/25-21:59:09:399 (881) 0 [Generic.Event] AUXWD #4 exited due to system shutdown
+10/04/25-21:59:09:398 (880) 0 [Generic.Event] AUXWD #2 exited due to system shutdown
+10/04/25-21:59:09:400 (885) 0 [Generic.Event] AUXWD #7 exited due to system shutdown
+10/04/25-21:59:09:399 (883) 0 [Generic.Event] AUXWD #5 exited due to system shutdown
+10/04/25-21:59:09:406 (876) 0 [Generic.Event] No blocks pending in WIJ file
+10/04/25-21:59:09:424 (876) 0 [Generic.Event] WRTDMN exited due to system shutdown
+10/04/25-21:59:09:439 (835) 0 [Generic.Event] CONTROL exited due to system shutdown
+10/04/25-21:59:09:455 (949) 0 [Utility.Event] Shutdown complete
+
+
+
+*** Recovery started at Sat Oct  4 21:59:14 2025
+     Current default directory: /durable/iris/mgr
+     Log file directory: /durable/iris/mgr/
+     WIJ file spec: /durable/iris/mgr/IRIS.WIJ
+Recovering local (/durable/iris/mgr/IRIS.WIJ) image journal file...
+Starting WIJ recovery for '/durable/iris/mgr/IRIS.WIJ'.
+  0 blocks pending in this WIJ.
+Exiting with status 3 (Success)
+10/04/25-21:59:14:492 (1540) 1 [Utility.Event] Startup directory and clone directory are the same
+10/04/25-21:59:14:498 (1540) 1 [Utility.Event] ISC_DATA_DIRECTORY=/durable/iris
+10/04/25-21:59:14:503 (1540) 1 [Utility.Event] Cloning command ignored
+
+
+
+*** Recovery started at Sat Oct  4 21:59:18 2025
+     Current default directory: /durable/iris/mgr
+     Log file directory: /durable/iris/mgr/
+     WIJ file spec: /durable/iris/mgr/IRIS.WIJ
+Recovering local (/durable/iris/mgr/IRIS.WIJ) image journal file...
+Starting WIJ recovery for '/durable/iris/mgr/IRIS.WIJ'.
+  0 blocks pending in this WIJ.
+Exiting with status 3 (Success)
+10/04/25-21:59:18:928 (1960) 0 [Generic.Event] Global buffer setting requires attention.  Auto-selected 25% of total memory.
+10/04/25-21:59:19:064 (1960) 0 [Generic.Event] Allocated 5016MB shared memory
+10/04/25-21:59:19:068 (1960) 0 [Generic.Event] 3930MB global buffers, 393MB routine buffers, 64MB journal buffers, 308MB buffer descriptors, 300MB heap, 5MB ECP, 16MB miscellaneous
+10/04/25-21:59:19:076 (1960) 0 [Crypto.IntelSandyBridgeAESNI] Intel Sandy Bridge or AMD x8 AES-NI instructions detected.
+10/04/25-21:59:19:083 (1960) 0 [SIMD] SIMD optimization level: arch=x86-64-v3
+10/04/25-21:59:19:268 (1960) 0 [WriteDaemon.UsingWIJFile] Using WIJ file: /durable/iris/mgr/IRIS.WIJ
+10/04/25-21:59:19:272 (1960) 0 [Generic.Event] Jrn info from prior WIJ (imflags: 0):
+	wdpass: 0
+	jrnwdpass: 8
+	fspec: /durable/iris/mgr/journal/20251004.001
+	filecnt: 7
+	fileoff: 0
+	prevfcnt: 7
+	prevfileoeff: 0
+	min trans cnt: 7
+	min trans index: 177904
+10/04/25-21:59:19:313 (1960) 0 [Generic.Event] 
+Startup of InterSystems IRIS [IRIS for UNIX (Ubuntu Server LTS for x86-64 Containers) 2025.2 (Build 227U) Thu Jul 10 2025 11:09:14 EDT]
+	in /usr/irissys/bin/
+	with mgr: /durable/iris/mgr
+	with wij: /durable/iris/mgr/IRIS.WIJ
+	from: /durable/iris/mgr/
+  OS=[Linux], version=[#1 SMP Tue Nov 5 00:21:55 UTC 2024], release=[5.15.167.4-microsoft-standard-WSL2], machine=[x86_64]
+  nodename=[baac76f4b82b].
+  numasyncwijbuf: 2, wdwrite_asyncio_max: 64, wijdirectio: on, synctype: 3
+  System Initialized.
+10/04/25-21:59:19:316 (2001) 0 [WriteDaemon.Started] Write daemon started.
+10/04/25-21:59:19:368 (2012) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/ (SFN 0) read-write.
+10/04/25-21:59:19:502 (1960) 1 [Generic.Event] Cannot lock /usr/irissys/mgr/irislib/ err(13): will try accessing readonly
+10/04/25-21:59:19:507 (2012) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/irislib/ (SFN 1) read-only. File or filesystem allows read-only access. 
+10/04/25-21:59:19:526 (2012) 0 [Utility.Event] Instance 'IRIS' starting on node baac76f4b82b by user 'irisowner' on 10/04/2025 21:59:19.526 UTC
+10/04/25-21:59:19:531 (2012) 0 [Utility.Event] Using parameters from file '/durable/iris/iris.cpf'
+10/04/25-21:59:19:552 (2012) 0 [Utility.Event] Loading DLLs
+10/04/25-21:59:19:559 (2012) 0 [Utility.Event] Switching to temporary %SYS Namespace
+10/04/25-21:59:19:638 (2012) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irissecurity/ (SFN 2) read-write.
+10/04/25-21:59:19:670 (2012) 0 [Utility.Event] Loading Locale enuw (English, United States, Unicode) from objects
+10/04/25-21:59:19:753 (2012) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irislocaldata/ (SFN 3) read-write.
+10/04/25-21:59:19:767 (2012) 0 [Utility.Event] Using OpenSSL 3.0.13 30 Jan 2024
+10/04/25-21:59:20:303 (2012) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/iristemp/ (SFN 4) read-write.
+10/04/25-21:59:20:320 (2012) 0 [Utility.Event] /durable/iris/mgr/iristemp/ initialized as IRISTEMP
+10/04/25-21:59:20:361 (2012) 0 [Utility.Event] Switching to default %SYS Namespace
+10/04/25-21:59:20:440 (2013) 0 [Utility.Event] Log Monitor Started
+10/04/25-21:59:20:556 (2014) 0 [Utility.Event] Clean Daemon Started
+10/04/25-21:59:20:577 (2012) 0 [Utility.Event] No archives configured
+10/04/25-21:59:20:708 (2012) 0 [Utility.Event] Performing Journal Recovery
+10/04/25-21:59:20:839 (2012) 0 [Utility.Event] WIJ indicates no open transactions
+10/04/25-21:59:21:011 (2012) 0 [Utility.Event] START: /durable/iris/mgr/journal/20251004.002
+10/04/25-21:59:21:031 (2012) 1 [Generic.Event] Warning: Alternate and primary journal directories are the same
+10/04/25-21:59:21:110 (2012) 0 [Generic.Event] INTERSYSTEMS IRIS JOURNALING SYSTEM MESSAGE
+Journaling started to: /durable/iris/mgr/journal/20251004.002
+10/04/25-21:59:21:117 (2012) 0 [Utility.Event] Journaling to /durable/iris/mgr/journal/20251004.002 started.
+10/04/25-21:59:21:123 (2012) 0 [Utility.Event] Processing WorkQueues section
+10/04/25-21:59:21:187 (2012) 0 [Utility.Event] Processing Startup section
+10/04/25-21:59:21:202 (2015) 0 [Utility.Event] Purging old application errors
+10/04/25-21:59:21:212 (2012) 0 [Utility.Event] Processing config section
+10/04/25-21:59:21:259 (2012) 0 [Utility.Event] Initializing Security system
+10/04/25-21:59:21:261 (2016) 0 [Utility.Event] LMF Info:  Licensed for 8 users.
+10/04/25-21:59:21:308 (2012) 0 [Utility.Event] Processing Network section
+10/04/25-21:59:21:315 (2012) 0 [Utility.Event] Activating Network
+10/04/25-21:59:21:334 (2012) 0 [Utility.Event] Processing Databases section
+10/04/25-21:59:21:418 (2012) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irisaudit/ (SFN 5) read-write.
+10/04/25-21:59:21:508 (2012) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irismetrics/ (SFN 6) read-write.
+10/04/25-21:59:21:534 (2012) 1 [Utility.Event] Warning: Database SANITARY-SURVEILLANCE has the same definition as Database IRISSYS - ^^/durable/iris/mgr/
+10/04/25-21:59:21:580 (2012) 1 [Utility.Event] Warning: Database SCRAPER has the same definition as Database IRISSYS - ^^/durable/iris/mgr/
+10/04/25-21:59:21:583 (2012) 1 [Utility.Event] Warning: Database SCRAPER has the same definition as Database SANITARY-SURVEILLANCE - ^^/durable/iris/mgr/
+10/04/25-21:59:21:642 (2012) 0 [Utility.Event] Processing Namespaces section
+10/04/25-21:59:21:645 (2012) 0 [Utility.Event] Namespaces are up to date
+10/04/25-21:59:21:648 (2012) 0 [Utility.Event] Activating namespaces
+10/04/25-21:59:21:655 (2012) 0 [Utility.Event] Activating new namespace map
+10/04/25-21:59:21:736 (2012) 0 [Utility.Event] Namespace changes have been activated
+10/04/25-21:59:21:776 (2019) 0 [Utility.Event] Starting superserver on port 1972
+10/04/25-21:59:21:776 (2012) 0 [Utility.Event] Network Lock Upload Phase Starting
+10/04/25-21:59:21:781 (2012) 0 [Utility.Event] Lock Upload Phase Complete
+10/04/25-21:59:21:786 (2012) 0 [Utility.Event] Processing Miscellaneous section
+10/04/25-21:59:21:789 (2018) 0 [Utility.Event] Journal File Compression: Compressed /durable/iris/mgr/journal/20251004.001 from 196608 bytes to 77824 bytes, compression ratio = 2.5
+10/04/25-21:59:21:863 (2022) 0 [Utility.Event] Starting Servers
+10/04/25-21:59:21:864 (2012) 0 [Utility.Event] Processing Devices section
+10/04/25-21:59:21:870 (2012) 0 [Utility.Event] Processing DeviceSubTypes section
+10/04/25-21:59:21:874 (2012) 0 [Utility.Event] Processing MagTape section
+10/04/25-21:59:21:882 (2012) 0 [Utility.Event] Processing IO section
+10/04/25-21:59:21:889 (2012) 0 [Utility.Event] Processing SQL section
+10/04/25-21:59:21:898 (2012) 0 [Utility.Event] Processing Macro Pre-Processor (MPP) section
+10/04/25-21:59:21:903 (2012) 0 [Utility.Event] Processing OS Package Requirements section
+10/04/25-21:59:22:787 (2012) 0 [Generic.Event] Auditing to /durable/iris/mgr/irisaudit/
+10/04/25-21:59:22:867 (2012) 0 [Utility.Event] Enabling logons
+10/04/25-21:59:22:872 (2012) 0 [Utility.Event] Interoperability System including auto-start of productions Starting
+10/04/25-21:59:22:912 (2012) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/user/ (SFN 7) read-write.
+10/04/25-21:59:22:923 (1960) 1 [Generic.Event] Cannot lock /usr/irissys/mgr/enslib/ err(13): will try accessing readonly
+10/04/25-21:59:22:929 (2012) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/enslib/ (SFN 8) read-only. File or filesystem allows read-only access. 
+10/04/25-21:59:22:934 (2012) 0 [Utility.Event] Initializing Interoperability during system startup
+10/04/25-21:59:23:225 (2012) 0 [Utility.Event] Interoperability System Startup Complete
+10/04/25-21:59:23:312 (2022) 0 [Utility.Event] Private webserver started on 52773
+10/04/25-21:59:23:315 (2022) 0 [Utility.Event] Processing Shadows section (this system as shadow)
+10/04/25-21:59:23:321 (2022) 0 [Utility.Event] Processing Monitor section
+10/04/25-21:59:23:350 (2050) 0 [Utility.Event] Starting TASKMGR
+10/04/25-21:59:23:363 (2051) 0 [Utility.Event] [SYSTEM MONITOR] System Monitor started in %SYS
+10/04/25-21:59:23:388 (2022) 0 [Utility.Event] Shard license: 0
+10/04/25-21:59:23:388 (2053) 0 [Utility.Event] WorkQueue: Starting work queue daemon parent=2022
+10/04/25-21:59:31:704 (2217) 0 [Utility.Event] User 'irisowner' shutting down InterSystems IRIS
+10/04/25-21:59:32:562 (2217) 0 [Utility.Event] Notifying Clients
+10/04/25-21:59:32:562 (2051) 0 [Utility.Event] [SYSTEM MONITOR] System Monitor stopped in %SYS
+10/04/25-21:59:32:566 (2217) 0 [Utility.Event] No user shutdown routines to execute
+10/04/25-21:59:32:570 (2217) 0 [Utility.Event] Stopping User Jobs
+10/04/25-21:59:32:605 (2217) 0 [Utility.Event] Stopping Network Servers
+10/04/25-21:59:32:610 (2217) 0 [Utility.Event] Withdrawing from License Domain
+10/04/25-21:59:32:621 (2217) 0 [Generic.Event] Auditing stopped
+10/04/25-21:59:32:625 (2217) 0 [Utility.Event] Stopping Client Networking
+10/04/25-21:59:32:641 (2217) 0 [Utility.Event] Updating Journal File
+10/04/25-21:59:32:697 (2217) 0 [Utility.Event] Journal restore not required at next startup
+10/04/25-21:59:32:701 (2217) 0 [Utility.Event] Transaction rollback not required at next startup
+10/04/25-21:59:32:837 (2217) 0 [Utility.Event] Removing database locks
+10/04/25-21:59:32:992 (2217) 0 [Utility.Event] Waiting for database updates to complete
+10/04/25-21:59:33:005 (2217) 0 [Utility.Event] Database updates complete
+10/04/25-21:59:33:011 (2217) 0 [Utility.Event] Stopping System Jobs
+10/04/25-21:59:33:118 (2011) 0 [Generic.Event] EXPDMN exited due to system shutdown
+10/04/25-21:59:33:119 (2003) 0 [Generic.Event] JRNDMN exited due to system shutdown
+10/04/25-21:59:33:120 (2002) 0 [Generic.Event] GARCOL exited due to system shutdown
+10/04/25-21:59:33:120 (2004) 0 [Generic.Event] AUXWD #1 exited due to system shutdown
+10/04/25-21:59:33:120 (2006) 0 [Generic.Event] AUXWD #2 exited due to system shutdown
+10/04/25-21:59:33:120 (2005) 0 [Generic.Event] AUXWD #3 exited due to system shutdown
+10/04/25-21:59:33:121 (2009) 0 [Generic.Event] AUXWD #5 exited due to system shutdown
+10/04/25-21:59:33:121 (2007) 0 [Generic.Event] AUXWD #4 exited due to system shutdown
+10/04/25-21:59:33:121 (2008) 0 [Generic.Event] AUXWD #6 exited due to system shutdown
+10/04/25-21:59:33:122 (2010) 0 [Generic.Event] AUXWD #7 exited due to system shutdown
+10/04/25-21:59:33:135 (2001) 0 [Generic.Event] No blocks pending in WIJ file
+10/04/25-21:59:33:155 (2001) 0 [Generic.Event] WRTDMN exited due to system shutdown
+10/04/25-21:59:33:166 (1960) 0 [Generic.Event] CONTROL exited due to system shutdown
+10/04/25-21:59:33:187 (2217) 0 [Utility.Event] Shutdown complete
+10/04/25-22:16:39:908 (410) 0 [Utility.Event] ISC_DATA_DIRECTORY=/durable/iris/
+10/04/25-22:16:39:920 (410) 0 [Utility.Event] Executing /usr/irissys/bin/iris qlist
+10/04/25-22:16:40:017 (410) 0 [Utility.Event] Versions are the same
+10/04/25-22:16:40:025 (410) 0 [Utility.Event] Source /usr/irissys/: 2025.2.0.227.0com
+10/04/25-22:16:40:035 (410) 0 [Utility.Event] Destination /durable/iris/: 2025.2.0.227.0com
+10/04/25-22:16:40:044 (410) 0 [Utility.Event] Executing /usr/irissys/bin/iris update IRIS directory=/usr/irissys/ datadir=/durable/iris/ versionid=2025.2.0.227.0com
+10/04/25-22:16:40:124 (410) 0 [Utility.Event] Executing find /usr/irissys/ -type d -exec chmod ugo-w {} +
+10/04/25-22:16:40:282 (410) 0 [Utility.Event] Executing chmod ugo-w /usr/irissys/
+
+
+
+*** Recovery started at Sat Oct  4 22:16:44 2025
+     Current default directory: /durable/iris/mgr
+     Log file directory: /durable/iris/mgr/
+     WIJ file spec: /durable/iris/mgr/IRIS.WIJ
+Recovering local (/durable/iris/mgr/IRIS.WIJ) image journal file...
+Starting WIJ recovery for '/durable/iris/mgr/IRIS.WIJ'.
+  0 blocks pending in this WIJ.
+Exiting with status 3 (Success)
+10/04/25-22:16:44:257 (837) 0 [Generic.Event] Global buffer setting requires attention.  Auto-selected 25% of total memory.
+10/04/25-22:16:44:397 (837) 0 [Generic.Event] Allocated 5016MB shared memory
+10/04/25-22:16:44:401 (837) 0 [Generic.Event] 3930MB global buffers, 393MB routine buffers, 64MB journal buffers, 308MB buffer descriptors, 300MB heap, 5MB ECP, 16MB miscellaneous
+10/04/25-22:16:44:409 (837) 0 [Crypto.IntelSandyBridgeAESNI] Intel Sandy Bridge or AMD x8 AES-NI instructions detected.
+10/04/25-22:16:44:414 (837) 0 [SIMD] SIMD optimization level: arch=x86-64-v3
+10/04/25-22:16:44:636 (837) 0 [WriteDaemon.UsingWIJFile] Using WIJ file: /durable/iris/mgr/IRIS.WIJ
+10/04/25-22:16:44:640 (837) 0 [Generic.Event] Jrn info from prior WIJ (imflags: 0):
+	wdpass: 0
+	jrnwdpass: 8
+	fspec: /durable/iris/mgr/journal/20251004.002
+	filecnt: 8
+	fileoff: 0
+	prevfcnt: 8
+	prevfileoeff: 0
+	min trans cnt: 8
+	min trans index: 177004
+10/04/25-22:16:44:685 (837) 0 [Generic.Event] 
+Startup of InterSystems IRIS [IRIS for UNIX (Ubuntu Server LTS for x86-64 Containers) 2025.2 (Build 227U) Thu Jul 10 2025 11:09:14 EDT]
+	in /usr/irissys/bin/
+	with mgr: /durable/iris/mgr
+	with wij: /durable/iris/mgr/IRIS.WIJ
+	from: /durable/iris/mgr/
+  OS=[Linux], version=[#1 SMP Tue Nov 5 00:21:55 UTC 2024], release=[5.15.167.4-microsoft-standard-WSL2], machine=[x86_64]
+  nodename=[c69c72bb0253].
+  numasyncwijbuf: 2, wdwrite_asyncio_max: 64, wijdirectio: on, synctype: 3
+  System Initialized.
+10/04/25-22:16:44:686 (878) 0 [WriteDaemon.Started] Write daemon started.
+10/04/25-22:16:44:744 (889) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/ (SFN 0) read-write.
+10/04/25-22:16:44:862 (837) 1 [Generic.Event] Cannot lock /usr/irissys/mgr/irislib/ err(13): will try accessing readonly
+10/04/25-22:16:44:866 (889) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/irislib/ (SFN 1) read-only. File or filesystem allows read-only access. 
+10/04/25-22:16:44:886 (889) 0 [Utility.Event] Instance 'IRIS' starting on node c69c72bb0253 by user 'irisowner' on 10/04/2025 22:16:44.886 UTC
+10/04/25-22:16:44:892 (889) 0 [Utility.Event] Using parameters from file '/durable/iris/iris.cpf'
+10/04/25-22:16:44:901 (889) 0 [Utility.Event] Loading DLLs
+10/04/25-22:16:44:909 (889) 0 [Utility.Event] Switching to temporary %SYS Namespace
+10/04/25-22:16:44:992 (889) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irissecurity/ (SFN 2) read-write.
+10/04/25-22:16:45:033 (889) 0 [Utility.Event] Loading Locale enuw (English, United States, Unicode) from objects
+10/04/25-22:16:45:126 (889) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irislocaldata/ (SFN 3) read-write.
+10/04/25-22:16:45:156 (889) 0 [Utility.Event] Using OpenSSL 3.0.13 30 Jan 2024
+10/04/25-22:16:45:491 (889) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/iristemp/ (SFN 4) read-write.
+10/04/25-22:16:45:505 (889) 0 [Utility.Event] /durable/iris/mgr/iristemp/ initialized as IRISTEMP
+10/04/25-22:16:45:532 (889) 0 [Utility.Event] Switching to default %SYS Namespace
+10/04/25-22:16:45:605 (890) 0 [Utility.Event] Log Monitor Started
+10/04/25-22:16:45:707 (889) 2 [Utility.Event] System appears to have failed over from node baac76f4b82b
+10/04/25-22:16:45:724 (891) 0 [Utility.Event] Clean Daemon Started
+10/04/25-22:16:45:750 (889) 0 [Utility.Event] No archives configured
+10/04/25-22:16:45:848 (889) 0 [Utility.Event] Performing Journal Recovery
+10/04/25-22:16:45:972 (889) 0 [Utility.Event] WIJ indicates no open transactions
+10/04/25-22:16:46:134 (889) 0 [Utility.Event] START: /durable/iris/mgr/journal/20251004.003
+10/04/25-22:16:46:148 (889) 1 [Generic.Event] Warning: Alternate and primary journal directories are the same
+10/04/25-22:16:46:228 (889) 0 [Generic.Event] INTERSYSTEMS IRIS JOURNALING SYSTEM MESSAGE
+Journaling started to: /durable/iris/mgr/journal/20251004.003
+10/04/25-22:16:46:233 (889) 0 [Utility.Event] Journaling to /durable/iris/mgr/journal/20251004.003 started.
+10/04/25-22:16:46:240 (889) 0 [Utility.Event] Processing WorkQueues section
+10/04/25-22:16:46:314 (889) 0 [Utility.Event] Processing Startup section
+10/04/25-22:16:46:332 (901) 0 [Utility.Event] Purging old application errors
+10/04/25-22:16:46:343 (889) 0 [Utility.Event] Processing config section
+10/04/25-22:16:46:395 (909) 0 [Utility.Event] LMF Info:  Licensed for 8 users.
+10/04/25-22:16:46:411 (889) 0 [Utility.Event] Initializing Security system
+10/04/25-22:16:46:453 (889) 0 [Utility.Event] Processing Network section
+10/04/25-22:16:46:460 (889) 0 [Utility.Event] Activating Network
+10/04/25-22:16:46:478 (889) 0 [Utility.Event] Processing Databases section
+10/04/25-22:16:46:556 (889) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irisaudit/ (SFN 5) read-write.
+10/04/25-22:16:46:642 (889) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irismetrics/ (SFN 6) read-write.
+10/04/25-22:16:46:669 (889) 1 [Utility.Event] Warning: Database SANITARY-SURVEILLANCE has the same definition as Database IRISSYS - ^^/durable/iris/mgr/
+10/04/25-22:16:46:710 (889) 1 [Utility.Event] Warning: Database SCRAPER has the same definition as Database IRISSYS - ^^/durable/iris/mgr/
+10/04/25-22:16:46:713 (889) 1 [Utility.Event] Warning: Database SCRAPER has the same definition as Database SANITARY-SURVEILLANCE - ^^/durable/iris/mgr/
+10/04/25-22:16:46:773 (889) 0 [Utility.Event] Processing Namespaces section
+10/04/25-22:16:46:776 (889) 0 [Utility.Event] Namespaces are up to date
+10/04/25-22:16:46:779 (889) 0 [Utility.Event] Activating namespaces
+10/04/25-22:16:46:787 (889) 0 [Utility.Event] Activating new namespace map
+10/04/25-22:16:46:870 (889) 0 [Utility.Event] Namespace changes have been activated
+10/04/25-22:16:46:905 (912) 0 [Utility.Event] Starting superserver on port 1972
+10/04/25-22:16:46:905 (889) 0 [Utility.Event] Network Lock Upload Phase Starting
+10/04/25-22:16:46:911 (889) 0 [Utility.Event] Lock Upload Phase Complete
+10/04/25-22:16:46:914 (889) 0 [Utility.Event] Processing Miscellaneous section
+10/04/25-22:16:46:977 (915) 0 [Utility.Event] Starting Servers
+10/04/25-22:16:46:983 (889) 0 [Utility.Event] Processing Devices section
+10/04/25-22:16:46:989 (889) 0 [Utility.Event] Processing DeviceSubTypes section
+10/04/25-22:16:46:993 (889) 0 [Utility.Event] Processing MagTape section
+10/04/25-22:16:47:002 (889) 0 [Utility.Event] Processing IO section
+10/04/25-22:16:47:007 (889) 0 [Utility.Event] Processing SQL section
+10/04/25-22:16:47:015 (889) 0 [Utility.Event] Processing Macro Pre-Processor (MPP) section
+10/04/25-22:16:47:019 (889) 0 [Utility.Event] Processing OS Package Requirements section
+10/04/25-22:16:47:871 (889) 0 [Generic.Event] Auditing to /durable/iris/mgr/irisaudit/
+10/04/25-22:16:47:950 (911) 0 [Utility.Event] Journal File Compression: Compressed /durable/iris/mgr/journal/20251004.002 from 196608 bytes to 77824 bytes, compression ratio = 2.5
+10/04/25-22:16:48:007 (889) 0 [Utility.Event] Enabling logons
+10/04/25-22:16:48:015 (889) 0 [Utility.Event] Interoperability System including auto-start of productions Starting
+10/04/25-22:16:48:053 (889) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/user/ (SFN 7) read-write.
+10/04/25-22:16:48:065 (837) 1 [Generic.Event] Cannot lock /usr/irissys/mgr/enslib/ err(13): will try accessing readonly
+10/04/25-22:16:48:072 (889) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/enslib/ (SFN 8) read-only. File or filesystem allows read-only access. 
+10/04/25-22:16:48:079 (889) 0 [Utility.Event] Initializing Interoperability during system startup
+10/04/25-22:16:48:332 (915) 0 [Utility.Event] Private webserver started on 52773
+10/04/25-22:16:48:337 (915) 0 [Utility.Event] Processing Shadows section (this system as shadow)
+10/04/25-22:16:48:347 (915) 0 [Utility.Event] Processing Monitor section
+10/04/25-22:16:48:366 (889) 0 [Utility.Event] Interoperability System Startup Complete
+10/04/25-22:16:48:374 (926) 0 [Utility.Event] Starting TASKMGR
+10/04/25-22:16:48:389 (927) 0 [Utility.Event] [SYSTEM MONITOR] System Monitor started in %SYS
+10/04/25-22:16:48:415 (915) 0 [Utility.Event] Shard license: 0
+10/04/25-22:16:48:415 (931) 0 [Utility.Event] WorkQueue: Starting work queue daemon parent=915
+10/04/25-22:16:48:453 (935) 0 [Utility.Event] User 'irisowner' shutting down InterSystems IRIS
+10/04/25-22:16:49:150 (935) 0 [Utility.Event] Notifying Clients
+10/04/25-22:16:49:149 (927) 0 [Utility.Event] [SYSTEM MONITOR] System Monitor stopped in %SYS
+10/04/25-22:16:49:151 (935) 0 [Utility.Event] No user shutdown routines to execute
+10/04/25-22:16:49:156 (935) 0 [Utility.Event] Stopping User Jobs
+10/04/25-22:16:49:181 (935) 0 [Utility.Event] Stopping Network Servers
+10/04/25-22:16:49:185 (935) 0 [Utility.Event] Withdrawing from License Domain
+10/04/25-22:16:49:196 (935) 0 [Generic.Event] Auditing stopped
+10/04/25-22:16:49:200 (935) 0 [Utility.Event] Stopping Client Networking
+10/04/25-22:16:49:208 (935) 0 [Utility.Event] Updating Journal File
+10/04/25-22:16:49:289 (935) 0 [Utility.Event] Journal restore not required at next startup
+10/04/25-22:16:49:293 (935) 0 [Utility.Event] Transaction rollback not required at next startup
+10/04/25-22:16:49:438 (935) 0 [Utility.Event] Removing database locks
+10/04/25-22:16:49:536 (935) 0 [Utility.Event] Waiting for database updates to complete
+10/04/25-22:16:49:540 (935) 0 [Utility.Event] Database updates complete
+10/04/25-22:16:49:544 (935) 0 [Utility.Event] Stopping System Jobs
+10/04/25-22:16:49:649 (880) 0 [Generic.Event] JRNDMN exited due to system shutdown
+10/04/25-22:16:49:649 (888) 0 [Generic.Event] EXPDMN exited due to system shutdown
+10/04/25-22:16:49:650 (879) 0 [Generic.Event] GARCOL exited due to system shutdown
+10/04/25-22:16:49:651 (884) 0 [Generic.Event] AUXWD #4 exited due to system shutdown
+10/04/25-22:16:49:650 (881) 0 [Generic.Event] AUXWD #1 exited due to system shutdown
+10/04/25-22:16:49:650 (882) 0 [Generic.Event] AUXWD #2 exited due to system shutdown
+10/04/25-22:16:49:650 (883) 0 [Generic.Event] AUXWD #3 exited due to system shutdown
+10/04/25-22:16:49:651 (886) 0 [Generic.Event] AUXWD #6 exited due to system shutdown
+10/04/25-22:16:49:651 (885) 0 [Generic.Event] AUXWD #5 exited due to system shutdown
+10/04/25-22:16:49:652 (887) 0 [Generic.Event] AUXWD #7 exited due to system shutdown
+10/04/25-22:16:49:684 (878) 0 [Generic.Event] No blocks pending in WIJ file
+10/04/25-22:16:49:711 (878) 0 [Generic.Event] WRTDMN exited due to system shutdown
+10/04/25-22:16:49:738 (837) 0 [Generic.Event] CONTROL exited due to system shutdown
+10/04/25-22:16:49:756 (935) 0 [Utility.Event] Shutdown complete
+
+
+
+*** Recovery started at Sat Oct  4 22:16:55 2025
+     Current default directory: /durable/iris/mgr
+     Log file directory: /durable/iris/mgr/
+     WIJ file spec: /durable/iris/mgr/IRIS.WIJ
+Recovering local (/durable/iris/mgr/IRIS.WIJ) image journal file...
+Starting WIJ recovery for '/durable/iris/mgr/IRIS.WIJ'.
+  0 blocks pending in this WIJ.
+Exiting with status 3 (Success)
+10/04/25-22:16:55:515 (1516) 1 [Utility.Event] Startup directory and clone directory are the same
+10/04/25-22:16:55:520 (1516) 1 [Utility.Event] ISC_DATA_DIRECTORY=/durable/iris
+10/04/25-22:16:55:526 (1516) 1 [Utility.Event] Cloning command ignored
+
+
+
+*** Recovery started at Sat Oct  4 22:16:59 2025
+     Current default directory: /durable/iris/mgr
+     Log file directory: /durable/iris/mgr/
+     WIJ file spec: /durable/iris/mgr/IRIS.WIJ
+Recovering local (/durable/iris/mgr/IRIS.WIJ) image journal file...
+Starting WIJ recovery for '/durable/iris/mgr/IRIS.WIJ'.
+  0 blocks pending in this WIJ.
+Exiting with status 3 (Success)
+10/04/25-22:16:59:122 (1936) 0 [Generic.Event] Global buffer setting requires attention.  Auto-selected 25% of total memory.
+10/04/25-22:16:59:250 (1936) 0 [Generic.Event] Allocated 5016MB shared memory
+10/04/25-22:16:59:255 (1936) 0 [Generic.Event] 3930MB global buffers, 393MB routine buffers, 64MB journal buffers, 308MB buffer descriptors, 300MB heap, 5MB ECP, 16MB miscellaneous
+10/04/25-22:16:59:264 (1936) 0 [Crypto.IntelSandyBridgeAESNI] Intel Sandy Bridge or AMD x8 AES-NI instructions detected.
+10/04/25-22:16:59:268 (1936) 0 [SIMD] SIMD optimization level: arch=x86-64-v3
+10/04/25-22:16:59:495 (1936) 0 [WriteDaemon.UsingWIJFile] Using WIJ file: /durable/iris/mgr/IRIS.WIJ
+10/04/25-22:16:59:500 (1936) 0 [Generic.Event] Jrn info from prior WIJ (imflags: 0):
+	wdpass: 0
+	jrnwdpass: 8
+	fspec: /durable/iris/mgr/journal/20251004.003
+	filecnt: 9
+	fileoff: 0
+	prevfcnt: 9
+	prevfileoeff: 0
+	min trans cnt: 9
+	min trans index: 177788
+10/04/25-22:16:59:549 (1936) 0 [Generic.Event] 
+Startup of InterSystems IRIS [IRIS for UNIX (Ubuntu Server LTS for x86-64 Containers) 2025.2 (Build 227U) Thu Jul 10 2025 11:09:14 EDT]
+	in /usr/irissys/bin/
+	with mgr: /durable/iris/mgr
+	with wij: /durable/iris/mgr/IRIS.WIJ
+	from: /durable/iris/mgr/
+  OS=[Linux], version=[#1 SMP Tue Nov 5 00:21:55 UTC 2024], release=[5.15.167.4-microsoft-standard-WSL2], machine=[x86_64]
+  nodename=[c69c72bb0253].
+  numasyncwijbuf: 2, wdwrite_asyncio_max: 64, wijdirectio: on, synctype: 3
+  System Initialized.
+10/04/25-22:16:59:554 (1977) 0 [WriteDaemon.Started] Write daemon started.
+10/04/25-22:16:59:604 (1988) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/ (SFN 0) read-write.
+10/04/25-22:16:59:719 (1936) 1 [Generic.Event] Cannot lock /usr/irissys/mgr/irislib/ err(13): will try accessing readonly
+10/04/25-22:16:59:723 (1988) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/irislib/ (SFN 1) read-only. File or filesystem allows read-only access. 
+10/04/25-22:16:59:735 (1988) 0 [Utility.Event] Instance 'IRIS' starting on node c69c72bb0253 by user 'irisowner' on 10/04/2025 22:16:59.735 UTC
+10/04/25-22:16:59:738 (1988) 0 [Utility.Event] Using parameters from file '/durable/iris/iris.cpf'
+10/04/25-22:16:59:744 (1988) 0 [Utility.Event] Loading DLLs
+10/04/25-22:16:59:750 (1988) 0 [Utility.Event] Switching to temporary %SYS Namespace
+10/04/25-22:16:59:824 (1988) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irissecurity/ (SFN 2) read-write.
+10/04/25-22:16:59:862 (1988) 0 [Utility.Event] Loading Locale enuw (English, United States, Unicode) from objects
+10/04/25-22:16:59:952 (1988) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irislocaldata/ (SFN 3) read-write.
+10/04/25-22:16:59:964 (1988) 0 [Utility.Event] Using OpenSSL 3.0.13 30 Jan 2024
+10/04/25-22:17:00:358 (1988) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/iristemp/ (SFN 4) read-write.
+10/04/25-22:17:00:374 (1988) 0 [Utility.Event] /durable/iris/mgr/iristemp/ initialized as IRISTEMP
+10/04/25-22:17:00:416 (1988) 0 [Utility.Event] Switching to default %SYS Namespace
+10/04/25-22:17:00:487 (1989) 0 [Utility.Event] Log Monitor Started
+10/04/25-22:17:00:600 (1990) 0 [Utility.Event] Clean Daemon Started
+10/04/25-22:17:00:616 (1988) 0 [Utility.Event] No archives configured
+10/04/25-22:17:00:721 (1988) 0 [Utility.Event] Performing Journal Recovery
+10/04/25-22:17:00:859 (1988) 0 [Utility.Event] WIJ indicates no open transactions
+10/04/25-22:17:01:114 (1988) 0 [Utility.Event] START: /durable/iris/mgr/journal/20251004.004
+10/04/25-22:17:01:134 (1988) 1 [Generic.Event] Warning: Alternate and primary journal directories are the same
+10/04/25-22:17:01:221 (1988) 0 [Generic.Event] INTERSYSTEMS IRIS JOURNALING SYSTEM MESSAGE
+Journaling started to: /durable/iris/mgr/journal/20251004.004
+10/04/25-22:17:01:226 (1988) 0 [Utility.Event] Journaling to /durable/iris/mgr/journal/20251004.004 started.
+10/04/25-22:17:01:234 (1988) 0 [Utility.Event] Processing WorkQueues section
+10/04/25-22:17:01:320 (1988) 0 [Utility.Event] Processing Startup section
+10/04/25-22:17:01:339 (1991) 0 [Utility.Event] Purging old application errors
+10/04/25-22:17:01:351 (1988) 0 [Utility.Event] Processing config section
+10/04/25-22:17:01:395 (1992) 0 [Utility.Event] LMF Info:  Licensed for 8 users.
+10/04/25-22:17:01:430 (1988) 0 [Utility.Event] Initializing Security system
+10/04/25-22:17:01:477 (1988) 0 [Utility.Event] Processing Network section
+10/04/25-22:17:01:487 (1988) 0 [Utility.Event] Activating Network
+10/04/25-22:17:01:515 (1988) 0 [Utility.Event] Processing Databases section
+10/04/25-22:17:01:606 (1988) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irisaudit/ (SFN 5) read-write.
+10/04/25-22:17:01:692 (1988) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/irismetrics/ (SFN 6) read-write.
+10/04/25-22:17:01:715 (1988) 1 [Utility.Event] Warning: Database SANITARY-SURVEILLANCE has the same definition as Database IRISSYS - ^^/durable/iris/mgr/
+10/04/25-22:17:01:757 (1988) 1 [Utility.Event] Warning: Database SCRAPER has the same definition as Database IRISSYS - ^^/durable/iris/mgr/
+10/04/25-22:17:01:760 (1988) 1 [Utility.Event] Warning: Database SCRAPER has the same definition as Database SANITARY-SURVEILLANCE - ^^/durable/iris/mgr/
+10/04/25-22:17:01:820 (1988) 0 [Utility.Event] Processing Namespaces section
+10/04/25-22:17:01:823 (1988) 0 [Utility.Event] Namespaces are up to date
+10/04/25-22:17:01:825 (1988) 0 [Utility.Event] Activating namespaces
+10/04/25-22:17:01:832 (1988) 0 [Utility.Event] Activating new namespace map
+10/04/25-22:17:01:918 (1988) 0 [Utility.Event] Namespace changes have been activated
+10/04/25-22:17:01:960 (1988) 0 [Utility.Event] Network Lock Upload Phase Starting
+10/04/25-22:17:01:960 (2011) 0 [Utility.Event] Starting superserver on port 1972
+10/04/25-22:17:01:963 (1988) 0 [Utility.Event] Lock Upload Phase Complete
+10/04/25-22:17:01:968 (1988) 0 [Utility.Event] Processing Miscellaneous section
+10/04/25-22:17:02:028 (2014) 0 [Utility.Event] Starting Servers
+10/04/25-22:17:02:029 (1988) 0 [Utility.Event] Processing Devices section
+10/04/25-22:17:02:039 (1988) 0 [Utility.Event] Processing DeviceSubTypes section
+10/04/25-22:17:02:045 (1988) 0 [Utility.Event] Processing MagTape section
+10/04/25-22:17:02:055 (1988) 0 [Utility.Event] Processing IO section
+10/04/25-22:17:02:060 (1988) 0 [Utility.Event] Processing SQL section
+10/04/25-22:17:02:068 (1988) 0 [Utility.Event] Processing Macro Pre-Processor (MPP) section
+10/04/25-22:17:02:075 (1988) 0 [Utility.Event] Processing OS Package Requirements section
+10/04/25-22:17:02:851 (1988) 0 [Generic.Event] Auditing to /durable/iris/mgr/irisaudit/
+10/04/25-22:17:02:952 (1988) 0 [Utility.Event] Enabling logons
+10/04/25-22:17:02:961 (1988) 0 [Utility.Event] Interoperability System including auto-start of productions Starting
+10/04/25-22:17:03:010 (1988) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/user/ (SFN 7) read-write.
+10/04/25-22:17:03:022 (1936) 1 [Generic.Event] Cannot lock /usr/irissys/mgr/enslib/ err(13): will try accessing readonly
+10/04/25-22:17:03:026 (1988) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/enslib/ (SFN 8) read-only. File or filesystem allows read-only access. 
+10/04/25-22:17:03:032 (1988) 0 [Utility.Event] Initializing Interoperability during system startup
+10/04/25-22:17:03:095 (1994) 0 [Utility.Event] Journal File Compression: Compressed /durable/iris/mgr/journal/20251004.003 from 196608 bytes to 77824 bytes, compression ratio = 2.5
+10/04/25-22:17:03:274 (2014) 0 [Utility.Event] Private webserver started on 52773
+10/04/25-22:17:03:279 (2014) 0 [Utility.Event] Processing Shadows section (this system as shadow)
+10/04/25-22:17:03:286 (2014) 0 [Utility.Event] Processing Monitor section
+10/04/25-22:17:03:313 (2025) 0 [Utility.Event] Starting TASKMGR
+10/04/25-22:17:03:329 (2026) 0 [Utility.Event] [SYSTEM MONITOR] System Monitor started in %SYS
+10/04/25-22:17:03:360 (2014) 0 [Utility.Event] Shard license: 0
+10/04/25-22:17:03:361 (2028) 0 [Utility.Event] WorkQueue: Starting work queue daemon parent=2014
+10/04/25-22:17:03:383 (1988) 0 [Utility.Event] Interoperability System Startup Complete
+10/04/25-22:18:00:391 (2195) 0 [Utility.Event] Purging old application errors
+10/04/25-22:23:01:806 (2292) 0 [Utility.Event] User 'irisowner' shutting down InterSystems IRIS
+10/04/25-22:23:02:617 (2026) 0 [Utility.Event] [SYSTEM MONITOR] System Monitor stopped in %SYS
+10/04/25-22:23:02:617 (2292) 0 [Utility.Event] Notifying Clients
+10/04/25-22:23:02:621 (2292) 0 [Utility.Event] No user shutdown routines to execute
+10/04/25-22:23:02:626 (2292) 0 [Utility.Event] Stopping User Jobs
+10/04/25-22:23:06:665 (2292) 0 [Utility.Event] Stopping Network Servers
+10/04/25-22:23:06:673 (2292) 0 [Utility.Event] Withdrawing from License Domain
+10/04/25-22:23:06:688 (2292) 0 [Generic.Event] Auditing stopped
+10/04/25-22:23:06:694 (2292) 0 [Utility.Event] Stopping Client Networking
+10/04/25-22:23:06:713 (2292) 0 [Utility.Event] Updating Journal File
+10/04/25-22:23:06:782 (2292) 0 [Utility.Event] Journal restore not required at next startup
+10/04/25-22:23:06:786 (2292) 0 [Utility.Event] Transaction rollback not required at next startup
+10/04/25-22:23:06:923 (2292) 0 [Utility.Event] Removing database locks
+10/04/25-22:23:07:082 (2292) 0 [Utility.Event] Waiting for database updates to complete
+10/04/25-22:23:07:087 (2292) 0 [Utility.Event] Database updates complete
+10/04/25-22:23:07:092 (2292) 0 [Utility.Event] Stopping System Jobs
+10/04/25-22:23:07:199 (1978) 0 [Generic.Event] GARCOL exited due to system shutdown
+10/04/25-22:23:07:201 (1983) 0 [Generic.Event] AUXWD #5 exited due to system shutdown
+10/04/25-22:23:07:199 (1987) 0 [Generic.Event] EXPDMN exited due to system shutdown
+10/04/25-22:23:07:199 (1980) 0 [Generic.Event] AUXWD #1 exited due to system shutdown
+10/04/25-22:23:07:200 (1981) 0 [Generic.Event] AUXWD #2 exited due to system shutdown
+10/04/25-22:23:07:200 (1982) 0 [Generic.Event] AUXWD #3 exited due to system shutdown
+10/04/25-22:23:07:199 (1979) 0 [Generic.Event] JRNDMN exited due to system shutdown
+10/04/25-22:23:07:201 (1986) 0 [Generic.Event] AUXWD #7 exited due to system shutdown
+10/04/25-22:23:07:201 (1985) 0 [Generic.Event] AUXWD #6 exited due to system shutdown
+10/04/25-22:23:07:200 (1984) 0 [Generic.Event] AUXWD #4 exited due to system shutdown
+10/04/25-22:23:07:217 (1977) 0 [Generic.Event] No blocks pending in WIJ file
+10/04/25-22:23:07:258 (1977) 0 [Generic.Event] WRTDMN exited due to system shutdown
+10/04/25-22:23:07:281 (1936) 0 [Generic.Event] CONTROL exited due to system shutdown
+10/04/25-22:23:07:308 (2292) 0 [Utility.Event] Shutdown complete

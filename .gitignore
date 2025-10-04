@@ -1,2 +1,16 @@
 venv/
-storage/
+storage/iris/csp/broker/CSP_UI_Component.css
+storage/iris/_LastGood_.cpf
+storage/iris/csp/bin/CSP.ini
+storage/iris/csp/bin/CSP.log
+storage/iris/csp/broker/CSP_UI_Component.js
+storage/iris/csp/bin/CSPRT.ini
+storage/iris/csp/broker/CSP_UI_Component_3.css
+storage/iris/csp/broker/CSP_UI_Component_3.css
+storage/iris/csp/broker/DeepSee.js
+storage/iris/csp/broker/DeepSee_Component.js
+storage/iris/csp/broker/DeepSee_Component.css
+storage/iris/csp/broker/DeepSee_Component_3.css
+storage/iris/csp/broker/DeepSee_Component_Portlet.js
+storage/iris/csp/broker
+# storage/

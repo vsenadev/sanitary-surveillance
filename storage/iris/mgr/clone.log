@@ -1,0 +1,78 @@
+log: 10/04/25-22:16:55:394 (1516) 0 [Generic.Event] Allocated 103MB shared memory
+
+Allocated 103MB shared memory
+16MB global buffers, 35MB routine buffers
+log: 10/04/25-22:16:55:395 (1516) 0 [Generic.Event] 16MB global buffers, 35MB routine buffers, 16MB journal buffers, 2MB buffer descriptors, 16MB heap, 1MB ECP, 15MB miscellaneous
+
+log: 10/03/25-15:25:30:230 (2311) 0 [Crypto.IntelSandyBridgeAESNI] Intel Sandy Bridge or AMD x8 AES-NI instructions detected.
+
+log: 10/03/25-15:25:30:230 (2311) 0 [SIMD] SIMD optimization level: arch=x86-64-v3
+
+log: 10/03/25-15:25:30:240 (2311) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/ (SFN 0) read-write.
+
+log: 10/03/25-15:25:30:258 (2311) 1 [Utility.Event] Error opening CPF file to get IRISTEMP and IRISLOCALDATA directories, using defaults
+
+log: 10/03/25-15:25:30:274 (2311) 1 [Database.MountedRO] dRO]  opening CPF file to get IRISTEMP and IRISLOCALDATA directories, using defaults...(repeated 1 times)
+
+log: 10/03/25-15:25:30:274 (2311) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/irislib/ (SFN 1) read-only. Database label is marked read-only. 
+
+log: 10/03/25-15:33:01:473 (1500) 0 [Crypto.IntelSandyBridgeAESNI] Intel Sandy Bridge or AMD x8 AES-NI instructions detected.
+
+log: 10/03/25-15:33:01:473 (1500) 0 [SIMD] SIMD optimization level: arch=x86-64-v3
+
+log: 10/03/25-15:33:01:483 (1500) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/ (SFN 0) read-write.
+
+log: 10/03/25-15:33:01:497 (1500) 1 [Utility.Event] Error opening CPF file to get IRISTEMP and IRISLOCALDATA directories, using defaults
+
+log: 10/03/25-15:33:01:518 (1500) 1 [Database.MountedRO] dRO]  opening CPF file to get IRISTEMP and IRISLOCALDATA directories, using defaults...(repeated 1 times)
+
+log: 10/03/25-15:33:01:518 (1500) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/irislib/ (SFN 1) read-only. Database label is marked read-only. 
+
+log: 10/03/25-18:35:22:675 (1493) 0 [Crypto.IntelSandyBridgeAESNI] Intel Sandy Bridge or AMD x8 AES-NI instructions detected.
+
+log: 10/03/25-18:35:22:675 (1493) 0 [SIMD] SIMD optimization level: arch=x86-64-v3
+
+log: 10/03/25-18:35:22:684 (1493) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/ (SFN 0) read-write.
+
+log: 10/03/25-18:35:22:700 (1493) 1 [Utility.Event] Error opening CPF file to get IRISTEMP and IRISLOCALDATA directories, using defaults
+
+log: 10/03/25-18:35:22:714 (1493) 1 [Database.MountedRO] dRO]  opening CPF file to get IRISTEMP and IRISLOCALDATA directories, using defaults...(repeated 1 times)
+
+log: 10/03/25-18:35:22:714 (1493) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/irislib/ (SFN 1) read-only. Database label is marked read-only. 
+
+log: 10/04/25-21:58:55:909 (413) 0 [Crypto.IntelSandyBridgeAESNI] Intel Sandy Bridge or AMD x8 AES-NI instructions detected.
+
+log: 10/04/25-21:58:55:909 (413) 0 [SIMD] SIMD optimization level: arch=x86-64-v3
+
+log: 10/04/25-21:58:55:960 (413) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/ (SFN 0) read-write.
+
+log: 10/04/25-21:58:56:008 (413) 1 [Utility.Event] Error opening CPF file to get IRISTEMP and IRISLOCALDATA directories, using defaults
+
+log: 10/04/25-21:58:56:038 (413) 1 [Database.MountedRO] dRO]  opening CPF file to get IRISTEMP and IRISLOCALDATA directories, using defaults...(repeated 1 times)
+
+log: 10/04/25-21:58:56:038 (413) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/irislib/ (SFN 1) read-only. Database label is marked read-only. 
+
+log: 10/04/25-21:59:14:418 (1540) 0 [Crypto.IntelSandyBridgeAESNI] Intel Sandy Bridge or AMD x8 AES-NI instructions detected.
+
+log: 10/04/25-21:59:14:418 (1540) 0 [SIMD] SIMD optimization level: arch=x86-64-v3
+
+log: 10/04/25-21:59:14:433 (1540) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/ (SFN 0) read-write.
+
+log: 10/04/25-21:59:14:456 (1540) 1 [Utility.Event] Error opening CPF file to get IRISTEMP and IRISLOCALDATA directories, using defaults
+
+log: 10/04/25-21:59:14:478 (1540) 1 [Database.MountedRO] dRO]  opening CPF file to get IRISTEMP and IRISLOCALDATA directories, using defaults...(repeated 1 times)
+
+log: 10/04/25-21:59:14:478 (1540) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/irislib/ (SFN 1) read-only. Database label is marked read-only. 
+
+log: 10/04/25-22:16:55:399 (1516) 0 [Crypto.IntelSandyBridgeAESNI] Intel Sandy Bridge or AMD x8 AES-NI instructions detected.
+
+log: 10/04/25-22:16:55:399 (1516) 0 [SIMD] SIMD optimization level: arch=x86-64-v3
+
+log: 10/04/25-22:16:55:416 (1516) 0 [Database.MountedRW] Mounted database /durable/iris/mgr/ (SFN 0) read-write.
+
+log: 10/04/25-22:16:55:450 (1516) 1 [Utility.Event] Error opening CPF file to get IRISTEMP and IRISLOCALDATA directories, using defaults
+
+log: 10/04/25-22:16:55:497 (1516) 1 [Database.MountedRO] dRO]  opening CPF file to get IRISTEMP and IRISLOCALDATA directories, using defaults...(repeated 1 times)
+
+log: 10/04/25-22:16:55:497 (1516) 0 [Database.MountedRO] Mounted database /usr/irissys/mgr/irislib/ (SFN 1) read-only. Database label is marked read-only. 
+

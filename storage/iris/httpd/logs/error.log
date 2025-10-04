@@ -1,0 +1,38 @@
+[Fri Oct 03 15:25:26.742682 2025] [mpm_worker:notice] [pid 1731:tid 1731] AH00292: Apache/2.4.63 (Unix) OpenSSL/3.0.13 configured -- resuming normal operations
+[Fri Oct 03 15:25:26.743143 2025] [core:notice] [pid 1731:tid 1731] AH00094: Command line: '/usr/irissys/httpd/bin/httpd -f /durable/iris/httpd/conf/httpd.conf -d /usr/irissys/httpd -c Listen 52773'
+[Fri Oct 03 15:25:32.576287 2025] [core:error] [pid 1731:tid 1731] (2)No such file or directory: AH00095: failed to remove PID file /durable/iris/httpd/logs/httpd.pid
+[Fri Oct 03 15:25:32.576603 2025] [mpm_worker:notice] [pid 1731:tid 1731] AH00295: caught SIGTERM, shutting down
+[Fri Oct 03 15:25:34.053208 2025] [mpm_worker:notice] [pid 2798:tid 2798] AH00292: Apache/2.4.63 (Unix) OpenSSL/3.0.13 configured -- resuming normal operations
+[Fri Oct 03 15:25:34.053517 2025] [core:notice] [pid 2798:tid 2798] AH00094: Command line: '/usr/irissys/httpd/bin/httpd -f /durable/iris/httpd/conf/httpd.conf -d /usr/irissys/httpd -c Listen 52773'
+[Fri Oct 03 15:30:49.199968 2025] [core:error] [pid 2798:tid 2798] (2)No such file or directory: AH00095: failed to remove PID file /durable/iris/httpd/logs/httpd.pid
+[Fri Oct 03 15:30:49.200468 2025] [mpm_worker:notice] [pid 2798:tid 2798] AH00295: caught SIGTERM, shutting down
+[Fri Oct 03 15:32:57.444349 2025] [mpm_worker:notice] [pid 904:tid 904] AH00292: Apache/2.4.63 (Unix) OpenSSL/3.0.13 configured -- resuming normal operations
+[Fri Oct 03 15:32:57.444768 2025] [core:notice] [pid 904:tid 904] AH00094: Command line: '/usr/irissys/httpd/bin/httpd -f /durable/iris/httpd/conf/httpd.conf -d /usr/irissys/httpd -c Listen 52773'
+[Fri Oct 03 15:33:03.414844 2025] [core:error] [pid 904:tid 904] (2)No such file or directory: AH00095: failed to remove PID file /durable/iris/httpd/logs/httpd.pid
+[Fri Oct 03 15:33:03.415084 2025] [mpm_worker:notice] [pid 904:tid 904] AH00295: caught SIGTERM, shutting down
+[Fri Oct 03 15:33:05.459156 2025] [mpm_worker:notice] [pid 1971:tid 1971] AH00292: Apache/2.4.63 (Unix) OpenSSL/3.0.13 configured -- resuming normal operations
+[Fri Oct 03 15:33:05.459753 2025] [core:notice] [pid 1971:tid 1971] AH00094: Command line: '/usr/irissys/httpd/bin/httpd -f /durable/iris/httpd/conf/httpd.conf -d /usr/irissys/httpd -c Listen 52773'
+[Fri Oct 03 18:10:21.630510 2025] [core:error] [pid 1971:tid 1971] (2)No such file or directory: AH00095: failed to remove PID file /durable/iris/httpd/logs/httpd.pid
+[Fri Oct 03 18:10:21.631137 2025] [mpm_worker:notice] [pid 1971:tid 1971] AH00295: caught SIGTERM, shutting down
+[Fri Oct 03 18:35:18.740383 2025] [mpm_worker:notice] [pid 904:tid 904] AH00292: Apache/2.4.63 (Unix) OpenSSL/3.0.13 configured -- resuming normal operations
+[Fri Oct 03 18:35:18.740719 2025] [core:notice] [pid 904:tid 904] AH00094: Command line: '/usr/irissys/httpd/bin/httpd -f /durable/iris/httpd/conf/httpd.conf -d /usr/irissys/httpd -c Listen 52773'
+[Fri Oct 03 18:35:24.634918 2025] [core:error] [pid 904:tid 904] (2)No such file or directory: AH00095: failed to remove PID file /durable/iris/httpd/logs/httpd.pid
+[Fri Oct 03 18:35:24.635132 2025] [mpm_worker:notice] [pid 904:tid 904] AH00295: caught SIGTERM, shutting down
+[Fri Oct 03 18:35:26.687129 2025] [mpm_worker:notice] [pid 1971:tid 1971] AH00292: Apache/2.4.63 (Unix) OpenSSL/3.0.13 configured -- resuming normal operations
+[Fri Oct 03 18:35:26.687468 2025] [core:notice] [pid 1971:tid 1971] AH00094: Command line: '/usr/irissys/httpd/bin/httpd -f /durable/iris/httpd/conf/httpd.conf -d /usr/irissys/httpd -c Listen 52773'
+[Sat Oct 04 21:59:07.976432 2025] [mpm_worker:notice] [pid 944:tid 944] AH00292: Apache/2.4.63 (Unix) OpenSSL/3.0.13 configured -- resuming normal operations
+[Sat Oct 04 21:59:07.977240 2025] [core:notice] [pid 944:tid 944] AH00094: Command line: '/usr/irissys/httpd/bin/httpd -f /durable/iris/httpd/conf/httpd.conf -d /usr/irissys/httpd -c Listen 52773'
+[Sat Oct 04 21:59:14.184859 2025] [core:error] [pid 944:tid 944] (2)No such file or directory: AH00095: failed to remove PID file /durable/iris/httpd/logs/httpd.pid
+[Sat Oct 04 21:59:14.185243 2025] [mpm_worker:notice] [pid 944:tid 944] AH00295: caught SIGTERM, shutting down
+[Sat Oct 04 21:59:23.215464 2025] [mpm_worker:notice] [pid 2043:tid 2043] AH00292: Apache/2.4.63 (Unix) OpenSSL/3.0.13 configured -- resuming normal operations
+[Sat Oct 04 21:59:23.215853 2025] [core:notice] [pid 2043:tid 2043] AH00094: Command line: '/usr/irissys/httpd/bin/httpd -f /durable/iris/httpd/conf/httpd.conf -d /usr/irissys/httpd -c Listen 52773'
+[Sat Oct 04 21:59:32.945896 2025] [core:error] [pid 2043:tid 2043] (2)No such file or directory: AH00095: failed to remove PID file /durable/iris/httpd/logs/httpd.pid
+[Sat Oct 04 21:59:32.946235 2025] [mpm_worker:notice] [pid 2043:tid 2043] AH00295: caught SIGTERM, shutting down
+[Sat Oct 04 22:16:48.259057 2025] [mpm_worker:notice] [pid 920:tid 920] AH00292: Apache/2.4.63 (Unix) OpenSSL/3.0.13 configured -- resuming normal operations
+[Sat Oct 04 22:16:48.259847 2025] [core:notice] [pid 920:tid 920] AH00094: Command line: '/usr/irissys/httpd/bin/httpd -f /durable/iris/httpd/conf/httpd.conf -d /usr/irissys/httpd -c Listen 52773'
+[Sat Oct 04 22:16:54.527088 2025] [core:error] [pid 920:tid 920] (2)No such file or directory: AH00095: failed to remove PID file /durable/iris/httpd/logs/httpd.pid
+[Sat Oct 04 22:16:54.527694 2025] [mpm_worker:notice] [pid 920:tid 920] AH00295: caught SIGTERM, shutting down
+[Sat Oct 04 22:17:03.260691 2025] [mpm_worker:notice] [pid 2019:tid 2019] AH00292: Apache/2.4.63 (Unix) OpenSSL/3.0.13 configured -- resuming normal operations
+[Sat Oct 04 22:17:03.261192 2025] [core:notice] [pid 2019:tid 2019] AH00094: Command line: '/usr/irissys/httpd/bin/httpd -f /durable/iris/httpd/conf/httpd.conf -d /usr/irissys/httpd -c Listen 52773'
+[Sat Oct 04 22:23:08.006501 2025] [core:error] [pid 2019:tid 2019] (2)No such file or directory: AH00095: failed to remove PID file /durable/iris/httpd/logs/httpd.pid
+[Sat Oct 04 22:23:08.007082 2025] [mpm_worker:notice] [pid 2019:tid 2019] AH00295: caught SIGTERM, shutting down
