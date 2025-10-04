@@ -1,17 +1,25 @@
 services:
   iris:
-    container_name: iris-sanitary-surveillance
+    container_name: sanitary-surveillance
     build:
-      context: .       
+      context: .        # Build using local Dockerfile
       dockerfile: Dockerfile
-    image: iris-sanitary-surveillance:latest 
+    image: sanitary-surveillance:latest  # Custom project image, not the base one
     init: true
     restart: unless-stopped
     volumes:
       - ./storage:/durable
     ports:
-      - "52773:52773"  
-      - "1972:1972"  
+      - "52773:52773"  # Management Portal / REST APIs
+      - "1972:1972"   # SuperServer port
     environment:
       - ISC_DATA_DIRECTORY=/durable/iris
+    # command: --password-file /durable/password/password.txt
+    # ------------------------------------------------------------------------------
+    # Entrypoint: this runs your entrypoint.sh, which will start IRIS,
+    # import your code into the current USER namespace, and then hand over
+    # control to the default IRIS entrypoint.
+    # Logs can be found in /opt/irisapp/logs/entrypoint.log and in Docker Desktop either.
+    # Logs can be print in terminal by using command: docker exec -it <container_name> cat /opt/irisapp/logs/entrypoint.log
+    # ------------------------------------------------------------------------------
     entrypoint: ["/opt/irisapp/entrypoint.sh"]

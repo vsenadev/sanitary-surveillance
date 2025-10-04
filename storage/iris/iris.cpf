@@ -11,21 +11,18 @@ IRISLOCALDATA=/durable/iris/mgr/irislocaldata/
 IRISAUDIT=/durable/iris/mgr/irisaudit/
 ENSLIB=/usr/irissys/mgr/enslib/
 IRISMETRICS=/durable/iris/mgr/irismetrics/
-SANITARY-SURVEILLANCE=/durable/iris/mgr/
-SANITARY-SURVEILLANCEENSTEMP=/durable/iris/mgr/sanitary-surveillanceenstemp/
-SANITARY-SURVEILLANCESECONDARY=/durable/iris/mgr/sanitary-surveillancesecondary/
-SCRAPER=/durable/iris/mgr/
-SCRAPERENSTEMP=/durable/iris/mgr/scraperenstemp/
-SCRAPERSECONDARY=/durable/iris/mgr/scrapersecondary/
+SURVEILLANCE=/durable/iris/mgr/
+SURVEILLANCEENSTEMP=/durable/iris/mgr/surveillanceenstemp/
+SURVEILLANCESECONDARY=/durable/iris/mgr/surveillancesecondary/
 USER=/durable/iris/mgr/user/
 
 [Namespaces]
 %SYS=IRISSYS
-SANITARYSURVERLLANCE=SANITARY-SURVEILLANCE
+SURVEILLANCE=SURVEILLANCE
 USER=USER
 
-[Map.SANITARYSURVERLLANCE]
-Global_Ens.SecondaryData*=SANITARY-SURVEILLANCESECONDARY
+[Map.SURVEILLANCE]
+Global_Ens.SecondaryData*=SURVEILLANCESECONDARY
 Global_EnsDICOM.Dictionary=ENSLIB
 Global_EnsEDI.Description=IRISSYS
 Global_EnsEDI.Description("X","X12")=ENSLIB
@@ -108,7 +105,7 @@ Global_IRIS.MsgNames("tahoma,verdana")=ENSLIB
 Global_IRIS.Temp.EnsHostTotals=IRISTEMP
 Global_IRIS.Temp.EnsPortal*=IRISTEMP
 Global_IRIS.Temp.EnsPublic*=IRISTEMP
-Global_IRIS.Temp.Ens*=SANITARY-SURVEILLANCEENSTEMP
+Global_IRIS.Temp.Ens*=SURVEILLANCEENSTEMP
 Routine_Ens*=ENSLIB
 Package_CSPX.Dashboard=ENSLIB
 Package_Ens=ENSLIB
@@ -569,7 +566,7 @@ DNSLookup=ON
 Port=23
 
 [Conversions]
-LastConvertTime=2025-10-03 15:25:16
+LastConvertTime=2025-10-04 23:07:36
 
 #----------CPF conversion detail------------
 # Updated from Clone
