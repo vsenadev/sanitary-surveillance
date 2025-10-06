@@ -1,2 +1,0 @@
-[Info]
-SuperServers=1972
