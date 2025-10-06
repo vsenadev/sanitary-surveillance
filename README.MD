@@ -1,91 +1,109 @@
-Minimal Requirements
-Before running the project, make sure you have the following installed:
+## CPSC Recalls & Safety Warnings Dashboard ⚠️
+Important: Make sure your entrypoint.sh file uses LF line endings (Unix style) instead of CRLF, especially if you are on Windows. This ensures Docker containers run the script correctly.
+
+## Minimal Requirements
+Before running the project, make sure you have installed:
 
 Python 3.9+ (with libraries listed in requirements.txt)
 
-Google Chrome
-
 Docker & Docker Compose
 
-Project Description
-This project collects product recall and safety warning data from the CPSC (Consumer Product Safety Commission) website, processes the information, organizes it into a JSON format, and persists it in InterSystems IRIS.
+Note: Selenium and ChromeDriver are managed inside the container, so you don't need Chrome installed locally.
+
+## Project Description
+This project collects product recall and safety warning data from the CPSC (Consumer Product Safety Commission), processes it into JSON, and persists it in InterSystems IRIS.
 
 The project includes:
 
-A Python scraper using Selenium for automatic CSV downloads.
+Python Scraper: Uses Selenium to automatically download CSVs of recalls and warnings.
 
-Data processing and cleaning, normalizing names of manufacturers, importers, and retailers.
+Data Processing & Cleaning:
 
-Persistence in InterSystems IRIS, with automatic creation of main and auxiliary tables.
+Normalizes names of manufacturers, importers, distributors, and retailers.
 
-Daily data collection scheduled for 10:00 PM (22:00) using schedule.
+Converts dates, units, and other fields to consistent formats.
+
+Persistence in IRIS: Automatically creates main (cpsc_data) and auxiliary tables (cpsc_sold_at, cpsc_importers, etc.).
+
+Daily Scheduling: Scraper runs automatically at 10:00 PM using schedule.
 
 Technologies Used
-Python (Selenium, Pandas, Schedule)
+Python: Selenium, Pandas, Schedule
 
 InterSystems IRIS (Community Edition via Docker)
 
 Docker & Docker Compose
 
-JSON and CSV for temporary storage
+JSON & CSV for temporary storage
 
-Project Structure
+Streamlit for interactive dashboard
+
+Altair / Pydeck for charts and maps
+
+## Project Structure
 .
-├── api.py
-├── cpsc_scraper.py
-├── dashboard.py
+├── api.py                 # FastAPI backend
+├── cpsc_scraper.py        # Scraper + processing + persistence
+├── dashboard.py           # Streamlit dashboard
 ├── docker-compose.yml
 ├── Dockerfile
-├── entrypoint.sh
-├── iris.script
+├── entrypoint.sh          # Important: must use LF line endings
+├── iris.script            # IRIS initialization script
 ├── requirements.txt
 ├── processed_cpsc_data.json
-├── downloads/              # Temporarily downloaded CSVs
-├── storage/                # Persistent IRIS data
+├── downloads/             # Temporary downloaded CSVs
+├── storage/               # Persisted IRIS data
 └── .env
-How to Run
-Clone the repository:
+The scraper saves temporary files in downloads/ and persists data in IRIS via storage/.
 
+## How to Run
+1. Clone the repository
 Bash
 
 git clone <REPOSITORY_URL>
 cd <REPOSITORY_NAME>
-Install Python dependencies:
-
+## 2. Install Python dependencies
 Bash
 
 pip install -r requirements.txt
-Execute Docker Compose:
-
+## 3. Execute Docker Compose
 Bash
 
 docker compose up --build -d
-This command will start the container with InterSystems IRIS, process the collected data, and store it automatically.
+This command builds the images, starts the containers, collects data, and saves it automatically to IRIS.
 
-The main script is already configured to run daily at 10:00 PM (22:00). To run manually:
+The scraper is configured to run daily at 10:00 PM. To run it manually:
 
-```bash
+Bash
+
 python cpsc_scraper.py
-```
 How It Works
-The scraper accesses the CPSC page and downloads the Recalls and Product Safety Warnings CSVs.
+The scraper accesses the CPSC website and downloads CSVs of Recalls and Product Safety Warnings.
 
-The CSV files are processed, extracting information such as products, manufacturers, importers, distributors, retailers, and countries of manufacture.
+CSV files are processed into JSON, extracting fields such as:
 
-The data is inserted into the main table cpsc_data and auxiliary tables (cpsc_sold_at, cpsc_importers, cpsc_manufacturers, etc.) in IRIS.
+name_of_product, description, hazard_description
 
-After processing, the temporary CSVs are removed, and the data becomes available in IRIS for SQL queries or dashboard use.
+manufacturers, importers, distributors
 
-Main Command
+sold_at, manufactured_in
+
+Data is persisted in the main table cpsc_data and auxiliary tables (cpsc_sold_at, cpsc_importers, etc.) in IRIS.
+
+Temporary CSV files are deleted after processing.
+
+The Streamlit dashboard consumes the FastAPI backend to display interactive charts and filterable tables.
+
+![Dashboard](./images/dash.png)
+
+![Dashboard Recalls](./images/dash-recalls.png)
+
+
+## Main Command
 Bash
 
-docker compose up --build -d
-This command is sufficient to build the image, start the container, and process the data automatically.
+``docker compose up --build -d``
+This builds the image, starts containers, collects data, and persists it in IRIS automatically.
 
-Next Steps
-Add dashboard images and examples of IRIS queries.
-
-Publish a demo video or GIF showing the scraper in action.
-
-License
-This project is Open Source and can be used under the terms of the MIT license.
+## License
+MIT License — Open Source. You can use, modify, and redistribute freely.

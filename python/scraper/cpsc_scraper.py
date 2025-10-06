@@ -5,6 +5,7 @@ import json
 import re
 from datetime import datetime
 import schedule
+from selenium.webdriver.chrome.service import Service
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
@@ -15,7 +16,7 @@ import pandas as pd
 
 # === IRIS CONNECTION CLASS ===
 class IRIS_connection:
-    def __init__(self, host="127.0.0.1", port=1972, namespace="USER", username="_SYSTEM", password="SYS"):
+    def __init__(self, host="sanitary-surveillance", port=1972, namespace="USER", username="_SYSTEM", password="SYS"):
         args = {'hostname': host, 'port': port, 'namespace': namespace, 'username': username, 'password': password}
         self.conn = iris.connect(**args)
 
@@ -57,7 +58,6 @@ class IRIS_connection:
         except Exception as e:
             self.conn.rollback()
             print(f"Failed to insert into {table_name}: {e}")
-            raise
         finally:
             cursor.close()
 
@@ -178,16 +178,15 @@ def process_csv(path, source_type):
 
 # === SELENIUM CSV DOWNLOAD ===
 def download_cpsc_csvs():
+    service = Service('/usr/bin/chromedriver')
     chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("--disable-extensions")
     chrome_options.add_argument("--start-maximized")
-    chrome_options.add_argument("--disable-notifications")
-    chrome_options.add_experimental_option("prefs", {
-        "download.default_directory": DOWNLOAD_DIR,
-        "download.prompt_for_download": False,
-        "directory_upgrade": True,
-        "safebrowsing.enabled": True
-    })
-    driver = webdriver.Chrome(options=chrome_options)
+    driver = webdriver.Chrome(service=service, options=chrome_options)
     try:
         driver.get(BASE_URL)
         wait = WebDriverWait(driver, 20)
@@ -224,18 +223,28 @@ def upsert_aux_table(conn, table_name, key, values):
 
 # === MAIN TASK ===
 def run_task():
-    download_cpsc_csvs()
-    recalls = process_csv(RECALLS_CSV, "recall")
-    warnings = process_csv(WARNINGS_CSV, "warning")
-    all_data = recalls + warnings
-
-    with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
-        json.dump(all_data, f, ensure_ascii=False, indent=2)
-    print("[OK] Processing finished. JSON saved.")
+    try:
+        print("[INFO] Starting CSV capture from website...")
+        download_cpsc_csvs()
+        recalls = process_csv(RECALLS_CSV, "recall")
+        warnings = process_csv(WARNINGS_CSV, "warning")
+        all_data = recalls + warnings
+        with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
+            json.dump(all_data, f, ensure_ascii=False, indent=2)
+        print("[OK] Processing finished. JSON saved.")
+    except Exception as e:
+        print(f"[WARN] CSV capture failed: {e}")
+        if os.path.exists(OUTPUT_JSON):
+            print("[INFO] Using preprocessed JSON backup.")
+            with open(OUTPUT_JSON, "r", encoding="utf-8") as f:
+                all_data = json.load(f)
+        else:
+            print("[ERROR] No backup JSON found. Aborting.")
+            return
 
     conn = IRIS_connection()
 
-    # === CREATE MAIN TABLE ===
+    # === CREATE TABLES ===
     conn.create_table("cpsc_data", {
         "id": "SERIAL PRIMARY KEY",
         "source": "VARCHAR(20)",
@@ -252,7 +261,6 @@ def run_task():
         "remedy": "VARCHAR(8000)"
     })
 
-    # === CREATE AUXILIARY TABLES ===
     aux_tables = {
         "cpsc_sold_at": "VARCHAR(255)",
         "cpsc_importers": "VARCHAR(255)",
@@ -268,15 +276,11 @@ def run_task():
             "value": col_type
         })
 
-    # === INSERT OR UPDATE MAIN + AUX ===
     for record in all_data:
         flat_data = {k: v for k, v in record.items() if not isinstance(v, list)}
         key = flat_data.get("recall_number") or flat_data.get("product_safety_warning_number")
-
         if not key:
             continue
-
-        # Check if record exists
         existing = conn.query("SELECT id FROM cpsc_data WHERE recall_number=?", [key])
         try:
             if not existing.empty:
@@ -291,7 +295,6 @@ def run_task():
         except Exception as e:
             print(f"Error inserting/updating record: {e}")
 
-        # Insert into auxiliary tables
         for list_field, table_name in [
             ("sold_at", "cpsc_sold_at"),
             ("importers", "cpsc_importers"),
@@ -306,7 +309,7 @@ def run_task():
     for f in [RECALLS_CSV, WARNINGS_CSV]:
         if os.path.exists(f):
             os.remove(f)
-    print("[OK] CSV files deleted.")
+    print("[OK] Data saved successfully.")
 
 # === EXECUTE IMMEDIATELY ===
 run_task()

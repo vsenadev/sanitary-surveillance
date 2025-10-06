@@ -29,7 +29,7 @@ def parse_date(val):
 
 # === IRIS CONNECTION ===
 class IRISConnection:
-    def __init__(self, host="127.0.0.1", port=1972, namespace="USER", username="_SYSTEM", password="SYS"):
+    def __init__(self, host="sanitary-surveillance", port=1972, namespace="USER", username="_SYSTEM", password="SYS"):
         self.conn = iris.connect(hostname=host, port=port, namespace=namespace, username=username, password=password)
 
     def query(self, sql: str, params: list = []):

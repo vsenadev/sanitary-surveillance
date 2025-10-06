@@ -9,7 +9,7 @@ from typing import List, Dict, Any
 from functools import lru_cache
 from datetime import datetime, timedelta
 
-API_URL = "http://127.0.0.1:8000"  # adjust if needed
+API_URL = "http://myapp-api:8000"  # adjust if needed
 
 st.set_page_config(page_title="CPSC Recalls Dashboard", layout="wide", initial_sidebar_state="expanded")
 

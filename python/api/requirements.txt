@@ -1,0 +1,5 @@
+pandas
+fastapi
+intersystems_irispython
+uvicorn
+requests

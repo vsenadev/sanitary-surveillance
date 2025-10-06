@@ -11,12 +11,54 @@ services:
     restart: unless-stopped
     volumes:
       - ./storage:/durable
-      - ./:/opt/irisapp
     ports:
-      - "52773:52773"  # IRIS Management Portal
-      - "1972:1972"    # IRIS SuperServer
-      - "8000:8000"    # API
-      - "8501:8501"    # Streamlit Dashboard
+      - "52773:52773"
+      - "1972:1972"
     environment:
       - ISC_DATA_DIRECTORY=/durable/iris
     entrypoint: ["/opt/irisapp/entrypoint.sh"]
+    networks:
+      - ss_net
+
+  scraper:
+    build:
+      context: ./python/scraper
+    container_name: myapp-scraper
+    volumes:
+      - ./data:/app/data
+      - ./python/requirements.txt:/app/requirements.txt:ro
+    depends_on:
+      - iris
+    networks:
+      - ss_net
+
+  api:
+    build:
+      context: ./python/api
+    container_name: myapp-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./python/requirements.txt:/app/requirements.txt:ro
+    depends_on:
+      - scraper
+    networks:
+      - ss_net
+
+  streamlit:
+    build:
+      context: ./python/dashboard
+    container_name: myapp-dashboard
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./python/requirements.txt:/app/requirements.txt:ro
+    depends_on:
+      - api
+    networks:
+      - ss_net
+
+networks:
+  ss_net:
+    driver: bridge
